@@ -8,7 +8,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 
 deployment on uwcirg.github.io
 
-(add a few brief reminders how this was done)
+Settings -> Github pages
 
 =====================
 Story template
