@@ -1,9 +1,17 @@
 view this repo hosted at:  https://uwcirg.github.io/ViiV-Draft/
 
+This site was started from the Story template at HTML5 Up/pixalarity (details below)
+
 Story by HTML5 UP
 html5up.net | @ajlkn
 Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 
+deployment on uwcirg.github.io
+
+(add a few brief reminders how this was done)
+
+=====================
+Story template
 
 Say hello to Story, a brand new responsive one-pager for HTML5 UP! Inspired by my work
 on Carrd*, Story is built to be extremely modular and tweakable, and as such is entirely
