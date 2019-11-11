@@ -98,7 +98,9 @@
 	// Smooth scroll.
 		$('.smooth-scroll').scrolly();
 		$('.smooth-scroll-middle').scrolly({ anchor: 'middle' });
-
+	// next line added by Bill, but seems to do the right thing
+		$('.smooth-scroll-top').scrolly({ anchor: 'top' });
+		
 	// Wrapper.
 		$wrapper.children()
 			.scrollex({
