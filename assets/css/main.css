@@ -7375,12 +7375,13 @@ input, select, textarea {
 		background: #222222;
 		cursor: default;
 		position: fixed;
-		/* height: 100vh;
-		left: 0;
+		top: 0;
 		overflow-x: hidden;
 		overflow-y: auto;
 		text-align: right;
-		top: 0;
+		/* 
+		height: 100vh;
+		left: 0;
 		width: 18em;
 		z-index: 10000;
 		*/
