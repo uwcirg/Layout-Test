@@ -7384,7 +7384,7 @@ input, select, textarea {
 		width: 18em;
 		z-index: 10000;
 	}
-
+*/
 		#sidebar > .inner {
 			display: -moz-flex;
 			display: -webkit-flex;
@@ -7648,9 +7648,9 @@ input, select, textarea {
 			opacity: 0;
 		}
 
-*/
 
-		@media screen and (max-width: 1680px) {
+
+		/* @media screen and (max-width: 1680px) { */
 
 			#sidebar {
 				height: 3.5em;
@@ -7710,7 +7710,7 @@ input, select, textarea {
 							background-color: #b74e91;
 						}
 
-		}
+		/*}*/
 
 		@media screen and (max-width: 736px) {
 
