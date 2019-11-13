@@ -7379,11 +7379,11 @@ input, select, textarea {
 		overflow-x: hidden;
 		overflow-y: auto;
 		text-align: right;
+		z-index: 10000;
+		left: 0;
 		/* 
 		height: 100vh;
-		left: 0;
 		width: 18em;
-		z-index: 10000;
 		*/
 	}
 
