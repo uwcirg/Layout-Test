@@ -7715,34 +7715,12 @@ input, select, textarea {
 		/*}*/
 
 		@media screen and (max-width: 900px) {
-
+			/*
 			#sidebar {
-				body
-				{
-				  margin: 0;
-				  padding: 0;
-
-				  /* make it look decent enough */
-				  background: #232323;
-				  color: #cdcdcd;
-				  /*font-family: "Avenir Next", "Avenir", sans-serif;*/
-				}
-
-				a
-				{
-				  text-decoration: none;
-				  color: #232323;
-
-				  transition: color 0.3s ease;
-				}
-
-				a:hover
-				{
-				  color: tomato;
-				}
-
-				#menuToggle
-				{
+				display: none;
+			}
+			*/
+			#sidebar {
 				  display: block;
 				  position: relative;
 				  top: 50px;
@@ -7754,7 +7732,7 @@ input, select, textarea {
 				  user-select: none;
 				}
 
-				#menuToggle input
+			#sidebar input
 				{
 				  display: block;
 				  width: 40px;
@@ -7774,7 +7752,7 @@ input, select, textarea {
 				/*
 				 * Just a quick hamburger
 				 */
-				#menuToggle span
+			#sidebar span
 				{
 				  display: block;
 				  width: 33px;
@@ -7794,12 +7772,12 @@ input, select, textarea {
 					      opacity 0.55s ease;
 				}
 
-				#menuToggle span:first-child
+				#sidebar span:first-child
 				{
 				  transform-origin: 0% 0%;
 				}
 
-				#menuToggle span:nth-last-child(2)
+				#sidebar span:nth-last-child(2)
 				{
 				  transform-origin: 0% 100%;
 				}
@@ -7808,7 +7786,7 @@ input, select, textarea {
 				 * Transform all the slices of hamburger
 				 * into a crossmark.
 				 */
-				#menuToggle input:checked ~ span
+				#sidebar input:checked ~ span
 				{
 				  opacity: 1;
 				  transform: rotate(45deg) translate(-2px, -1px);
@@ -7818,7 +7796,7 @@ input, select, textarea {
 				/*
 				 * But let's hide the middle one.
 				 */
-				#menuToggle input:checked ~ span:nth-last-child(3)
+				#sidebar input:checked ~ span:nth-last-child(3)
 				{
 				  opacity: 0;
 				  transform: rotate(0deg) scale(0.2, 0.2);
@@ -7827,7 +7805,7 @@ input, select, textarea {
 				/*
 				 * Ohyeah and the last one should go the other direction
 				 */
-				#menuToggle input:checked ~ span:nth-last-child(2)
+				#sidebar input:checked ~ span:nth-last-child(2)
 				{
 				  transform: rotate(-45deg) translate(0, -1px);
 				}
@@ -7868,7 +7846,7 @@ input, select, textarea {
 				{
 				  transform: none;
 				}
-			}
+			
 
 		}
 
