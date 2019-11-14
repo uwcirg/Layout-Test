@@ -124,7 +124,14 @@
 
 				}
 			});
-
+	
+	// Menu
+		$("#hambagaMenu a").on("click", function() {
+			setTimeout(function() {
+				$("#menuToggle [type='checkbox']").trigger("click")
+			}, 150);
+		});
+	
 	// Items.
 		$('.items')
 			.scrollex({
