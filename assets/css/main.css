@@ -7417,6 +7417,8 @@ input, select, textarea {
 		width: 300px;  
 		margin: -100px 0 0 -50px;  
 		padding: 50px;  
+		border-radius: 3.75em;
+		font-weight: bold;
 		padding-top: 125px;  
 		background: #ededed;  
 		list-style-type: none;  
