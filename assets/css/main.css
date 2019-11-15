@@ -7209,33 +7209,7 @@ input, select, textarea {
 	.gallery article .image {
 		background-color: rgba(0, 0, 0, 0.125);
 	}
-/* Wrapper (menu)
 
-	#sidebar + #wrapper {
-		margin-left: 18em;
-	}
-
-		@media screen and (max-width: 1280px) {
-
-			#sidebar + #wrapper {
-				margin-left: 0;
-				padding-top: 3.5em;
-			}
-
-		}
-
-		@media screen and (max-width: 736px) {
-
-			#sidebar + #wrapper {
-				padding-top: 0;
-			}
-
-		}
-
-	#header + #wrapper > .wrapper > .inner {
-		margin: 0 auto;
-	}
-*/
 
 /* Wrapper (style1) */
 
@@ -7408,7 +7382,7 @@ input, select, textarea {
  		height: 4px;  
 		margin-bottom: 5px;  
 		position: relative;  
-		background: #cdcdcd;  
+		background: #ffffff;  
 		border-radius: 3px;  
 		z-index: 1;  
 		transform-origin: 4px 0px;  
@@ -7426,7 +7400,7 @@ input, select, textarea {
 	#hambagaMenu #menuToggle input:checked ~ span{  
 		opacity: 1;  
 		transform: rotate(45deg) translate(-2px, -1px);  
-		background: #232323;
+		background: #222222;
 	}
 	/* * But let's hide the middle one. */ 
 	#hambagaMenu #menuToggle input:checked ~ span:nth-last-child(3){  
