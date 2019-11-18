@@ -7423,7 +7423,7 @@ input, select, textarea {
 		text-decoration: none !important;
 		padding-top: 125px;  
 		/*background: #222222;  */
-		background: #a8a8a8;
+		background: #ededed;
 		list-style-type: none;  
 		-webkit-font-smoothing: antialiased;  
 		/* to stop flickering of text in safari */  
