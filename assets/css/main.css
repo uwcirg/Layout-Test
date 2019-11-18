@@ -7419,10 +7419,11 @@ input, select, textarea {
 		margin: -100px 0 0 -50px;  
 		padding: 50px;  
 		border-radius: 0.5rem;
-		font-weight: bold;
+		/*font-weight: bold;*/
+		text-decoration: none !important;
 		padding-top: 125px;  
 		/*background: #222222;  */
-		background: hsla(0, 0%, 0%, 0.4);
+		background: #a8a8a8;
 		list-style-type: none;  
 		-webkit-font-smoothing: antialiased;  
 		/* to stop flickering of text in safari */  
