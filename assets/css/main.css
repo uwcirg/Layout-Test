@@ -7356,6 +7356,7 @@ input, select, textarea {
 			top: 0;        
 			left: 0;        
 			z-index: 100;    
+			text-decoration: none !important;
 		}
 	}
 	#hambagaMenu #menuToggle {    
@@ -7420,8 +7421,8 @@ input, select, textarea {
 		border-radius: 0.5rem;
 		font-weight: bold;
 		padding-top: 125px;  
-		background: #222222;  
-		color: #ffffff;
+		/*background: #222222;  */
+		background: hsla(0, 0%, 0%, 0.4);
 		list-style-type: none;  
 		-webkit-font-smoothing: antialiased;  
 		/* to stop flickering of text in safari */  
@@ -7430,7 +7431,7 @@ input, select, textarea {
 		transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 	}
 	#hambagaMenu #menu:hover {
-				color: rgba(255, 255, 255, 0.55);
+		color: rgba(255, 255, 255, 0.55);
 				
 			}
 	#hambagaMenu #menu li{  
