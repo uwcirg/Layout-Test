@@ -7420,7 +7420,7 @@ input, select, textarea {
 		border-radius: 3.75em;
 		font-weight: bold;
 		padding-top: 125px;  
-		background: #ededed;  
+		background: #222222;  
 		list-style-type: none;  
 		-webkit-font-smoothing: antialiased;  
 		/* to stop flickering of text in safari */  
@@ -7657,7 +7657,8 @@ input, select, textarea {
 			-ms-transition: color 0.2s ease;
 			transition: color 0.2s ease;
 			border: 0;
-			color: rgba(255, 255, 255, 0.35);
+			/*color: rgba(255, 255, 255, 0.35); */
+			color: #ffffff;
 			display: block;
 			font-size: 0.6em;
 			font-weight: bold;
@@ -7697,7 +7698,8 @@ input, select, textarea {
 			}
 
 			#sidebar nav a:hover {
-				color: rgba(255, 255, 255, 0.55);
+				/*color: rgba(255, 255, 255, 0.55);*/
+				color: #ffffff;
 			}
 
 			#sidebar nav a.active {
