@@ -7415,7 +7415,7 @@ input, select, textarea {
 	/* * Make this absolute positioned * at the top left of the screen */ 
 	#hambagaMenu #menu{  
 		position: absolute;  
-		width: 300px;  
+		width: 250px;  
 		margin: -100px 0 0 -50px;  
 		padding: 50px;  
 		border-radius: 0.5rem;
@@ -7423,7 +7423,7 @@ input, select, textarea {
 		text-decoration: none !important;
 		padding-top: 125px;  
 		/*background: #222222;  */
-		background: #ededed;
+		background: #5E42A6;
 		list-style-type: none;  
 		-webkit-font-smoothing: antialiased;  
 		/* to stop flickering of text in safari */  
