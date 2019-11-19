@@ -7383,7 +7383,7 @@ input, select, textarea {
  		height: 4px;  
 		margin-bottom: 5px;  
 		position: relative;  
-		background: #839D9A;  
+		background: #BBC9C7;  
 		border-radius: 3px;  
 		z-index: 1;  
 		transform-origin: 4px 0px;  
@@ -7422,7 +7422,7 @@ input, select, textarea {
 		/*font-weight: bold;*/
 		text-decoration: none !important;
 		padding-top: 125px;  
-		background: #839D9A; 
+		background: #BBC9C7; 
 		/* background: rgba(94, 66, 166, 1); */
 		list-style-type: none;  
 		-webkit-font-smoothing: antialiased;  
@@ -7689,7 +7689,7 @@ input, select, textarea {
 
 			#sidebar nav a:before {
 				/*background: #3c2c62;*/
-				background-color: #839D9A;
+				background-color: #BBC9C7;
 			}
 
 			#sidebar nav a:after {
