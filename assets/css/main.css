@@ -7688,7 +7688,8 @@ input, select, textarea {
 			}
 
 			#sidebar nav a:before {
-				background: #3c2c62;
+				/*background: #3c2c62;*/
+				background-color: #839D9A;
 			}
 
 			#sidebar nav a:after {
@@ -7703,10 +7704,10 @@ input, select, textarea {
 				max-width: 0;
 			}
 
-			#sidebar nav a:hover {
+			/*#sidebar nav a:hover {
 				color: rgba(255, 255, 255, 0.55);
 			
-			}
+			}*/
 
 			#sidebar nav a.active {
 				color: #ffffff;
