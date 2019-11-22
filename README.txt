@@ -1,5 +1,9 @@
 view this repo hosted at:  https://uwcirg.github.io/ViiV-Draft/
 
+hosting strategy:
+
+github pages controlled from Settings -> Options -> Github pages
+
 This site was started from the Story template at HTML5 Up/pixalarity (details below)
 
 Story by HTML5 UP
