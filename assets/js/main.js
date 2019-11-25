@@ -94,7 +94,15 @@
 					});
 
 				})();
-
+	
+	// added by sie-ce to add toggle content
+		function toggle_visibility(id) {
+      			var e = document.getElementById(id);
+      			if(e.style.display == 'block')
+          			e.style.display = 'none';
+       			else
+         			e.style.display = 'block';
+   		}
 	// Smooth scroll.
 		$('.smooth-scroll').scrolly();
 		$('.smooth-scroll-middle').scrolly({ anchor: 'middle' });
