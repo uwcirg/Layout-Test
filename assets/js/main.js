@@ -96,13 +96,22 @@
 				})();
 	
 	// added by sie-ce to add toggle content
-		function toggle_visibility(id) {
-      			var e = document.getElementById(id);
-      			if(e.style.display == 'block')
-          			e.style.display = 'none';
-       			else
-         			e.style.display = 'block';
-   		}
+		function toggleParagraphVisible(){
+		    if(document.getElementById("textIsHidden").innerText == "see"){
+			//If the sentence says "see more info"
+
+			//First, change the sentence to read "hide more info"
+			document.getElementById("textIsHidden").innerText = "hide";
+			//Next, change the display on the paragraph to block,
+			//which makes it visible
+			document.getElementById("toggleParagraph").style.display = "block";
+		    } else {
+			//If the sentence doesn't say "see more info", revert everything
+			document.getElementById("textIsHidden").innerText = "see";
+			document.getElementById("toggleParagraph").style.display = "none";
+		    }
+		}
+	
 	// Smooth scroll.
 		$('.smooth-scroll').scrolly();
 		$('.smooth-scroll-middle').scrolly({ anchor: 'middle' });
