@@ -129,7 +129,9 @@
 							
 							
 							<!-- Toggle Test -->
-							<button onclick="toggle()">Show More Information</button>			
+							<ul class="actions stacked">
+								<button onclick="toggle()">Show More Information</button>
+							</ul>						
 							
 							<div class="items style1 medium onscroll-fade-in">
 								<section>
@@ -140,28 +142,12 @@
 									</a>	
 									<p id="detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
 								</section>
-								<!-- 
-								<section>
-									<a href="images/alcohol.round.jpg" class="image">
-										<span class="image fit"><img src="images/alcohol.round.larger.jpg" alt="" /></span>
-									</a>						
-									<h3>Alcohol Use</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<a href="images/drug.round.jpg" class="image">
-										<span class="image fit"><img src="images/drug.round.larger.jpg" alt="" /></span>
-									</a>
-									<h3>Drug Use</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								-->
 								<section>
 									<h3>Substance Use</h3>
 									<a href="images/smoking.round.larger.jpg" class="image" style=padding: 0 0 7em 0;>
 										<span class="image fit"><img src="images/smoking.round.larger.jpg" alt="" /></span>
 									</a>
-									<!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p> -->
+									<p id="detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
 								</section>
 								<section>
 									<h3>Antiretroviral Adherence</h3>
@@ -223,6 +209,7 @@
 								-->
 							</div>
 							
+							<!-- original 
 							<script>
 							function toggle() {
 							  var x = document.getElementById("detail");
@@ -230,6 +217,17 @@
 							    x.style.display = "block";
 							  } else {
 							    x.style.display = "none";
+							  }
+							}
+							</script> -->
+							
+							<script>
+							function toggle() {
+							  var x = document.getElementById("detail");
+							  if (x.style.display === "block") {
+							    x.style.display = "none";
+							  } else {
+							    x.style.display = "block";
 							  }
 							}
 							</script>
