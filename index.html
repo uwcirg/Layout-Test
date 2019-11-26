@@ -127,6 +127,10 @@
 							-->
 							<p>PROs cover a broad range of topics clinically relevant to people living with HIV, including symptoms, health behaviors, basic needs, and social context. A resulting report summarizes results and displays topics of interest in order of clinical priority, and can depict changes over time. Alerts for critical issues such significant anxiety or distress, interference with function, or suicidal ideation, may be sent to an appropriate provider or displayed to the patient, depending on whether the patient is within or outside a clinical setting when using the PROs.</p>							
 							
+							
+							<!-- Toggle Test -->
+							<button onclick="toggle()">Show More Information</button>			
+							
 							<div class="items style1 medium onscroll-fade-in">
 								<section>
 									<h3>Mental Health</h3>
@@ -134,7 +138,7 @@
 										<span class="image fit"><img src="images/mental health.round.larger.jpg" alt="" /></span>
 										<!-- <img src="images/mental health.round.larger.jpg" alt="" /> -->
 									</a>	
-									<!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p> -->
+									<p id="detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
 								</section>
 								<!-- 
 								<section>
@@ -218,9 +222,21 @@
 								</section>
 								-->
 							</div>
-							<ul class="actions stacked">
+							
+							<script>
+							function toggle() {
+							  var x = document.getElementById("detail");
+							  if (x.style.display === "none") {
+							    x.style.display = "block";
+							  } else {
+							    x.style.display = "none";
+							  }
+							}
+							</script>
+							
+							<!-- <ul class="actions stacked">
 								<li><a href="clinicaltopics.html" class="button">Learn More</a></li>
-							</ul>
+							</ul> -->
 						</div>
 					</section>
 				
