@@ -1,13 +1,16 @@
-Exposed github repo as http://prohiv.org 
-required HTTPS
+<b>hosting strategy:</b>
+
+github pages controlled from Settings -> Options -> Github pages
+
+1) Exposed github repo as http://prohiv.org 
+2) required HTTPS
+
 see:  https://help.github.com/en/github/working-with-github-pages/managing-a-custom-domain-for-your-github-pages-site#configuring-an-apex-domain and https://help.github.com/en/github/working-with-github-pages/securing-your-github-pages-site-with-https
-(until site changes are made, I've turned off https again to limit mixed content errors)
+(leaving "require https" on to see if github pages provisions a cert w/in 24 hours.  approx 5PM Pacific Mon 12/09)
 
 2019-12-09 deprecated - view this repo hosted at:  https://uwcirg.github.io/ViiV-Draft/
 
-hosting strategy:
-
-github pages controlled from Settings -> Options -> Github pages
+<b>template strategy</b>
 
 This site was started from the Story template at HTML5 Up/pixalarity (details below)
 
