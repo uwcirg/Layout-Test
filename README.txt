@@ -1,4 +1,9 @@
-view this repo hosted at:  https://uwcirg.github.io/ViiV-Draft/
+Exposed github repo as http://prohiv.org 
+required HTTPS
+see:  https://help.github.com/en/github/working-with-github-pages/managing-a-custom-domain-for-your-github-pages-site#configuring-an-apex-domain and https://help.github.com/en/github/working-with-github-pages/securing-your-github-pages-site-with-https
+(until site changes are made, I've turned off https again to limit mixed content errors)
+
+2019-12-09 deprecated - view this repo hosted at:  https://uwcirg.github.io/ViiV-Draft/
 
 hosting strategy:
 
