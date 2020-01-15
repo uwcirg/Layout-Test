@@ -1,44 +1,76 @@
 <!DOCTYPE HTML>
 <!--
-	Hyperspace by HTML5 UP
+	Story by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
 	<head>
-		<title>ViiV Toolkit</title>
+		<title>PRO HIV - Evidence</title>
+		<link rel="shortcut icon" type="image/x-icon" href="images/PRO HIV icon.png" />
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
-
-		<!-- Header -->
-			<header id="header">
-				<!--<ul class="actions stacked">
-					<li><a href="index.html" class="button">Back</a></li>
-				</ul> -->
+		
+		<!-- Sidebar -->
+			<section id="sidebar">
+				<div class="inner">
+					<nav>
+						<ul>
+							<li><a href="index.html#five" class="smooth-scroll-middle"><img src="images/PRO HIV icon.png" alt="" style="height: 75%; vertical-align: middle;"/></a></li>
+							<li><a href="#purpose" class="smooth-scroll-middle">Purpose</a></li>
+							<li><a href="#steps" class="smooth-scroll-middle">Steps</a></li>
+							<li><a href="#PDF" class="smooth-scroll-middle">Full PDF</a></li>
+							<li><a href="#ref" class="smooth-scroll-middle">References</a></li>
+							<li><a href="#seven" class="smooth-scroll-middle">Contact</a></li>
+						</ul>
+					</nav>	
+			</section>
+	
+			<section id="hambagaMenu" role="navigation">    
+				<div id="menuToggle">        
+					<!--        A fake / hidden checkbox is used as click reciever,        so you can use the :checked selector on it.        -->        
+					<input type="checkbox" />       
+					<!--        Some spans to act as a hamburger.        They are acting like a real hamburger,        not that McDonalds stuff.        -->        
+					<span></span>        
+					<span></span>        
+					<span></span>        
+					<!--        Too bad the menu has to be inside of the button        but hey, it's pure CSS magic.        -->        
+					<ul id="menu">            
+						<li><a href="index.html#five" class="smooth-scroll-middle"><b>HIV PROs</b></a></li>
+						<li><a href="#purpose" class="smooth-scroll-middle">Purpose</a></li>
+						<li><a href="#steps" class="smooth-scroll-middle">Steps</a></li>
+						<li><a href="#PDF" class="smooth-scroll-middle">Full PDF</a></li>
+						<li><a href="#ref" class="smooth-scroll-middle">References</a></li>
+						<li><a href="#seven" class="smooth-scroll-middle">Contact</a></li>    
+					</ul>    
+				</div>
+			</section>
 				
-			</header>
-
 		<!-- Wrapper -->
 			<div id="wrapper" class="divided">
-				<section class="wrapper style1 align-left">
-					<div class="inner">
-						<ul class="actions stacked">
-							<li><a href="https://prohiv.org/#five" class="button">Back</a></li>
-						</ul>
-						<!-- Two -->
-							<section id="one" id="first">
-								<header>
-									<h2>Implementation Toolkit</h2>
-								</header>
-								<div class="content">
-									<h3>What Is the Purpose of the Implementation Toolkit?</h3>
+
+				<!-- One -->
+					<section id="intro" class="banner style2 orient-center content-align-center image-position-right onload-image-fade-in onload-content-fade-right">
+						<div class="content">
+							<h1>HIV PROs Implementation Toolkit</h1>
+						</div>
+						<div class="image">
+							<img src="images/structure.jpg" alt="" />
+						</div>
+					</section>
+				
+				<!--more -->	
+					<section id="more" class="wrapper style1 align-left">
+				
+								<div class="inner">
+									<h3 id="purpose">What Is the Purpose of the Implementation Toolkit?</h3>
 									<p>This toolkit has been designed to support PRO uptake in routine HIV care by highlighting key considerations for implementers; this includes implementation insights, example materials and testimonies from stakeholders who have first-hand experience with PRO implementation, covering key areas that need to be actioned or assessed. The objective is to facilitate easier and more effective PRO use where appropriate.</p>
 									<p>Much of the real world evidence and practical tips found in the Toolkit are drawn from conversations with staff from the Center for Aids Research (CFAR) Network of Integrated Clinical Systems (CNICS).  CNICS is an electronic medical records-based network of HIV clinics.  It provides a research infrastructure to support research on HIV clinical outcomes and comparative effectiveness trials.  CNICS sites include routine collection of PROs electronically as part of their clinical care (see, for example, Crane et al. 2017; Fredericksen et al. 2012; Fredericksen et al. 2016).<p>
-									<h3>What Steps Are Needed for PRO Implementation?</h3>
+									<h3 id="steps">What Steps Are Needed for PRO Implementation?</h3>
 									<p>PRO implementation involves several stages of planning and execution, as well as follow-up and assessment. Each chapter in the toolkit considers a different step in the implementation process. The order in which the steps are followed depends on the needs of the individual clinic. The chapters available in this resource are outlined below:</p>
 									
 									<h4>Chapter 1: Choosing PROs and Implementation Approaches to Meet Patient and Clinic Needs</h4>
@@ -110,50 +142,34 @@
 									
 									<section class="wrapper style1 align-center">
 										<ul class="actions stacked">
-											<li><a href="" class="button">View Full PDF</a></li>
+											<li><a href="" id="PDF" class="button">View Full PDF</a></li>
 										</ul>
 									</section>
 									
-									<h3>References</h3>
+								</div>
+
+					
+				</section>
+				
+				<section class="wrapper style1 align-left">
+					<div class="inner">
+						<h3 id="ref">References</h3>
 									<p>Crane HM, Crane PK, Tufano JT, et al.  HIV provider documentation and actions following patient reports of at-risk behaviors and conditions when identified by a web-based point-of-care assessment.  AIDS Behav.  2017;21(11):3111-3121.</p>
 									<p>Fredericksen R, Crane PK, Tufano J, et al.  Integrating a web-based, patient-administered assessment into primary care for HIV-infected adults.  J AIDS HIV Res. 2012;4(2):47-55. </p>
 									<p>Fredericksen RJ, Tufano J, Ralston J, et al.  Provider perceptions of the value of same-day, electronic patient-reported measures for use in clinical HIV care.  AIDS Care.  2016;28(11):1428-1433.</p>
 									<p>International Society for Quality of Life Research (prepared by Aaronson N, Elliott T, Greenhalgh J, Halyard M, Hess R, Miller D, Reeve B, Santana M, Snyder C).  Users Guide to Implementing Patient-Reported Outcomes Assessment in Clinical Practice, Version 2.  January 2015.</p>
 									<p>Kleinman l, Skalicky A, Short D, Crane H, Fredericksen R, Lober B.  Implementing Patient-Reported Outcomes (PROs) Within HIV Routine Care: An Evidence Review and Summary.  ViiV Healthcare Report; May 2018.</p>	
-									
-								</div>
-
-							
-						<!-- Ordered List 
-							
-								<header>
-									<h3>Implementation Steps</h3>
-								</header>
-								<div class="content">
-									<ol>
-										<li>Choosing the right PROs and implementation approaches to meet patient and clinic needs</li>
-										<li>Identifying and obtaining stakeholder Buy-in</li>
-										<li>Making the business case to secure funding or endorsement for PRO Implementation</li>
-										<li>Setting up the PROs to be administered electronically and considering potential approaches connecting the electronic PRO (ePRO) system to electronic health records</li>
-										<li>Integrating PROs into the clinic flow including considerations of when and where to administer them</li>
-										<li>Training clinic personnel on what they need to know about the PRO implementation and how they may engage with patients</li>
-										<li>Monitoring, evaluation and updating the PRO system used in a clinic</li>
-									</ol>
-								</div>
-							</section> -->
-									
-					</div>		
+					</div>
 				</section>
 		</div>
 
-		<!-- Footer -->
-					<footer class="wrapper style1 align-center">
+					<!-- Footer -->
+					<footer id="seven" class="wrapper style1 align-center">
 						<div class="inner">
-							<p>&copy;University of Washington 2019, <a href="https://cirg.washington.edu" target="_blank">Clinical Informatics Research Group</a><br/>
+							<p>&copy;University of Washington 2020, <a href="https://cirg.washington.edu" target="_blank">Clinical Informatics Research Group</a><br/>
 							questions? <a href="mailto:info.cirg+site.ViiV-Draft@gmail.com?subject=ViiV-Draft site inquiry&body=Principal Investigators: Heidi Crane and Bill Lober%0A%0AHeidi and Bill -%0A%0A"><u>click to send us an email</u></a></p>
 						</div>
 					</footer>
-					</section>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>

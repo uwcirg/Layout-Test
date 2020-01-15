@@ -20,13 +20,13 @@
 				<div class="inner">
 					<nav>
 						<ul>
-							<li><a href="#intro" class="smooth-scroll-middle">HIV PROs</a></li>
-							<li><a href="#more" class="smooth-scroll-top">About</a></li>
-							<li><a href="#one" class="smooth-scroll-top">For Providers</a></li>
-							<li><a href="#two" class="smooth-scroll-top">For Patients</a></li>
-							<li><a href="#three" class="smooth-scroll-top">Clinical Topics</a></li>
-							<li><a href="#four" class="smooth-scroll-top">Evidence</a></li>
-							<li><a href="#five" class="smooth-scroll-top">Implementation</a></li>
+							<li><a href="#intro" class="smooth-scroll-middle"><img src="images/PRO HIV icon.png" alt="" style="height: 75%; vertical-align: middle;"/></a></li>
+							<li><a href="#more" class="smooth-scroll-middle">About</a></li>
+							<li><a href="#one" class="smooth-scroll-middle">For Providers</a></li>
+							<li><a href="#two" class="smooth-scroll-middle">For Patients</a></li>
+							<li><a href="#three" class="smooth-scroll-middle">Clinical Topics</a></li>
+							<li><a href="#four" class="smooth-scroll-middle">Evidence</a></li>
+							<li><a href="#five" class="smooth-scroll-middle">Implementation</a></li>
 							<!-- <li><a href="#six" class="smooth-scroll-top">Impact</a></li> -->
 							<li><a href="#seven" class="smooth-scroll-middle">Contact</a></li>
 						</ul>
@@ -44,12 +44,12 @@
 					<!--        Too bad the menu has to be inside of the button        but hey, it's pure CSS magic.        -->        
 					<ul id="menu">            
 						<li><a href="#intro" class="smooth-scroll-middle">HIV PROs</a></li> 
-						<li><a href="#more" class="smooth-scroll-top">About</a></li>						
-						<li><a href="#one" class="smooth-scroll-top">For Providers</a></li>            
-						<li><a href="#two" class="smooth-scroll-top">For Patients</a></li>            
-						<li><a href="#three" class="smooth-scroll-top">Clinical Topics</a></li>            
-						<li><a href="#four" class="smooth-scroll-top">Evidence</a></li>            
-						<li><a href="#five" class="smooth-scroll-top">Implementation</a></li>            
+						<li><a href="#more" class="smooth-scroll-middle">About</a></li>						
+						<li><a href="#one" class="smooth-scroll-middle">For Providers</a></li>            
+						<li><a href="#two" class="smooth-scroll-middle">For Patients</a></li>            
+						<li><a href="#three" class="smooth-scroll-middle">Clinical Topics</a></li>            
+						<li><a href="#four" class="smooth-scroll-middle">Evidence</a></li>            
+						<li><a href="#five" class="smooth-scroll-middle">Implementation</a></li>            
 						<!-- <li><a href="#six" class="smooth-scroll-top">Impact</a></li> -->        
 						<li><a href="#seven" class="smooth-scroll-middle">Contact</a></li>        
 					</ul>    
@@ -60,9 +60,9 @@
 			<div id="wrapper" class="divided">
 
 				<!-- One -->
-					<section id="intro" class="banner style2 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+					<section class="banner style2 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
 						<div class="content">
-							<h1>Patient Reported Outcomes for HIV Care</h1>
+							<h1 id="intro">Patient Reported Outcomes for HIV Care</h1>
 							<p class="major">Improving clinical efficiency
 								<br>Strengthening the patient provider relationship
 								<br>Providing more informed care</p>
@@ -81,9 +81,9 @@
 					</section>
 				
 				<!--more -->	
-					<section id="more" class="wrapper style1 align-left">
+					<section class="wrapper style1 align-left">
 						<div class="inner">
-							<p> Patient Reported Outcome measures, or PROs, elicit and assess the patient’s experience of clinically important issues, using brief, validated questionnaires. PROs provide the patient perspective of the effects of disease and treatment on well-being, function, symptoms, satisfaction with (and preference for) treatments, risky behaviors (such as substance abuse), and other outcomes. Electronic Patient Reported Outcomes (ePROs) [expand on epros].
+							<p id="more"> Patient Reported Outcome measures, or PROs, elicit and assess the patient’s experience of clinically important issues, using brief, validated questionnaires. PROs provide the patient perspective of the effects of disease and treatment on well-being, function, symptoms, satisfaction with (and preference for) treatments, risky behaviors (such as substance abuse), and other outcomes. Electronic Patient Reported Outcomes (ePROs) [expand on epros].
 							<br/>
 							<br/>
 							This site is authored by a PRO Steering Committee made up of representivies of ... 
@@ -95,9 +95,9 @@
 					</section>
 				
 				<!-- Two -->
-					<section id="one" class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
+					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
 						<div class="content">
-							<h2>How providers see the system</h2>
+							<h2 id="one">How providers see the system</h2>
 							<p></p>
 							<ul class="actions stacked">
 								<li><a href="#" class="button">Try the Demo</a></li>
@@ -109,9 +109,9 @@
 					</section>
 
 				<!-- Three -->
-					<section id="two" class="spotlight style1 orient-left content-align-right image-position-center onscroll-image-fade-in">
+					<section class="spotlight style1 orient-left content-align-right image-position-center onscroll-image-fade-in">
 						<div class="content">
-							<h2>How patients see the system</h2>
+							<h2 id="two">How patients see the system</h2>
 							<p></p>
 							<ul class="actions stacked">
 								<li><a href="#" class="button">Try the Demo</a></li>
@@ -124,13 +124,14 @@
 
 				<!-- Six -->
 					<section class="wrapper style1 align-center">
-						<div id="three" class="inner">
+						<div class="inner">
 							<!-- <h2>Clinical Topics Addressed by the HIV PROs</h2> -->
-							<h2>Clinical Topics Measured by PROs</h2>
-							<!-- Blockquote -->
+							<h2 id="three">Clinical Topics Measured by PROs</h2>
+							<!-- Blockquote 
 								<div class="content">
 									<blockquote><b>“What do we want to know about our patients that would allow us to do a better job—to increase our knowledge and take action?”</b><br> - Clinic Director, speaking about their implementation experience</blockquote>
 								</div>
+								-->
 							<!--
 							<p>The HIV PROs system assesses the patient's experience of clinically important issues, using standardized questionnaires. This information is organized by the following clinical domains, inspected for critical values or trends, and displayed to depict changes over time. Alerts for critical issues such significant anxiety or distress, interference with function, or suicidal ideation, may be sent to an appropriate provider or displayed to the patient, depending on whether the patient is within or outside a clinical setting when using the PROs.</p>
 							-->
@@ -259,9 +260,9 @@
 					</section>
 				
 				<!-- Two -->
-					<section id="four" class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
+					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
 						<div class="content">
-							<h2>Evidence</h2>
+							<h2 id="four">Evidence</h2>
 							<p>The gathering and synthesis of patient-reported outcome (PRO) data for a clinical consultation has been shown to enhance joint decision-making; this includes improving the mutual understanding of difficult-to-assess patient factors such as mental health concerns, medication adherence and risky behaviours (e.g. substance misuse).</p>
 							<ul class="actions stacked">
 								<li><a href="litreview.html" class="button">Read More</a></li>
@@ -273,9 +274,9 @@
 					</section>
 
 				<!-- Three -->
-					<section id="five" class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
 						<div class="content">
-							<h2>Implementation</h2>
+							<h2 id="five">Implementation</h2>
 							<p>Implementing PROs involves several stages of planning, execution, follow-up, and assessment. The toolkit linked below has been designed to support PRO uptake in routine HIV care by highlighting key considerations for implementers; this includes implementation insights, example materials and testimonies from stakeholders who have first-hand experience with PRO implementation, covering key areas that need to be actioned or assessed. The objective is to facilitate easier and more effective PRO use where appropriate. 
 							<br>
 							<br>This Patient-Reported Outcome (PRO) Implementation Toolkit is designed to provide practical advice to support the introduction of PROs in a clinical setting that supports the management of people living with human immunodeficiency virus (PLHIV). These insights are drawn from a range of sources, including published literature and primary interviews with stakeholders who have experience with integrating PROs into HIV clinical care.
