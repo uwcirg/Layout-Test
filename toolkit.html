@@ -144,6 +144,9 @@
 				<section class="wrapper style1 align-left">
 					<div id= "chapter1" class="inner">
 						<h2>CHAPTER 1. ASSESS READINESS</h3>
+						
+						<button onclick="toggle(); textswap();"><p id="dbutton">Show Chapter</p></button>
+
 						<p>content</p>
 
 						<h3>Are PROs right for my clinic?</h3> 
@@ -201,6 +204,28 @@
 						<p>citations</p>
 					</div>
 				</section>
+					
+						<script>
+							function togglec1() {
+							  var x = document.getElementsById("chapter1");
+							  for (var i =0; i < x.length; i++) {	
+							  if (x[i].style.display === "none") {
+							    x[i].style.display = "block";
+							  } else {
+							    x[i].style.display = "none";
+							  }
+							  }
+							}
+							function textswap() {
+							  var x = document.getElementById("dbutton");
+							  if (x.innerHTML === "Hide Details") {
+							    x.innerHTML = "Show Chapter";
+							  } else {
+							    x.innerHTML = "Hide Chapter";
+							  }
+							}
+							 
+						</script>
 
 				<section class="wrapper style1 align-left">
 					<div id= "chapter2" class="inner">
