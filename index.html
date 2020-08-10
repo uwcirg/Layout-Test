@@ -14,7 +14,7 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
-		
+		<div class="loading-container loading"><div class="loader"></div></div>
 		<!-- Sidebar -->
 			<section id="sidebar">
 				<div class="inner">
@@ -30,7 +30,8 @@
 							<!-- <li><a href="#six" class="smooth-scroll-top">Impact</a></li> -->
 							<li><a href="#seven" class="smooth-scroll-middle">Contact</a></li>
 						</ul>
-					</nav>	
+					</nav>
+				</div>
 			</section>
 	
 			<section id="hambagaMenu" role="navigation">    
@@ -76,7 +77,8 @@
 							</ul>
 						</div>
 						<div class="image">
-							<img src="images/meeting1.jpg" alt="" />
+							<!-- using background image for this to allow pre-loading-->
+							<!-- <img class="main" data-src="images/meeting1.jpg" alt="" /> -->
 						</div>
 					</section>
 				
@@ -105,7 +107,7 @@
 							</ul>
 						</div>
 						<div class="image">
-							<img src="images/doctor-and-patient-in-a-doctor-s-office.warm.jpeg" alt="" />
+							<img data-src="images/doctor-and-patient-in-a-doctor-s-office.warm.jpeg" alt="" />
 						</div>
 					</section>
 
@@ -119,7 +121,7 @@
 							</ul>
 						</div>
 						<div class="image">
-							<img src="images/tablet-man.jpg" alt="" />
+							<img data-src="images/tablet-man.jpg" alt="" />
 						</div>
 					</section>
 
@@ -147,7 +149,7 @@
 								<section>
 									<h3>Mental Health</h3>
 									<a href="images/mental health.round.larger.jpg" class="image" style=padding: 0 0 7em 0;>
-										<span class="image fit"><img src="images/mental health.round.larger.jpg" alt="" /></span>
+										<span class="image fit"><img data-src="images/mental health.round.larger.jpg" alt="" /></span>
 										<!-- <img src="images/mental health.round.larger.jpg" alt="" /> -->
 									</a>	
 									<p class="detail" style="display:none;">Measures the mental health of a patient focusing on concerns like anxiety, distress, and suicidal ideation using frequency and severity. <br/><i><b>(e.g., PHQ-9)</b></i></p>
@@ -155,56 +157,56 @@
 								<section>
 									<h3>Substance Use</h3>
 									<a href="images/smoking.round.larger.jpg" class="image" style=padding: 0 0 7em 0;>
-										<span class="image fit"><img src="images/smoking.round.larger.jpg" alt="" /></span>
+										<span class="image fit"><img data-src="images/smoking.round.larger.jpg" alt="" /></span>
 									</a>
 									<p class="detail" style="display:none;">Measures frequency, quantity and type of patient substance use, including alcohol, nicotine and drugs. <br/><i><b>(e.g., AUDIT-C, ASSIST)</b></i></p>
 								</section>
 								<section>
 									<h3>Antiretroviral Adherence</h3>
 									<a href="images/medication.round.larger.jpg" class="image" style=padding: 0 0 7em 0;>
-										<span class="image fit"><img src="images/medication.round.larger.jpg" alt="" /></span>
+										<span class="image fit"><img data-src="images/medication.round.larger.jpg" alt="" /></span>
 									</a>
 									<p class="detail" style="display:none;">Measures if and how regularly the patient takes antiretroviral medication and any barriers to their regular access. <br/><i><b>(e.g., VAS, self-rating)</b></i></p>
 								</section>
 								<section>
 									<h3>Sexual Risk Behavior</h3>
 									<a href="images/risk.round.larger.jpg" class="image" style=padding: 0 0 7em 0;>
-										<span class="image fit"><img src="images/risk.round.larger.jpg" alt="" /></span>
+										<span class="image fit"><img data-src="images/risk.round.larger.jpg" alt="" /></span>
 									</a>
 									<p class="detail" style="display:none;">Measures frequency, types and use of protection in sexual interactions. <br/><i><b>(e.g., HRAP)</b></i></p>
 								</section>
 								<section>
 									<h3>Basic Needs</h3>
 									<a href="images/basic needs.round.larger.jpg" class="image" style=padding: 0 0 7em 0;>
-										<span class="image fit"><img src="images/basic needs.round.larger.jpg" alt="" /></span>
+										<span class="image fit"><img data-src="images/basic needs.round.larger.jpg" alt="" /></span>
 									</a>
 									<p class="detail" style="display:none;">Measures if the patient’s nutritional, housing, and financial needs are being met. <br/><i><b>(e.g., self-assessment)</b></i></p>
 								</section>
 								<section>
 									<h3>Social Enviromment</h3>
 									<a href="images/social.round.larger.jpg" class="image" style=padding: 0 0 7em 0;>
-										<span class="image fit"><img src="images/social.round.larger.jpg" alt="" /></span>
+										<span class="image fit"><img data-src="images/social.round.larger.jpg" alt="" /></span>
 									</a>
 									<p class="detail" style="display:none;"> <!--[Social Determinats of Health?] --> Measures factors like social support, partner violence, and HIV related stigma in a patient's social environment. <br/><i><b>(e.g., IPV-4, Stigma)</b></i></p>
 								</section>
 								<section>
 									<h3>Body Change Distress</h3>
 									<a href="images/self.round.larger.jpg" class="image" style=padding: 0 0 7em 0;>
-										<span class="image fit"><img src="images/self.round.larger.jpg" alt="" /></span>
+										<span class="image fit"><img data-src="images/self.round.larger.jpg" alt="" /></span>
 									</a>
 									<p class="detail" style="display:none;">Measures the patient’s monitoring of the changes in their body as a result of HIV symptoms.<br/><i><b>(e.g., FRAM)</b></i></p>
 								</section>
 								<section>
 									<h3>Quality of Life</h3>
 									<a href="images/life.round.larger.jpg" class="image" style=padding: 0 0 7em 0;>
-										<span class="image fit"><img src="images/life.round.larger.jpg" alt="" /></span>
+										<span class="image fit"><img data-src="images/life.round.larger.jpg" alt="" /></span>
 									</a>
 									<p class="detail" style="display:none;">Measures how HIV has impacted the patient's quality of life and interference in function it has caused. <br/><i><b>(e.g., EURO-QOL)</b></i></p>
 								</section>
 								<section>
 									<h3>Symptom Tracking</h3>
 									<a href="images/symptom.round.larger.jpg" class="image" style=padding: 0 0 7em 0;>
-										<span class="image fit"><img src="images/symptom.round.larger.jpg" alt="" /></span>
+										<span class="image fit"><img data-src="images/symptom.round.larger.jpg" alt="" /></span>
 									</a>
 									<p class="detail" style="display:none;">Measures the patient’s HIV symptoms to better track and treat them. <br/><i><b>(e.g., HIV Sx Inventory)</b></i></p>
 								</section>
@@ -275,7 +277,7 @@
 							</ul>
 						</div>
 						<div class="image">
-							<img src="images/structure.jpg" alt="" />
+							<img data-src="images/structure.jpg" alt="" />
 						</div>
 					</section>
 				
@@ -289,7 +291,7 @@
 							</ul>
 						</div>
 						<div class="image">
-							<img src="images/books.sized.jpg" alt="" />
+							<img data-src="images/books.sized.jpg" alt="" />
 						</div>
 					</section>
 
@@ -320,6 +322,7 @@
 			</div>
 
 		<!-- Scripts -->
+			<script src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver"></script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
