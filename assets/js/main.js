@@ -20,13 +20,6 @@
 			xxsmall:  [ null,      '360px'  ]
 		});
 
-	// Play initial animations on page load.
-		$window.on('load', function() {
-			window.setTimeout(function() {
-				$body.removeClass('is-preload');
-			}, 100);
-		});
-
 	// Browser fixes.
 
 		// IE: Flexbox min-height bug.
@@ -64,9 +57,11 @@
 							$img = $this.children('img'),
 							positionClass = $this.parent().attr('class').match(/image-position-([a-z]+)/);
 
+						if (!$img.length) return;
+
 						// Set image.
 							$this
-								.css('background-image', 'url("' + $img.attr('src') + '")')
+								.css('background-image', 'url("' + ($img.attr('src') || $img.attr('data-src')) + '")')
 								.css('background-repeat', 'no-repeat')
 								.css('background-size', 'cover');
 
@@ -363,5 +358,55 @@
 							}, 275);
 
 						});
-
+		
+		/*
+		 * begin lazy loading images
+		 */
+		var initImageObservers = function() {
+			var observerConfig = {
+				rootMargin: '0px 0px 24px 0px',
+				threshold: 0
+			};
+			// register the config object with an instance
+			// of intersectionObserver
+			var observer = new IntersectionObserver(function(entries, self) {
+				// iterate over each entry
+				for (var index=0; index < entries.length; index++) {
+					var entry = entries[index];
+					// process just the images that are intersecting.
+					// isIntersecting is a property exposed by the interface
+					if(entry.isIntersecting) {
+						// custom function that copies the path to the img
+						// from data-src to src
+						(function(img) {
+							var imageSrc = (img).getAttribute("data-src");
+							img.setAttribute("src", imageSrc);
+							
+						})(entry.target);
+						// the image is now in place, stop watching
+						self.unobserve(entry.target);
+					}
+				}
+			}, observerConfig);
+			var imgs = document.querySelectorAll('[data-src]');
+			for (var index=0; index < imgs.length; index++) {
+				observer.observe(imgs[index]);
+			}
+		}
+		/*
+		 * hide loading spinner
+		 */
+		var setLoaderReady = function() {
+			setTimeout(function() {
+				document.querySelector('.loading-container').classList.remove('loading');
+			}, 750);
+		}
+		// Play initial animations on page load.
+		$window.on('load', function() {
+			window.setTimeout(function() {
+				$body.removeClass('is-preload');
+			}, 100);
+			initImageObservers();
+			setLoaderReady();
+		});
 })(jQuery);
