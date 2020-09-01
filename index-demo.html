@@ -1,2809 +1,391 @@
 <!DOCTYPE HTML>
-<!--
-	Story by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-
-	Note: Only needed for demo purposes. Delete for production sites.
--->
 <html>
 	<head>
-		<title>Story by HTML5 UP</title>
+		<title>PRO HIV</title>
+		<link rel="shortcut icon" type="image/x-icon" href="images/PRO HIV icon round new.png" />
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
-
+		<div class="loading-container loading"><div class="loader"></div></div>
+		<!-- Sidebar -->
+			<section id="sidebar">
+				<div class="inner">
+					<nav>
+						<ul>
+							<li><a href="#intro" class="smooth-scroll-middle"><img src="images/PRO HIV icon.png" alt="" style="height: 75%; vertical-align: middle;"/></a></li>
+							<li><a href="#more" class="smooth-scroll-middle">About</a></li>
+							<li><a href="#one" class="smooth-scroll-middle">For Providers</a></li>
+							<li><a href="#two" class="smooth-scroll-middle">For Patients</a></li>
+							<li><a href="#three" class="smooth-scroll-middle">Clinical Topics</a></li>
+							<li><a href="#five" class="smooth-scroll-middle">Implementation</a></li>
+							<li><a href="#four" class="smooth-scroll-middle">Evidence</a></li>
+							<li><a href="#seven" class="smooth-scroll-middle">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</section>
+	
+			<section id="hambagaMenu" role="navigation">    
+				<div id="menuToggle">        
+					<!--        A fake / hidden checkbox is used as click reciever,        so you can use the :checked selector on it.        -->        
+					<input type="checkbox" />       
+					<!--        Some spans to act as a hamburger.        They are acting like a real hamburger,        not that McDonalds stuff.        -->        
+					<span></span>        
+					<span></span>        
+					<span></span>        
+					<!--        Too bad the menu has to be inside of the button        but hey, it's pure CSS magic.        -->        
+					<ul id="menu">            
+						<li><a href="#intro" class="smooth-scroll-middle">HIV PROs</a></li> 
+						<li><a href="#more" class="smooth-scroll-middle">About</a></li>						
+						<li><a href="#one" class="smooth-scroll-middle">For Providers</a></li>            
+						<li><a href="#two" class="smooth-scroll-middle">For Patients</a></li>            
+						<li><a href="#three" class="smooth-scroll-middle">Clinical Topics</a></li>            
+						<li><a href="#five" class="smooth-scroll-middle">Implementation</a></li>
+						<li><a href="#four" class="smooth-scroll-middle">Evidence</a></li>            
+						<li><a href="#seven" class="smooth-scroll-middle">Contact</a></li>        
+					</ul>    
+				</div>
+			</section>
+				
 		<!-- Wrapper -->
 			<div id="wrapper" class="divided">
-
-				<!-- Banner -->
-					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
-						<div class="content">
-							<h1>Story</h1>
-							<p class="major">A (modular, highly tweakable) responsive one-page template designed by <a href="https://html5up.net">HTML5 UP</a> and released for free under the <a href="https://html5up.net/license">Creative Commons</a>.</p>
-							<p>This is a <strong>Banner</strong> element, and it's generally used as an introduction or opening statement. You can customize its <span class="demo-controls">appearance with a number of modifiers</span>, as well as assign it an optional <code>onload</code> or <code>onscroll</code> transition modifier (<a href="#reference-banner">details</a>).</p>
+				<section class="banner style2 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+					<div class="content">
+						<h1 id="intro">Patient Reported Outcomes for HIV Care</h1>
+						<p class="major">Improving clinical efficiency
+							<br>Strengthening the patient provider relationship
+							<br>Providing more informed care</p>
+							<!-- <ul class="alt">
+								<li>Improving clinical efficiency</li>
+								<li>Strengthening the patient provider relationship</li>
+								<li>Providing more informed care</li>
+							</ul> -->
 							<ul class="actions stacked">
-								<li><a href="#first" class="button large wide smooth-scroll-middle">Get Started</a></li>
+								<li><a href="#about" class="button big wide smooth-scroll-middle">Learn More</a></li>
 							</ul>
 						</div>
 						<div class="image">
-							<img src="images/banner.jpg" alt="" />
+							<!-- using background image for this to allow pre-loading-->
+							<!-- <img class="main" data-src="images/meeting1.jpg" alt="" /> -->
+						</div>
+					</section>
+				
+				<!--about -->	
+					<section class="wrapper style1 align-left">
+						<div class="inner">
+							<p class="major"> <i>What are PROs?</i><br>
+							Patient reported outcome measures, or PROs, elicit the patient’s assessment and experience of clinically important issues, using brief, validated questionnaires. PRO measures offer insight beyond what may be directly observable by the provider in several dimensions of care. These include: physical symptoms; mental health (e.g, depression, anxiety); health behaviors (e.g., medication adherence, substance use, sexual risk behavior); functioning (e.g., cognitive, physical); life circumstances (e.g., current housing, nutrition, family history of chronic illness, intimate partner violence); identity (e.g., sexual orientation, gender identity); social well-being (e.g., social support, HIV stigma); health-related quality of life (HRQL); and patient satisfaction with care. 
+								<br><br>
+								On-site PRO collection prior to routine clinical care appointments, via hand-held computer tablets with real-time results available to providers during clinic visits, has improved provider ability to detect and address depression/suicidal ideation, inadequate antiretroviral (ART) adherence, and substance use in HIV care 1,2 . Integrating PROs into clinical care of patients with chronic conditions, such as cancer, rheumatoid arthritis, and HIV, have been shown to be acceptable to patients and providers and valuable in clinical care 2-4 ; they have improved patient-provider communication 5-9 and increased patient satisfaction with care 8,10-12 .
+							</p>
+							
+							<p class="major" id="about"><i>About this website</i>
+								<br>
+							This website is based on the expertise and insights of patients, providers, and researchers involved in the PROgress Study, funded by ViiV Healthcare. The study evaluated and summarized best practices regarding implementation and use of electronic PROs in clinical HIV care.</p>
+							
+						</div>
+					</section>
+				
+				<!-- providers -->
+					<section class="spotlight style1 orient-right content-align-left image-position-center" id="first">
+						<div class="content">
+							<h2 id="one">For Providers</h2>
+							<h3>Improve identification of health issues and behaviors</h3>
+							<p>PROs have been valuable in helping providers detect previously unrecognized problems <sup><a href=#ref">1,2</a></sup>. Controlled trials have found PROs improve provider ability to identify highly personal or stigmatizing symptoms or behaviors, including suicidal ideation, depression <sup><a href=#ref">1,13</a></sup> , substance use <sup><a href=#ref">1</a></sup> ,inadequate ART adherence <sup><a href=#ref">1</a></sup> , and sexual behavior <sup><a href=#ref">14</a></sup> . PROs have also improved detection of a broad range of symptoms in several clinical populations <sup><a href=#ref">7,15-20</a></sup> as well as less-observable quality-of-life issues, such as social functioning <sup><a href=#ref">5,8,14,21</a></sup>.</p>
+							<h3>Improve patient health outcomes</h3>
+							<p>Evidence suggests the use of PROs has contributed to improved health outcomes including fewer emergency department visits and hospitalizations <sup><a href=#ref">22,23</a></sup> , increased survival rates among cancer patients <sup><a href=#ref">22,23</a></sup> , improved outcomes for mental health conditions <sup><a href=#ref">24</a></sup> , lower symptom distress <sup><a href=#ref">16,17,25</a></sup> and better health-related quality of life <sup><a href=#ref">7</a></sup> .</p>
+							
+							<ul class="actions stacked">
+								<li><a href="testimonial.html" class="button">Testimonials</a></li>
+								<li><a href="#" class="button disabled">take a sample PRO assessment</a></li>
+								<li><a href="#" class="button disabled">Sample PRO results page</a></li>
+							</ul>
+							
+						</div>
+						<div class="image">
+							<img data-src="images/doctor-and-patient-in-a-doctor-s-office.warm.jpeg" alt="" />
 						</div>
 					</section>
 
-				<!-- Spotlight -->
-					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
+				<!-- Three -->
+					<section class="spotlight style1 orient-left content-align-right image-position-center">
 						<div class="content">
-							<h2>Spotlight</h2>
-							<p>This is a <strong>Spotlight</strong> element, and it's generally used &ndash; as its name implies &ndash; to spotlight a particular feature, subject, or pretty much whatever. You can customize its <span class="demo-controls">appearance with a number of modifiers</span>, as well as assign it an optional <code>onload</code> or <code>onscroll</code> transition modifier (<a href="#reference-spotlight">details</a>).</p>
+							<h2 id="two">For Patients</h2>
+							<h3>Optimize your care</h3>
+							<p>“Patients living with HIV have found the use of PROs improved communication with their provider in a few key ways. Specifically, it has 1) offered an opportunity to take inventory of current health needs, symptoms, health behaviors, and quality of life, including mental health and social well-being, improving their ability to advocate for their needs; 2) offered a preview in advance of the appointment of potential topics for discussion; and 3) enabled easier discussion of sensitive or highly personal topics, such as mental health, sexual health, and substance use. <sup><a href="#ref">28</a></sup> .</p>
+							
+							<h3>Improve health outcomes</h3>
+							<p>:“Evidence suggests the use of PROs has contributed to improved health outcomes including fewer emergency department visits and hospitalizations <sup><a href="#ref">22,23</a></sup> , increased survival rates among cancer patients <sup><a href="#ref">22,23</a></sup> , improved outcomes for mental health conditions <sup><a href="#ref">24</a></sup> ,
+								lower symptom distress <sup><a href="#ref">16,17,25</a></sup> and better health-related quality of life <sup><a href="#ref">7</a></sup> .</p>
 							<ul class="actions stacked">
-								<li><a href="#" class="button">Learn More</a></li>
+								<li><a href="testimonial.html" class="button">Testimonials</a></li>
+								<li><a href="#" class="button disabled">take a sample PRO assessment</a></li>
+								<li><a href="#" class="button disabled">Sample PRO results page</a></li>
 							</ul>
 						</div>
 						<div class="image">
-							<img src="images/spotlight01.jpg" alt="" />
+							<img data-src="images/tablet-man.jpg" alt="" />
 						</div>
 					</section>
 
-				<!-- Spotlight -->
-					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
-						<div class="content">
-							<h2>Spotlight</h2>
-							<p>This is also a <strong>Spotlight</strong> element, and it's here because this demo would look a bit empty with just one spotlight. Like all spotlights, you can customize its <span class="demo-controls">appearance with a number of modifiers</span>, as well as assign it an optional <code>onload</code> or <code>onscroll</code> transition modifier (<a href="#reference-spotlight">details</a>).</p>
-							<ul class="actions stacked">
-								<li><a href="#" class="button">Learn More</a></li>
-							</ul>
-						</div>
-						<div class="image">
-							<img src="images/spotlight02.jpg" alt="" />
-						</div>
-					</section>
-
-				<!-- Spotlight -->
-					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
-						<div class="content">
-							<h2>Spotlight</h2>
-							<p>And yes, this is another <strong>Spotlight</strong> element, and it's also here because I need to fill a bit of space. Naturally, like any other spotlight, you can customize its <span class="demo-controls">appearance with a number of modifiers</span>, as well as assign it an optional <code>onload</code> or <code>onscroll</code> transition modifier (<a href="#reference-spotlight">details</a>).</p>
-							<ul class="actions stacked">
-								<li><a href="#" class="button">Learn More</a></li>
-							</ul>
-						</div>
-						<div class="image">
-							<img src="images/spotlight03.jpg" alt="" />
-						</div>
-					</section>
-
-				<!-- Gallery -->
+				<!-- Six -->
 					<section class="wrapper style1 align-center">
 						<div class="inner">
-							<h2>Gallery</h2>
-							<p>This is a <strong>Gallery</strong> element. It can behave as a lightbox (when given the <code>lightbox</code> class), and you can customize its <span class="demo-controls">appearance with a number of modifiers</span>, as well as assign it an optional <code>onload</code> or <code>onscroll</code> transition modifier (<a href="#reference-gallery">details</a>).</p>
-						</div>
-
-						<!-- Gallery -->
-							<div class="gallery style2 medium lightbox onscroll-fade-in">
-								<article>
-									<a href="images/gallery/fulls/01.jpg" class="image">
-										<img src="images/gallery/thumbs/01.jpg" alt="" />
+							<!-- <h2>Clinical Topics Addressed by the HIV PROs</h2> -->
+							<h2 id="three">Clinical Topics Measured by PROs</h2>
+							<p>PROs cover a broad range of topics clinically relevant to patients living with HIV, including symptoms, mental health, health behaviors, basic needs, social context, and quality of life. A resulting report summarizes results and displays topics of interest in order of clinical priority, and can depict changes over time. Alerts for critical issues such as significant anxiety or distress, interference with function, or suicidal ideation, may be sent to an appropriate provider or displayed to the patient, depending on whether the patient is within or outside a clinical setting when using the PROs.
+							<!--Click on the image associated with each domain below to view a list of brief, validated measures currently used in HIV care.--></p>
+							
+							<!-- Toggle Test -->
+							<button onclick="toggle(); textswap();"><p id="dbutton">Show Explanations of Each Topic</p></button>
+											
+							
+							<div class="items style1 medium">
+								<section>
+									<h3>Mental Health</h3>
+									<a href="images/mental health.round.larger.jpg" class="image" style=padding: 0 0 7em 0;>
+										<span class="image fit"><img data-src="images/mental health.round.larger.jpg" alt="" /></span>
+										<!-- <img src="images/mental health.round.larger.jpg" alt="" /> -->
+									</a>	
+									<p class="detail" style="display:none;"> Common PRO measures of mental health include the PHQ-9 29,30 for depression, the PHQ-5 <sup><a ref="#ref">29,30</a></sup> and GAD-7 <sup><a ref="#ref">31</a></sup> for anxiety. </p>
+								</section>
+								<section>
+									<h3>Substance Use</h3>
+									<a href="images/smoking.round.larger.jpg" class="image" style=padding: 0 0 7em 0;>
+										<span class="image fit"><img data-src="images/smoking.round.larger.jpg" alt="" /></span>
 									</a>
-									<div class="caption">
-										<h3>Title</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/02.jpg" class="image">
-										<img src="images/gallery/thumbs/02.jpg" alt="" />
+									<p class="detail" style="display:none;">Common PRO measures of substance use include the AUDIT-C/AUDIT <sup><a href="#ref">32,33</a></sup> (alcohol use), and the ASSIST <sup><a href="#ref">34,35</a></sup> (drug use). A measure by Bruneck et al <sup><a href="#ref">36</a></sup> measures tobacco use. Past substance use treatment may be assessed via the Treatment Services Review. <sup><a href="#ref">37</a></sup></p>
+								</section>
+								<section>
+									<h3>Antiretroviral Adherence</h3>
+									<a href="images/medication.round.larger.jpg" class="image" style=padding: 0 0 7em 0;>
+										<span class="image fit"><img data-src="images/medication.round.larger.jpg" alt="" /></span>
 									</a>
-									<div class="caption">
-										<h3>Title</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/03.jpg" class="image">
-										<img src="images/gallery/thumbs/03.jpg" alt="" />
+									<p class="detail" style="display:none;">PRO measures available include the adherence Self-Rating Scale, 30-day visual analog scale, AACTG adherence instruments (7 day missed dose, last missed dose, weekend missed dose). <sup><a href="#ref">38-40</a></sup></p>
+								</section>
+								<section>
+									<h3>Sexual Risk Behavior</h3>
+									<a href="images/risk.round.larger.jpg" class="image" style=padding: 0 0 7em 0;>
+										<span class="image fit"><img data-src="images/risk.round.larger.jpg" alt="" /></span>
 									</a>
-									<div class="caption">
-										<h3>Title</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/04.jpg" class="image">
-										<img src="images/gallery/thumbs/04.jpg" alt="" />
+									<p class="detail" style="display:none;">Sexual risk behavior is measurable via the Sexual Risk Behavior Inventory <sup><a href="#ref">41</a></sup> , which includes perceived partner attributes such as gender, HIV status, and ART/PrEP use, as well as concern for recent STI exposure.</p>
+								</section>
+								<section>
+									<h3>Basic Needs</h3>
+									<a href="images/basic needs.round.larger.jpg" class="image" style=padding: 0 0 7em 0;>
+										<span class="image fit"><img data-src="images/basic needs.round.larger.jpg" alt="" /></span>
 									</a>
-									<div class="caption">
-										<h3>Title</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/05.jpg" class="image">
-										<img src="images/gallery/thumbs/05.jpg" alt="" />
+									<p class="detail" style="display:none;">Basic needs include housing, and nutrition. Housing status is assessable via the CNICS Housing Measure <sup><a href="#ref">42</a></sup> ; an option for measuring nutrition is the Canadian Nutrition Screening Tool <sup><a href="#ref">43</a></sup> .</p>
+								</section>
+								<section>
+									<h3>Social Enviromment</h3>
+									<a href="images/social.round.larger.jpg" class="image" style=padding: 0 0 7em 0;>
+										<span class="image fit"><img data-src="images/social.round.larger.jpg" alt="" /></span>
 									</a>
-									<div class="caption">
-										<h3>Title</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/06.jpg" class="image">
-										<img src="images/gallery/thumbs/06.jpg" alt="" />
+									<p class="detail" style="display:none;"> Measures to evaluate social environment and circumstance include Multifactorial Assessment of Perceived Social Support-Short Form (MAPSS-SF) <sup><a href="#ref">44</a></sup> and the HIV Stigma Mechanism Measure <sup><a href="#ref">45</a></sup> (adapted)</p>
+								</section>
+								<section>
+									<h3>Body Change Distress</h3>
+									<a href="images/self.round.larger.jpg" class="image" style=padding: 0 0 7em 0;>
+										<span class="image fit"><img data-src="images/self.round.larger.jpg" alt="" /></span>
 									</a>
-									<div class="caption">
-										<h3>Title</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/07.jpg" class="image">
-										<img src="images/gallery/thumbs/07.jpg" alt="" />
+									<p class="detail" style="display:none;">Measures the patient’s monitoring of the changes in their body as a result of HIV symptoms.<br/><i><b>(e.g., FRAM)</b></i></p>
+								</section>
+								<section>
+									<h3>Quality of Life</h3>
+									<a href="images/life.round.larger.jpg" class="image" style=padding: 0 0 7em 0;>
+										<span class="image fit"><img data-src="images/life.round.larger.jpg" alt="" /></span>
 									</a>
-									<div class="caption">
-										<h3>Title</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/08.jpg" class="image">
-										<img src="images/gallery/thumbs/08.jpg" alt="" />
+									<p class="detail" style="display:none;">The EQ-5D <sup><a href="#ref">46</a></sup> is a commonly-used measure of health-related quality of life.</p>
+								</section>
+								<section>
+									<h3>Symptom Tracking</h3>
+									<a href="images/symptom.round.larger.jpg" class="image" style=padding: 0 0 7em 0;>
+										<span class="image fit"><img data-src="images/symptom.round.larger.jpg" alt="" /></span>
 									</a>
-									<div class="caption">
-										<h3>Title</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/09.jpg" class="image">
-										<img src="images/gallery/thumbs/09.jpg" alt="" />
+									<p class="detail" style="display:none;">Symptoms and level of severity is measurable via the HIV Symptom Index. <sup><a href="#ref">47</a></sup></p>
+								</section>
+								
+								<section>
+									<h3>Exposure to Violence</h3>
+									<a href="images/symptom.round.larger.jpg" class="image" style=padding: 0 0 7em 0;>
+										<span class="image fit"><img data-src="images/symptom.round.larger.jpg" alt="" /></span>
 									</a>
-									<div class="caption">
-										<h3>Title</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/10.jpg" class="image">
-										<img src="images/gallery/thumbs/10.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Title</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/11.jpg" class="image">
-										<img src="images/gallery/thumbs/11.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Title</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/12.jpg" class="image">
-										<img src="images/gallery/thumbs/12.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Title</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
+									<p class="detail" style="display:none;">The Intimate Partner Violence 4-item measure (IPV-4) <sup><a href="#ref">48</a></sup> is a brief measure assessing physical, sexual, and psychological violence. The Adverse Childhood Experiences-International Questionnaire (ACE-IQ) <sup><a href="#ref">49</a></sup> (adapted) assesses childhood household violence prior to age 18.</p>
+								</section>
+								
 							</div>
-
+							
+							<!-- original 
+							<script>
+							function toggle() {
+							  var x = document.getElementById("detail");
+							  if (x.style.display === "none") {
+							    x.style.display = "block";
+							  } else {
+							    x.style.display = "none";
+							  }
+							}
+							</script> -->
+							
+							<!-- should be moved to css -->
+							<script>
+							function toggle() {
+							  var x = document.getElementsByClassName("detail");
+							  for (var i =0; i < x.length; i++) {	
+							  if (x[i].style.display === "none") {
+							    x[i].style.display = "block";
+							  } else {
+							    x[i].style.display = "none";
+							  }
+							  }
+							}
+							function textswap() {
+							  var x = document.getElementById("dbutton");
+							  if (x.innerHTML === "Hide Details") {
+							    x.innerHTML = "Show Explanations for Each Topic";
+							  } else {
+							    x.innerHTML = "Hide Details";
+							  }
+							}
+							 
+							</script>
+							
+							<!-- <ul class="actions stacked">
+								<li><a href="clinicaltopics.html" class="button">Learn More</a></li>
+							</ul> -->
+						</div>
 					</section>
+				
+				
+				<!-- Three -->
+					<section class="spotlight style1 orient-left content-align-left image-position-center">
+						<div class="content">
+							<h2 id="five">Implementation</h2>
+							<p>The Implementation Toolkit provides practical advice to support the introduction of clinical PRO assessments into routine HIV care. These insights draw from a range of sources, including practical experience integrating PROs into HIV clinical care, published literature, and primary interviews with stakeholders with experience integrating PROs into HIV clinical care. Its focus is on implementation of tablet-based patient self-administered PRO assessments in clinical care. It includes: </p>
+							<ul>
+								<li>Tools to assess and prepare clinic readiness for PRO implementation</li>
+								<li>Suggestions for stakeholder engagement</li>
+								<li>Information on building and/or selecting technical infrastructure for electronic data collection</li>
+								<li>Tools to create a PRO assessment that best suits the needs of your clinic and its patients, including an online time-budget tool to minimize patient response burden and impact on clinic flow</li>
+								<li>Information to support PRO integration and ongoing success</li>
+								<li>Insight into initial and ongoing staff training needs</li>
+								<li>Strategies for monitoring and evaluating successful PRO integration</li>
+							</ul>
+							
+							<!--<br>
+							<br>This Patient-Reported Outcome (PRO) Implementation Toolkit is designed to provide practical advice to support the introduction of PROs in a clinical setting that supports the management of people living with human immunodeficiency virus (PLHIV). These insights are drawn from a range of sources, including published literature and primary interviews with stakeholders who have experience with integrating PROs into HIV clinical care.
+							-->
+							</p>
+							<ul class="actions stacked">
+								<li><a href="toolkit.html" class=" button disabled">Click for Implementation Toolkit</a></li>
+							</ul>
+						</div>
+						<div class="image">
+							<img data-src="images/structure.jpg" alt="" />
+						</div>
+					</section>
+				
+				<!-- Two -->
+					<section class="spotlight style1 orient-right content-align-left image-position-center" id="first">
+						<div class="content">
+							<h2 id="four">Evidence</h2>
+							
+							<p>A dossier of available evidence supporting the use of PROs in clinical HIV care summarizes available real-world evidence surrounding impact on patient outcomes, care processes, and PRO platform usability and acceptability.</p>
 
-				<!-- Items -->
-					<section class="wrapper style1 align-center">
+							<ul class="actions stacked">
+								<li><a href="litreview.html" class="button disabled">Click for Evidence Dossier PDF</a></li>
+							</ul>
+						</div>
+						<div class="image">
+							<img data-src="images/books.sized.jpg" alt="" />
+						</div>
+					</section>
+		
+					<section class="wrapper style1 align-left">
 						<div class="inner">
-							<h2>Items</h2>
-							<p>This is an <strong>Items</strong> element, and it's basically just a grid for organizing items of various types. You can customize its <span class="demo-controls">appearance with a number of modifiers</span>, as well as assign it an optional <code>onload</code> or <code>onscroll</code> transition modifier (<a href="#reference-items">details</a>).</p>
-							<div class="items style1 medium onscroll-fade-in">
-								<section>
-									<span class="icon style2 major fa-gem"></span>
-									<h3>One</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-save"></span>
-									<h3>Two</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-chart-bar"></span>
-									<h3>Three</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-wifi"></span>
-									<h3>Four</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-cog"></span>
-									<h3>Five</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon style2 major fa-paper-plane"></span>
-									<h3>Six</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-desktop"></span>
-									<h3>Seven</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-sync-alt"></span>
-									<h3>Eight</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-hashtag"></span>
-									<h3>Nine</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-bolt"></span>
-									<h3>Ten</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon style2 major fa-envelope"></span>
-									<h3>Eleven</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-leaf"></span>
-									<h3>Twelve</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-							</div>
+							<h2>Acknowledgements</h3>
+							<p>This website was made possible by funding from ViiV Healthcare Limited, a subsidiary of GlaxoSmithKline Mercury Limited. Their support financed the PROgress Study, which evaluated the process of implementing electronic PROs in routine outpatient HIV care, as well as their utility, usability, acceptability, and impact. We thank the patients, providers, and research staff from two PROgress Study clinics, Midway Specialty Care in Ft. Pierce, FL, and St. Michael’s Hospital in Toronto, ON, for their rich insights and commitment to this work. We thank the staff of the Ontario HIV Treatment Network and affiliated clinics for their continued collaborative partnership in advancing the role of PROs in HIV care. We also thank the Centers for AIDS Research Network of Integrated Clinical Systems (CNICS), and the University of Washington Clinical Informatics Research Group (CIRG), for provision of resources and expertise in development of this website. Finally, we thank the PROgress Study Steering Committee, comprised of an expert panel of patients living with HIV, HIV care providers, clinic directors, and health care researchers, for their oversight and guidance. 								
+							</p>
 						</div>
 					</section>
-
-				<!-- Additional Elements -->
-					<section class="wrapper style1 align-center">
+		
+					<section class="wrapper style1 align-left" id="ref">
 						<div class="inner">
-							<h2>Additional Elements</h2>
-							<p>Finally, here are some additional elements you <em>might</em> find useful (and yup, they look fine with any <span class="demo-controls">appearance</span>).</p>
-							<div class="index align-left">
-
-								<!-- Text -->
-									<section>
-										<header>
-											<h3>Text</h3>
-										</header>
-										<div class="content">
-
-											<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-											This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-											This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>.
-											Finally, this is a <a href="#">link</a>.</p>
-
-										</div>
-									</section>
-
-								<!-- Heading -->
-									<section>
-										<header>
-											<h3>Headings</h3>
-										</header>
-										<div class="content">
-
-											<h1>Heading Level 1</h1>
-											<h2>Heading Level 2</h2>
-											<h3>Heading Level 3</h3>
-											<h4>Heading Level 4</h4>
-											<h5>Heading Level 5</h5>
-											<h6>Heading Level 6</h6>
-
-											<hr />
-
-											<header>
-												<h1>Heading with a Subtitle</h1>
-												<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-											</header>
-											<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-
-											<hr />
-
-											<header>
-												<h2>Heading with a Subtitle</h2>
-												<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-											</header>
-											<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-
-											<hr />
-
-											<header>
-												<h3>Heading with a Subtitle</h3>
-												<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-											</header>
-											<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-
-										</div>
-									</section>
-
-								<!-- Unordered List -->
-									<section>
-										<header>
-											<h3>Unordered List</h3>
-										</header>
-										<div class="content">
-
-											<h4>Default</h4>
-											<ul>
-												<li>Lorem ipsum dolor sit amet</li>
-												<li>Interdum adipiscing gravida odio</li>
-												<li>Porttitor sem non integer</li>
-												<li>Non faucibus ornare mi ut ante</li>
-												<li>Sagittis adipiscing eleifend</li>
-												<li>Felis amet dolore viverra</li>
-											</ul>
-
-											<h4>Alternate</h4>
-											<ul class="alt">
-												<li>Lorem ipsum dolor sit amet</li>
-												<li>Interdum adipiscing gravida odio</li>
-												<li>Porttitor sem non integer</li>
-												<li>Non faucibus ornare mi ut ante</li>
-												<li>Sagittis adipiscing eleifend</li>
-												<li>Felis amet dolore viverra</li>
-											</ul>
-
-										</div>
-									</section>
-
-								<!-- Ordered List -->
-									<section>
-										<header>
-											<h3>Ordered List</h3>
-										</header>
-										<div class="content">
-
-											<ol>
-												<li>Lorem ipsum dolor sit amet</li>
-												<li>Interdum adipiscing gravida odio</li>
-												<li>Porttitor sem non integer</li>
-												<li>Non faucibus ornare mi ut ante</li>
-												<li>Sagittis adipiscing eleifend</li>
-												<li>Felis amet dolore viverra</li>
-											</ol>
-
-										</div>
-									</section>
-
-								<!-- Definition List -->
-									<section>
-										<header>
-											<h3>Definition List</h3>
-										</header>
-										<div class="content">
-
-											<dl>
-												<dt>Interdum adipiscing odio</dt>
-												<dd>
-													<p>Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent fringilla quis tincidunt felis sagittis eget tempus euismod. Ante ipsum primis vestibulum.</p>
-												</dd>
-												<dt>Non faucibus ornare mi ut ante</dt>
-												<dd>
-													<p>Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent fringilla quis tincidunt felis sagittis eget tempus euismod. Ante ipsum primis vestibulum.</p>
-												</dd>
-												<dt>Felis amet dolore viverra</dt>
-												<dd>
-													<p>Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent fringilla quis tincidunt felis sagittis eget tempus euismod. Ante ipsum primis vestibulum.</p>
-												</dd>
-											</dl>
-
-										</div>
-									</section>
-
-								<!-- Blockquote -->
-									<section>
-										<header>
-											<h3>Blockquote</h3>
-										</header>
-										<div class="content">
-
-											<blockquote>Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent fringilla quis tincidunt felis sagittis eget tempus euismod. Ante ipsum primis vestibulum.</blockquote>
-
-										</div>
-									</section>
-
-								<!-- Code -->
-									<section>
-										<header>
-											<h3>Code</h3>
-										</header>
-										<div class="content">
-
-											<pre><code>i = 0;
-
-while (!deck.isInOrder()) {
-    print 'Iteration ' + i;
-    deck.shuffle();
-    i++;
-}
-
-print 'It took ' + i + ' iterations to sort the deck.';
-</code></pre>
-
-										</div>
-									</section>
-
-								<!-- Icons -->
-									<section>
-										<header>
-											<h3>Icons</h3>
-										</header>
-										<div class="content">
-
-											<h4>Style #1</h4>
-											<ul class="icons">
-												<li><a href="#" class="icon brands style1 fa-twitter"><span class="label">Twitter</span></a></li>
-												<li><a href="#" class="icon brands style1 fa-facebook-f"><span class="label">Facebook</span></a></li>
-												<li><a href="#" class="icon brands style1 fa-instagram"><span class="label">Instagram</span></a></li>
-												<li><a href="#" class="icon brands style1 fa-github"><span class="label">Github</span></a></li>
-												<li><a href="#" class="icon brands style1 fa-dribbble"><span class="label">Dribbble</span></a></li>
-											</ul>
-
-											<h4>Style #2</h4>
-											<ul class="icons">
-												<li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
-												<li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
-												<li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
-												<li><a href="#" class="icon brands style2 fa-github"><span class="label">Github</span></a></li>
-												<li><a href="#" class="icon brands style2 fa-dribbble"><span class="label">Dribbble</span></a></li>
-											</ul>
-
-										</div>
-									</section>
-
-								<!-- Buttons -->
-									<section>
-										<header>
-											<h3>Buttons</h3>
-										</header>
-										<div class="content">
-
-											<ul class="actions">
-												<li><a href="#" class="button primary">Primary</a></li>
-												<li><a href="#" class="button">Default</a></li>
-											</ul>
-											<ul class="actions">
-												<li><a href="#" class="button primary large">Large</a></li>
-												<li><a href="#" class="button">Default</a></li>
-												<li><a href="#" class="button small">Small</a></li>
-											</ul>
-											<ul class="actions fit">
-												<li><a href="#" class="button primary fit">Fit</a></li>
-												<li><a href="#" class="button fit">Fit</a></li>
-												<li><a href="#" class="button primary fit">Fit</a></li>
-												<li><a href="#" class="button fit">Fit</a></li>
-											</ul>
-											<ul class="actions fit small">
-												<li><a href="#" class="button primary fit small">Fit + Small</a></li>
-												<li><a href="#" class="button fit small">Fit + Small</a></li>
-												<li><a href="#" class="button primary fit small">Fit + Small</a></li>
-												<li><a href="#" class="button fit small">Fit + Small</a></li>
-											</ul>
-											<ul class="actions">
-												<li><a href="#" class="button primary icon solid fa-search">Icon</a></li>
-												<li><a href="#" class="button icon solid fa-download">Icon</a></li>
-											</ul>
-											<ul class="actions">
-												<li><span class="button primary disabled">Primary</span></li>
-												<li><span class="button disabled">Default</span></li>
-											</ul>
-
-										</div>
-									</section>
-
-								<!-- Actions -->
-									<section>
-										<header>
-											<h3>Actions</h3>
-										</header>
-										<div class="content">
-
-											<h4>Default</h4>
-											<ul class="actions">
-												<li><a href="#" class="button primary">Default</a></li>
-												<li><a href="#" class="button">Default</a></li>
-											</ul>
-
-											<h4>Small</h4>
-											<ul class="actions small">
-												<li><a href="#" class="button primary small">Small</a></li>
-												<li><a href="#" class="button small">Small</a></li>
-											</ul>
-
-											<h4>Stacked</h4>
-											<ul class="actions stacked">
-												<li><a href="#" class="button primary">Default</a></li>
-												<li><a href="#" class="button">Default</a></li>
-											</ul>
-
-											<h4>Stacked + Fit</h4>
-											<ul class="actions stacked">
-												<li><a href="#" class="button primary fit">Default</a></li>
-												<li><a href="#" class="button fit">Default</a></li>
-											</ul>
-
-										</div>
-									</section>
-
-								<!-- Form -->
-									<section>
-										<header>
-											<h3>Form</h3>
-										</header>
-										<div class="content">
-
-											<form method="post" action="#">
-												<div class="fields">
-													<div class="field half">
-														<label for="name">Name</label>
-														<input type="text" name="name" id="name" value="" />
-													</div>
-													<div class="field half">
-														<label for="email">Email</label>
-														<input type="email" name="email" id="email" value="" />
-													</div>
-													<div class="field">
-														<label for="department">Department</label>
-														<select name="department" id="department">
-															<option value="">- Category -</option>
-															<option value="1">Manufacturing</option>
-															<option value="2">Shipping</option>
-															<option value="3">Administration</option>
-															<option value="4">Human Resources</option>
-														</select>
-													</div>
-													<div class="field third">
-														<input type="radio" id="priority-low" name="priority" checked />
-														<label for="priority-low">Low Priority</label>
-													</div>
-													<div class="field third">
-														<input type="radio" id="priority-normal" name="priority" />
-														<label for="priority-normal">Normal Priority</label>
-													</div>
-													<div class="field third">
-														<input type="radio" id="priority-high" name="priority" />
-														<label for="priority-high">High Priority</label>
-													</div>
-													<div class="field">
-														<label for="message">Message</label>
-														<textarea name="message" id="message" rows="6"></textarea>
-													</div>
-													<div class="field half">
-														<input type="checkbox" id="copy" name="copy" />
-														<label for="copy">Email me a copy of this message</label>
-													</div>
-													<div class="field half">
-														<input type="checkbox" id="human" name="human" checked />
-														<label for="human">I am a human and not a robot</label>
-													</div>
-												</div>
-												<ul class="actions">
-													<li><input type="submit" name="submit" id="submit" value="Send Message" /></li>
-												</ul>
-											</form>
-
-										</div>
-									</section>
-
-								<!-- Table -->
-									<section>
-										<header>
-											<h3>Table</h3>
-										</header>
-										<div class="content">
-
-											<h4>Default</h4>
-											<div class="table-wrapper">
-												<table>
-													<thead>
-														<tr>
-															<th>Name</th>
-															<th>Description</th>
-															<th>Price</th>
-														</tr>
-													</thead>
-													<tbody>
-														<tr>
-															<td>Item 1</td>
-															<td>Ante turpis integer aliquet porttitor.</td>
-															<td>29.99</td>
-														</tr>
-														<tr>
-															<td>Item 2</td>
-															<td>Vis ac commodo adipiscing arcu aliquet.</td>
-															<td>19.99</td>
-														</tr>
-														<tr>
-															<td>Item 3</td>
-															<td> Morbi faucibus arcu accumsan lorem.</td>
-															<td>29.99</td>
-														</tr>
-														<tr>
-															<td>Item 4</td>
-															<td>Vitae integer tempus condimentum.</td>
-															<td>19.99</td>
-														</tr>
-														<tr>
-															<td>Item 5</td>
-															<td>Ante turpis integer aliquet porttitor.</td>
-															<td>29.99</td>
-														</tr>
-													</tbody>
-													<tfoot>
-														<tr>
-															<td colspan="2"></td>
-															<td>100.00</td>
-														</tr>
-													</tfoot>
-												</table>
-											</div>
-
-											<h4>Alternate</h4>
-											<div class="table-wrapper">
-												<table class="alt">
-													<thead>
-														<tr>
-															<th>Name</th>
-															<th>Description</th>
-															<th>Price</th>
-														</tr>
-													</thead>
-													<tbody>
-														<tr>
-															<td>Item 1</td>
-															<td>Ante turpis integer aliquet porttitor.</td>
-															<td>29.99</td>
-														</tr>
-														<tr>
-															<td>Item 2</td>
-															<td>Vis ac commodo adipiscing arcu aliquet.</td>
-															<td>19.99</td>
-														</tr>
-														<tr>
-															<td>Item 3</td>
-															<td> Morbi faucibus arcu accumsan lorem.</td>
-															<td>29.99</td>
-														</tr>
-														<tr>
-															<td>Item 4</td>
-															<td>Vitae integer tempus condimentum.</td>
-															<td>19.99</td>
-														</tr>
-														<tr>
-															<td>Item 5</td>
-															<td>Ante turpis integer aliquet porttitor.</td>
-															<td>29.99</td>
-														</tr>
-													</tbody>
-													<tfoot>
-														<tr>
-															<td colspan="2"></td>
-															<td>100.00</td>
-														</tr>
-													</tfoot>
-												</table>
-											</div>
-
-										</div>
-									</section>
-
-								<!-- Images -->
-									<section>
-										<header>
-											<h3>Images</h3>
-										</header>
-										<div class="content">
-
-											<h4>Fit</h4>
-											<span class="image fit"><img src="images/banner.jpg" alt="" /></span>
-
-											<h4>Left</h4>
-											<p><span class="image left"><img src="images/pic01.jpg" alt="" /></span>Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Vestibulum ante ipsum primis in faucibus magna blandit adipiscing eu felis iaculis volutpat lorem ipsum dolor sit amet dolor consequat.</p>
-
-											<h4>Right</h4>
-											<p><span class="image right"><img src="images/pic02.jpg" alt="" /></span>Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Vestibulum ante ipsum primis in faucibus magna blandit adipiscing eu felis iaculis volutpat lorem ipsum dolor sit amet dolor consequat.</p>
-
-										</div>
-									</section>
-
-								<!-- Box -->
-									<section>
-										<header>
-											<h3>Box</h3>
-										</header>
-										<div class="content">
-
-											<div class="box">
-												<p>Felis sagittis eget tempus primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Magna sed etiam ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus lorem ipsum dolor sit amet nullam.</p>
-											</div>
-
-										</div>
-									</section>
-
-							</div>
-
-
+							<h2>References</h3>
+							<ol>
+								<li>Crane HM, Crane PK, Tufano JT, et al. HIV Provider Documentation and Actions Following Patient Reports of At-risk Behaviors and Conditions When Identified by a Web-Based Point-of-Care Assessment. AIDS Behav. 2017;21(11):3111-3121.</li>
+								<li>Fredericksen RJ, Tufano J, Ralston J, et al. Provider perceptions of the value of same-day, electronic patient-reported measures for use in clinical HIV care. AIDS Care. 2016:1-6.</li>
+								<li>Wolfe F, Pincus T, Thompson AK, Doyle J. The assessment of rheumatoid arthritis and the acceptability of self-report questionnaires in clinical practice. Arthritis Rheum. 2003;49(1):59-63.</li>
+								<li>Stover A, Irwin DE, Chen RC, et al. Integrating Patient-Reported Outcome Measures into Routine Cancer Care: Cancer Patients' and Clinicians' Perceptions of Acceptability and Value. EGEMS (Wash DC). 2015;3(1):1169.</li>
+								<li>Detmar SB, Muller MJ, Schornagel JH, Wever LD, Aaronson NK. Health-related quality-of-life assessments and patient-physician communication: a randomized controlled trial. Jama. 2002;288(23):3027-3034.</li>
+								<li>Wagner AK, Ehrenberg BL, Tran TA, Bungay KM, Cynn DJ, Rogers WH. Patient-based health status measurement in clinical practice: a study of its impact on epilepsy patients' care. Qual Life Res. 1997;6(4):329-341.</li>
+								<li>Velikova G, Booth L, Smith AB, et al. Measuring quality of life in routine oncology practice improves communication and patient well-being: a randomized controlled trial. J Clin Oncol. 2004;22(4):714-724.</li>
+								<li>Taenzer P, Bultz BD, Carlson LE, et al. Impact of computerized quality of life screening on physician behaviour and patient satisfaction in lung cancer outpatients. Psychooncology. 2000;9(3):203-213.</li>
+								<li>Brown RF, Butow PN, Dunn SM, Tattersall MH. Promoting patient participation and shortening cancer consultations: a randomised trial. Br J Cancer. 2001;85(9):1273-1279.</li>
+								<li>Wasson JH, Stukel TA, Weiss JE, Hays RD, Jette AM, Nelson EC. A randomized trial of the use of patient self-assessment data to improve community practices. Eff Clin Pract. 1999;2(1):1-10.</li>
+								<li>Nelson EC, Eftimovska E, Lind C, Hager A, Wasson JH, Lindblad S. Patient reported outcome measures in practice. BMJ. 2015;350:g7818.</li>
+								<li>Chen J. OL, Hollis S. J. A systematic review of the impact of routine collection of patient reported outcome measures on patients, providers and health organisations in an oncologic setting. BMC Health Services Research. 2013;13(211).</li>
+								<li>Dobscha SK, Gerrity MS, Ward MF. Effectiveness of an intervention to improve primary care provider recognition of depression. Eff Clin Pract. 2001;4(4):163-171.</li>
+								<li>Berry DL, Blumenstein BA, Halpenny B, et al. Enhancing patient-provider communication with the electronic self-report assessment for cancer: a randomized trial. J Clin Oncol. 2011;29(8):1029-1035.</li>
+								<li>Kjaer A, Rasmussen TA, Hjollund NH, Rodkjaer LO, Storgaard M. Patient-reported outcomes in daily clinical practise in HIV outpatient care. Int J Infect Dis. 2018;69:108-114.</li>
+								<li>Ruland CM, Holte HH, Roislien J, et al. Effects of a computer-supported interactive tailored patient assessment tool on patient care, symptom distress, and patients' need for symptom management support: a randomized clinical trial. J Am Med Inform Assoc. 2010;17(4):403-410.</li>
+								<li>Cleeland CS, Wang XS, Shi Q, et al. Automated symptom alerts reduce postoperative symptom severity after cancer surgery: a randomized controlled clinical trial. J Clin Oncol. 2011;29(8):994-1000.</li>
+								<li>Mark TL, Johnson G, Fortner B, Ryan K. The benefits and challenges of using computer-assisted symptom assessments in oncology clinics: results of a qualitative assessment. Technol Cancer Res Treat. 2008;7(5):401-406.</li>
+								<li>Mazonson PD, Mathias SD, Fifer SK, Buesching DP, Malek P, Patrick DL. The mental health patient profile: does it change primary care physicians' practice patterns? J Am Board Fam Pract. 1996;9(5):336-345.</li>
+								<li>Chen J, Ou L, Hollis SJ. A systematic review of the impact of routine collection of patient reported outcome measures on patients, providers and health organisations in an oncologic setting. BMC health services research. 2013;13:211.</li>
+								<li>Crane H TJ, Fredericksen R, Schmidt S, Brown T, Harrington R, Lober W, Kitahata M, Ralston J. Evaluating Integration of an HIV Medication Adherence Computer Assisted Self-Administered Interview (CASI) with Routine Patient Care. 5th International Conference on HIV Treatment Adherence; May 23-25, 2010, 2010; Miami, FL.</li>
+								<li>Basch E, Deal AM, Kris MG, et al. Symptom Monitoring With Patient-Reported Outcomes During Routine Cancer Treatment: A Randomized Controlled Trial. J Clin Oncol. 2016;34(6):557-565.</li>
+								<li>Basch E, Deal AM, Dueck AC, et al. Overall Survival Results of a Trial Assessing Patient-Reported Outcomes for Symptom Monitoring During Routine Cancer Treatment. JAMA. 2017;318(2):197-198.</li>
+								<li>Marshall S, Haywood K, Fitzpatrick R. Impact of patient-reported outcome measures on routine practice: a structured review. J Eval Clin Pract. 2006;12(5):559-568.</li>
+								<li>Berry DL, Hong F, Halpenny B, et al. Electronic self-report assessment for cancer and self-care support: results of a multicenter randomized trial. J Clin Oncol. 2014;32(3):199-205.</li>
+								<li>Fredericksen RJ SD, Fitzsimmons E, Musten A, Jacobs B, Suri S, Korlipara D, Hodge V, Gough K, Ramgopal M, Bacon J, McReynolds J, Lober W, Crane HM. . Provider perceptions of utility and impact of a same-day routine electronic patient reported outcomes (PRO) assessment in clinical HIV care. International Society for Quality of Life Research; 2020; Virtual conference.</li>
+								<li>Fredericksen RJS, D. Fitzsimmons, E. Musten, A. Jacobs, B. Suri, S. Korlipara, D. Hodge, V. Gough, K. Ramgopal, M. Bacon, J. McReynolds, J. Crane, HM. Lober, W. . Patient perceptions of the utility and impact of a same-day self-administered routine electronic patient-reported outcomes (PRO) assessment in HIV care in two North American clinics. International Society of Quality of Life; October 21-24, 2020, 2020; online.</li>
+								<li>HM. FRFEMJBSSLLWC. Patients' perceptions of value of a self-administered electronic patient-reported outcomes assessment on quality of their HIV care. . International Society of Quality of Life 26th Annual Conference; 2019; San Diego, CA.</li>
+								<li>Spitzer RL, Kroenke K, Williams JB. Validation and utility of a self-report version of PRIME-MD: the PHQ primary care study. Primary Care Evaluation of Mental Disorders. Patient Health Questionnaire. Jama. 1999;282(18):1737-1744.</li>
+								<li>Kroenke K, Spitzer RL, Williams JB. The PHQ-9: validity of a brief depression severity measure. J Gen Intern Med. 2001;16(9):606-613.</li>
+								<li>Spitzer RL, Kroenke K, Williams JB, Lowe B. A brief measure for assessing generalized anxiety disorder: the GAD-7. Arch Intern Med. 2006;166(10):1092-1097.</li>
+								<li>Bush K, Kivlahan DR, McDonell MB, Fihn SD, Bradley KA. The AUDIT alcohol consumption questions (AUDIT-C): an effective brief screening test for problem drinking. Ambulatory Care Quality Improvement Project (ACQUIP). Alcohol Use Disorders Identification Test. Arch Intern Med. 1998;158(16):1789-1795.</li>
+								<li>Bradley KA, Bush KR, Epler AJ, et al. Two brief alcohol-screening tests From the Alcohol Use Disorders Identification Test (AUDIT): validation in a female Veterans Affairs patient population. Arch Intern Med. 2003;163(7):821-829.</li>
+								<li>Newcombe DA, Humeniuk RE, Ali R. Validation of the World Health Organization Alcohol, Smoking and Substance Involvement Screening Test (ASSIST): report of results from the Australian site. Drug Alcohol Rev. 2005;24(3):217-226.</li>
+								<li>WHO ASSIST Working Group. The Alcohol, Smoking and Substance Involvement Screening Test (ASSIST): development, reliability and feasibility. Addiction. 2002;97(9):1183-1194.</li>
+								<li>Kiechl S, Werner P, Egger G, et al. Active and passive smoking, chronic infections, and the risk of carotid atherosclerosis: prospective results from the Bruneck Study. Stroke. 2002;33(9):2170-2176.</li>
+								<li>McLellan AT, Alterman AI, Cacciola J, Metzger D, O'Brien CP. A new measure of substance abuse treatment. Initial studies of the treatment services review. J Nerv Ment Dis. 1992;180(2):101-110.</li>
+								<li>Simoni JM, Kurth AE, Pearson CR, Pantalone DW, Merrill JO, Frick PA. Self-report measures of antiretroviral therapy adherence: A review with recommendations for HIV research and clinical management. AIDS Behav. 2006;10(3):227-245.</li>
+								<li>Chesney MA, Ickovics JR, Chambers DB, et al. Self-reported adherence to antiretroviral medications among participants in HIV clinical trials: the AACTG adherence instruments. Patient Care Committee & Adherence Working Group of the Outcomes Committee of the Adult AIDS Clinical Trials Group (AACTG). AIDS Care. 2000;12(3):255-266.</li>
+								<li>Lu M, Safren SA, Skolnik PR, et al. Optimal recall period and response task for self-reported HIV medication adherence. AIDS Behav. 2008;12(1):86-94.</li>
+								<li>Fredericksen RJ, Mayer KH, Gibbons LE, et al. Development and Content Validation of a Patient-Reported Sexual Risk Measure for Use in Primary Care. J Gen Intern Med. 2018.</li>
+								<li>RJ. WBFEJMBSNJNRRSDJCHF. Patient perceptions and understanding of a housing status measure for use in HIV care. 27th Annual Conference of International Society of Quality of Life; October 19-23, 2020, 2020; online.</li>
+								<li>Laporte M, Keller HH, Payette H, et al. Validity and reliability of the new Canadian Nutrition Screening Tool in the 'real-world' hospital setting. Eur J Clin Nutr. 2015;69(5):558-564.</li>
+								<li>Fredericksen RJ, Fitzsimmons E, Gibbons LE, et al. Development and content validation of the Multifactoral assessment of perceived social support (MAPSS), a brief, patient-reported measure of social support for use in HIV care. AIDS Care. 2019:1-9.</li>
+								<li>Earnshaw VA, Smith LR, Chaudoir SR, Amico KR, Copenhaver MM. HIV stigma mechanisms and well-being among PLWH: a test of the HIV stigma framework. AIDS Behav. 2013;17(5):1785-1795.</li>
+								<li>EuroQol G. EuroQol--a new facility for the measurement of health-related quality of life. Health Policy. 1990;16(3):199-208.</li>
+								<li>Ainsworth BE, Jacobs DR, Jr., Leon AS. Validity and reliability of self-reported physical activity status: the Lipid Research Clinics questionnaire. Med Sci Sports Exerc. 1993;25(1):92-98.</li>
+								<li>Fitzsimmons E, Loo S, Dougherty S, et al. Development and Content Validation of the IPV-4, a Brief Patient-Reported Measure of Intimate Partner Violence for Use in HIV Care. International Society of Quality of Life Research Conference; October 21, 20019, 2019; San Diego, California.</li>
+								<li>World Health Organization. Adverse Childhood Experiences International Questionnaire. Adverse Childhood Experiences International Questionnaire (ACE-IQ) 2018; http://www.who.int/violence_injury_prevention/violence/activities/adverse_childhood_experiences/en/ </li>
+							
+							</ol>
+							
+							
 						</div>
 					</section>
-
-				<!-- Modifiers -->
-					<section class="wrapper style1 align-center" id="reference">
-						<div class="inner">
-							<h2>Elements Reference</h2>
-							<p>Oh, and this: a handy reference to all the modifiers supported by various elements.</p>
-							<div class="index align-left">
-
-								<!-- Banner -->
-									<section id="reference-banner">
-										<header>
-											<h3>Banner</h3>
-										</header>
-										<div class="content">
-
-											<h4>HTML</h4>
-<pre><code>&lt;section class="banner style<em>(N)</em> <em>(optional modifiers)</em>"&gt;
-  &lt;div class="content"&gt;
-    <em>(content)</em>
-  &lt;/div&gt;
-  &lt;div class="image"&gt;
-    &lt;img src="<em>(image URL)</em>" alt="Alternate text" /&gt;
-  &lt;/div&gt;
-&lt;/section&gt;</code></pre>
-
-											<hr />
-
-											<!-- style1 -->
-												<section>
-													<h4><code>banner style1</code></h4>
-													<p>A 50/50 vertical split between content and an image. Supports these modifiers:</p>
-
-													<div class="table-wrapper">
-														<table class="alt uniform fixed">
-															<tbody>
-																<tr>
-																	<td><code>fullscreen</code></td>
-																	<td>Fills the height of the screen.</td>
-																</tr>
-																<tr class="alt">
-																	<td colspan="2"></td>
-																</tr>
-																<tr>
-																	<td><code>orient-left</code></td>
-																	<td>Shows content on the left, image on the right.</td>
-																</tr>
-																<tr>
-																	<td><code>orient-right</code></td>
-																	<td>Shows content on the right, image on the left.</td>
-																</tr>
-																<tr class="alt">
-																	<td colspan="2"></td>
-																</tr>
-																<tr>
-																	<td><code>content-align-left</code></td>
-																	<td>Left-aligns content.</td>
-																</tr>
-																<tr>
-																	<td><code>content-align-center</code></td>
-																	<td>Center-aligns content.</td>
-																</tr>
-																<tr>
-																	<td><code>content-align-right</code></td>
-																	<td>Right-aligns content.</td>
-																</tr>
-																<tr class="alt">
-																	<td colspan="2"></td>
-																</tr>
-																<tr>
-																	<td><code>image-position-left</code></td>
-																	<td>Left-positions image.</td>
-																</tr>
-																<tr>
-																	<td><code>image-position-center</code></td>
-																	<td>Center-positions image.</td>
-																</tr>
-																<tr>
-																	<td><code>image-position-right</code></td>
-																	<td>Right-positions image.</td>
-																</tr>
-																<tr class="alt">
-																	<td colspan="2"></td>
-																</tr>
-																<tr>
-																	<td><code>onload-content-fade-up</code></td>
-																	<td>Fades content up on page load.</td>
-																</tr>
-																<tr>
-																	<td><code>onload-content-fade-down</code></td>
-																	<td>Fades content down on page load.</td>
-																</tr>
-																<tr>
-																	<td><code>onload-content-fade-left</code></td>
-																	<td>Fades content left on page load.</td>
-																</tr>
-																<tr>
-																	<td><code>onload-content-fade-right</code></td>
-																	<td>Fades content right on page load.</td>
-																</tr>
-																<tr>
-																	<td><code>onload-content-fade-in</code></td>
-																	<td>Fades in content on page load.</td>
-																</tr>
-																<tr>
-																	<td><code>onload-image-fade-in</code></td>
-																	<td>Fades in image on page load.</td>
-																</tr>
-																<tr class="alt">
-																	<td colspan="2"></td>
-																</tr>
-																<tr>
-																	<td><code>onscroll-content-fade-up</code></td>
-																	<td>Fades content up on page scroll.</td>
-																</tr>
-																<tr>
-																	<td><code>onscroll-content-fade-down</code></td>
-																	<td>Fades content down on page scroll.</td>
-																</tr>
-																<tr>
-																	<td><code>onscroll-content-fade-left</code></td>
-																	<td>Fades content left on page scroll.</td>
-																</tr>
-																<tr>
-																	<td><code>onscroll-content-fade-right</code></td>
-																	<td>Fades content right on page scroll.</td>
-																</tr>
-																<tr>
-																	<td><code>onscroll-content-fade-in</code></td>
-																	<td>Fades in content on page scroll.</td>
-																</tr>
-																<tr>
-																	<td><code>onscroll-image-fade-in</code></td>
-																	<td>Fades in image on page scroll.</td>
-																</tr>
-																<tr class="alt">
-																	<td colspan="2"></td>
-																</tr>
-																<tr>
-																	<td><code>invert</code></td>
-																	<td>Inverts the color scheme.</td>
-																</tr>
-																<tr>
-																	<td><code>color1</code></td>
-																	<td>Uses background color #1.</td>
-																</tr>
-																<tr>
-																	<td><code>color2</code></td>
-																	<td>Uses background color #2.</td>
-																</tr>
-																<tr>
-																	<td><code>color3</code></td>
-																	<td>Uses background color #3.</td>
-																</tr>
-																<tr>
-																	<td><code>color4</code></td>
-																	<td>Uses background color #4.</td>
-																</tr>
-																<tr>
-																	<td><code>color5</code></td>
-																	<td>Uses background color #5.</td>
-																</tr>
-																<tr>
-																	<td><code>color6</code></td>
-																	<td>Uses background color #6.</td>
-																</tr>
-																<tr>
-																	<td><code>color7</code></td>
-																	<td>Uses background color #7.</td>
-																</tr>
-															</tbody>
-														</table>
-													</div>
-												</section>
-
-											<hr />
-
-											<!-- style2 -->
-												<section>
-													<h4><code>banner style2</code></h4>
-													<p>Boxed-in content set against an image background, and attached to either side of the screen or centered. Supports these modifiers:</p>
-
-													<div class="table-wrapper">
-														<table class="alt uniform fixed">
-															<tbody>
-																<tr>
-																	<td><code>fullscreen</code></td>
-																	<td>Fills the height of the screen.</td>
-																</tr>
-																<tr class="alt">
-																	<td colspan="2"></td>
-																</tr>
-																<tr>
-																	<td><code>orient-left</code></td>
-																	<td>Attaches the content box to the left edge of the screen.</td>
-																</tr>
-																<tr>
-																	<td><code>orient-center</code></td>
-																	<td>Places the content box in the center of the screen.</td>
-																</tr>
-																<tr>
-																	<td><code>orient-right</code></td>
-																	<td>Attaches the content box to the right edge of the screen.</td>
-																</tr>
-																<tr class="alt">
-																	<td colspan="2"></td>
-																</tr>
-																<tr>
-																	<td><code>content-align-left</code></td>
-																	<td>Left-aligns content.</td>
-																</tr>
-																<tr>
-																	<td><code>content-align-center</code></td>
-																	<td>Center-aligns content.</td>
-																</tr>
-																<tr>
-																	<td><code>content-align-right</code></td>
-																	<td>Right-aligns content.</td>
-																</tr>
-																<tr class="alt">
-																	<td colspan="2"></td>
-																</tr>
-																<tr>
-																	<td><code>image-position-left</code></td>
-																	<td>Left-positions image.</td>
-																</tr>
-																<tr>
-																	<td><code>image-position-center</code></td>
-																	<td>Center-positions image.</td>
-																</tr>
-																<tr>
-																	<td><code>image-position-right</code></td>
-																	<td>Right-positions image.</td>
-																</tr>
-																<tr class="alt">
-																	<td colspan="2"></td>
-																</tr>
-																<tr>
-																	<td><code>onload-content-fade-up</code></td>
-																	<td>Fades content up on page load.</td>
-																</tr>
-																<tr>
-																	<td><code>onload-content-fade-down</code></td>
-																	<td>Fades content down on page load.</td>
-																</tr>
-																<tr>
-																	<td><code>onload-content-fade-left</code></td>
-																	<td>Fades content left on page load.</td>
-																</tr>
-																<tr>
-																	<td><code>onload-content-fade-right</code></td>
-																	<td>Fades content right on page load.</td>
-																</tr>
-																<tr>
-																	<td><code>onload-content-fade-in</code></td>
-																	<td>Fades in content on page load.</td>
-																</tr>
-																<tr>
-																	<td><code>onload-image-fade-in</code></td>
-																	<td>Fades in image on page load.</td>
-																</tr>
-																<tr class="alt">
-																	<td colspan="2"></td>
-																</tr>
-																<tr>
-																	<td><code>onscroll-content-fade-up</code></td>
-																	<td>Fades content up on page scroll.</td>
-																</tr>
-																<tr>
-																	<td><code>onscroll-content-fade-down</code></td>
-																	<td>Fades content down on page scroll.</td>
-																</tr>
-																<tr>
-																	<td><code>onscroll-content-fade-left</code></td>
-																	<td>Fades content left on page scroll.</td>
-																</tr>
-																<tr>
-																	<td><code>onscroll-content-fade-right</code></td>
-																	<td>Fades content right on page scroll.</td>
-																</tr>
-																<tr>
-																	<td><code>onscroll-content-fade-in</code></td>
-																	<td>Fades in content on page scroll.</td>
-																</tr>
-																<tr>
-																	<td><code>onscroll-image-fade-in</code></td>
-																	<td>Fades in image on page scroll.</td>
-																</tr>
-																<tr class="alt">
-																	<td colspan="2"></td>
-																</tr>
-																<tr>
-																	<td><code>invert</code></td>
-																	<td>Inverts the color scheme.</td>
-																</tr>
-																<tr>
-																	<td><code>color1</code></td>
-																	<td>Uses background color #1.</td>
-																</tr>
-																<tr>
-																	<td><code>color2</code></td>
-																	<td>Uses background color #2.</td>
-																</tr>
-																<tr>
-																	<td><code>color3</code></td>
-																	<td>Uses background color #3.</td>
-																</tr>
-																<tr>
-																	<td><code>color4</code></td>
-																	<td>Uses background color #4.</td>
-																</tr>
-																<tr>
-																	<td><code>color5</code></td>
-																	<td>Uses background color #5.</td>
-																</tr>
-																<tr>
-																	<td><code>color6</code></td>
-																	<td>Uses background color #6.</td>
-																</tr>
-																<tr>
-																	<td><code>color7</code></td>
-																	<td>Uses background color #7.</td>
-																</tr>
-															</tbody>
-														</table>
-													</div>
-												</section>
-
-											<hr />
-
-											<!-- style3 -->
-												<section>
-													<h4><code>banner style3</code></h4>
-													<p>An image within a circular frame placed to the side of content. Supports these modifiers:</p>
-
-													<div class="table-wrapper">
-														<table class="alt uniform fixed">
-															<tbody>
-																<tr>
-																	<td><code>fullscreen</code></td>
-																	<td>Fills the height of the screen.</td>
-																</tr>
-																<tr class="alt">
-																	<td colspan="2"></td>
-																</tr>
-																<tr>
-																	<td><code>orient-left</code></td>
-																	<td>Places the content on the left, image on the right.</td>
-																</tr>
-																<tr>
-																	<td><code>orient-right</code></td>
-																	<td>Places the content on the right, image on the left.</td>
-																</tr>
-																<tr class="alt">
-																	<td colspan="2"></td>
-																</tr>
-																<tr>
-																	<td><code>content-align-left</code></td>
-																	<td>Left-aligns content.</td>
-																</tr>
-																<tr>
-																	<td><code>content-align-center</code></td>
-																	<td>Center-aligns content.</td>
-																</tr>
-																<tr>
-																	<td><code>content-align-right</code></td>
-																	<td>Right-aligns content.</td>
-																</tr>
-																<tr class="alt">
-																	<td colspan="2"></td>
-																</tr>
-																<tr>
-																	<td><code>image-position-left</code></td>
-																	<td>Left-positions image.</td>
-																</tr>
-																<tr>
-																	<td><code>image-position-center</code></td>
-																	<td>Center-positions image.</td>
-																</tr>
-																<tr>
-																	<td><code>image-position-right</code></td>
-																	<td>Right-positions image.</td>
-																</tr>
-																<tr class="alt">
-																	<td colspan="2"></td>
-																</tr>
-																<tr>
-																	<td><code>onload-content-fade-up</code></td>
-																	<td>Fades content up on page load.</td>
-																</tr>
-																<tr>
-																	<td><code>onload-content-fade-down</code></td>
-																	<td>Fades content down on page load.</td>
-																</tr>
-																<tr>
-																	<td><code>onload-content-fade-left</code></td>
-																	<td>Fades content left on page load.</td>
-																</tr>
-																<tr>
-																	<td><code>onload-content-fade-right</code></td>
-																	<td>Fades content right on page load.</td>
-																</tr>
-																<tr>
-																	<td><code>onload-content-fade-in</code></td>
-																	<td>Fades in content on page load.</td>
-																</tr>
-																<tr>
-																	<td><code>onload-image-fade-up</code></td>
-																	<td>Fades image up on page load.</td>
-																</tr>
-																<tr>
-																	<td><code>onload-image-fade-down</code></td>
-																	<td>Fades image down on page load.</td>
-																</tr>
-																<tr>
-																	<td><code>onload-image-fade-left</code></td>
-																	<td>Fades image left on page load.</td>
-																</tr>
-																<tr>
-																	<td><code>onload-image-fade-right</code></td>
-																	<td>Fades image right on page load.</td>
-																</tr>
-																<tr>
-																	<td><code>onload-image-fade-in</code></td>
-																	<td>Fades in image on page load.</td>
-																</tr>
-																<tr class="alt">
-																	<td colspan="2"></td>
-																</tr>
-																<tr>
-																	<td><code>onscroll-content-fade-up</code></td>
-																	<td>Fades content up on page scroll.</td>
-																</tr>
-																<tr>
-																	<td><code>onscroll-content-fade-down</code></td>
-																	<td>Fades content down on page scroll.</td>
-																</tr>
-																<tr>
-																	<td><code>onscroll-content-fade-left</code></td>
-																	<td>Fades content left on page scroll.</td>
-																</tr>
-																<tr>
-																	<td><code>onscroll-content-fade-right</code></td>
-																	<td>Fades content right on page scroll.</td>
-																</tr>
-																<tr>
-																	<td><code>onscroll-content-fade-in</code></td>
-																	<td>Fades in content on page scroll.</td>
-																</tr>
-																<tr>
-																	<td><code>onscroll-image-fade-up</code></td>
-																	<td>Fades image up on page scroll.</td>
-																</tr>
-																<tr>
-																	<td><code>onscroll-image-fade-down</code></td>
-																	<td>Fades image down on page scroll.</td>
-																</tr>
-																<tr>
-																	<td><code>onscroll-image-fade-left</code></td>
-																	<td>Fades image left on page scroll.</td>
-																</tr>
-																<tr>
-																	<td><code>onscroll-image-fade-right</code></td>
-																	<td>Fades image right on page scroll.</td>
-																</tr>
-																<tr>
-																	<td><code>onscroll-image-fade-in</code></td>
-																	<td>Fades in image on page scroll.</td>
-																</tr>
-																<tr class="alt">
-																	<td colspan="2"></td>
-																</tr>
-																<tr>
-																	<td><code>invert</code></td>
-																	<td>Inverts the color scheme.</td>
-																</tr>
-																<tr>
-																	<td><code>color1</code></td>
-																	<td>Uses background color #1.</td>
-																</tr>
-																<tr>
-																	<td><code>color2</code></td>
-																	<td>Uses background color #2.</td>
-																</tr>
-																<tr>
-																	<td><code>color3</code></td>
-																	<td>Uses background color #3.</td>
-																</tr>
-																<tr>
-																	<td><code>color4</code></td>
-																	<td>Uses background color #4.</td>
-																</tr>
-																<tr>
-																	<td><code>color5</code></td>
-																	<td>Uses background color #5.</td>
-																</tr>
-																<tr>
-																	<td><code>color6</code></td>
-																	<td>Uses background color #6.</td>
-																</tr>
-																<tr>
-																	<td><code>color7</code></td>
-																	<td>Uses background color #7.</td>
-																</tr>
-															</tbody>
-														</table>
-													</div>
-												</section>
-
-											<hr />
-
-											<!-- style4 -->
-												<section>
-													<h4><code>banner style4</code></h4>
-													<p>An image within a phone-shaped frame placed to the side of content. Supports these modifiers:</p>
-
-													<div class="table-wrapper">
-														<table class="alt uniform fixed">
-															<tbody>
-																<tr>
-																	<td><code>fullscreen</code></td>
-																	<td>Fills the height of the screen.</td>
-																</tr>
-																<tr class="alt">
-																	<td colspan="2"></td>
-																</tr>
-																<tr>
-																	<td><code>iphone</code></td>
-																	<td>Uses iPhone styling for image frame.</td>
-																</tr>
-																<tr>
-																	<td><code>android</code></td>
-																	<td>Uses Android styling for image frame.</td>
-																</tr>
-																<tr class="alt">
-																	<td colspan="2"></td>
-																</tr>
-																<tr>
-																	<td><code>orient-left</code></td>
-																	<td>Places the content on the left, image on the right.</td>
-																</tr>
-																<tr>
-																	<td><code>orient-right</code></td>
-																	<td>Places the content on the right, image on the left.</td>
-																</tr>
-																<tr class="alt">
-																	<td colspan="2"></td>
-																</tr>
-																<tr>
-																	<td><code>content-align-left</code></td>
-																	<td>Left-aligns content.</td>
-																</tr>
-																<tr>
-																	<td><code>content-align-center</code></td>
-																	<td>Center-aligns content.</td>
-																</tr>
-																<tr>
-																	<td><code>content-align-right</code></td>
-																	<td>Right-aligns content.</td>
-																</tr>
-																<tr class="alt">
-																	<td colspan="2"></td>
-																</tr>
-																<tr>
-																	<td><code>image-position-left</code></td>
-																	<td>Left-positions image.</td>
-																</tr>
-																<tr>
-																	<td><code>image-position-center</code></td>
-																	<td>Center-positions image.</td>
-																</tr>
-																<tr>
-																	<td><code>image-position-right</code></td>
-																	<td>Right-positions image.</td>
-																</tr>
-																<tr class="alt">
-																	<td colspan="2"></td>
-																</tr>
-																<tr>
-																	<td><code>onload-content-fade-up</code></td>
-																	<td>Fades content up on page load.</td>
-																</tr>
-																<tr>
-																	<td><code>onload-content-fade-down</code></td>
-																	<td>Fades content down on page load.</td>
-																</tr>
-																<tr>
-																	<td><code>onload-content-fade-left</code></td>
-																	<td>Fades content left on page load.</td>
-																</tr>
-																<tr>
-																	<td><code>onload-content-fade-right</code></td>
-																	<td>Fades content right on page load.</td>
-																</tr>
-																<tr>
-																	<td><code>onload-content-fade-in</code></td>
-																	<td>Fades in content on page load.</td>
-																</tr>
-																<tr>
-																	<td><code>onload-image-fade-up</code></td>
-																	<td>Fades image up on page load.</td>
-																</tr>
-																<tr>
-																	<td><code>onload-image-fade-down</code></td>
-																	<td>Fades image down on page load.</td>
-																</tr>
-																<tr>
-																	<td><code>onload-image-fade-left</code></td>
-																	<td>Fades image left on page load.</td>
-																</tr>
-																<tr>
-																	<td><code>onload-image-fade-right</code></td>
-																	<td>Fades image right on page load.</td>
-																</tr>
-																<tr>
-																	<td><code>onload-image-fade-in</code></td>
-																	<td>Fades in image on page load.</td>
-																</tr>
-																<tr class="alt">
-																	<td colspan="2"></td>
-																</tr>
-																<tr>
-																	<td><code>onscroll-content-fade-up</code></td>
-																	<td>Fades content up on page scroll.</td>
-																</tr>
-																<tr>
-																	<td><code>onscroll-content-fade-down</code></td>
-																	<td>Fades content down on page scroll.</td>
-																</tr>
-																<tr>
-																	<td><code>onscroll-content-fade-left</code></td>
-																	<td>Fades content left on page scroll.</td>
-																</tr>
-																<tr>
-																	<td><code>onscroll-content-fade-right</code></td>
-																	<td>Fades content right on page scroll.</td>
-																</tr>
-																<tr>
-																	<td><code>onscroll-content-fade-in</code></td>
-																	<td>Fades in content on page scroll.</td>
-																</tr>
-																<tr>
-																	<td><code>onscroll-image-fade-up</code></td>
-																	<td>Fades image up on page scroll.</td>
-																</tr>
-																<tr>
-																	<td><code>onscroll-image-fade-down</code></td>
-																	<td>Fades image down on page scroll.</td>
-																</tr>
-																<tr>
-																	<td><code>onscroll-image-fade-left</code></td>
-																	<td>Fades image left on page scroll.</td>
-																</tr>
-																<tr>
-																	<td><code>onscroll-image-fade-right</code></td>
-																	<td>Fades image right on page scroll.</td>
-																</tr>
-																<tr>
-																	<td><code>onscroll-image-fade-in</code></td>
-																	<td>Fades in image on page scroll.</td>
-																</tr>
-																<tr class="alt">
-																	<td colspan="2"></td>
-																</tr>
-																<tr>
-																	<td><code>invert</code></td>
-																	<td>Inverts the color scheme.</td>
-																</tr>
-																<tr>
-																	<td><code>color1</code></td>
-																	<td>Uses background color #1.</td>
-																</tr>
-																<tr>
-																	<td><code>color2</code></td>
-																	<td>Uses background color #2.</td>
-																</tr>
-																<tr>
-																	<td><code>color3</code></td>
-																	<td>Uses background color #3.</td>
-																</tr>
-																<tr>
-																	<td><code>color4</code></td>
-																	<td>Uses background color #4.</td>
-																</tr>
-																<tr>
-																	<td><code>color5</code></td>
-																	<td>Uses background color #5.</td>
-																</tr>
-																<tr>
-																	<td><code>color6</code></td>
-																	<td>Uses background color #6.</td>
-																</tr>
-																<tr>
-																	<td><code>color7</code></td>
-																	<td>Uses background color #7.</td>
-																</tr>
-															</tbody>
-														</table>
-													</div>
-												</section>
-
-											<hr />
-
-											<!-- style5 -->
-												<section>
-													<h4><code>banner style5</code></h4>
-													<p>Content set directly against an image background. Supports these modifiers:</p>
-
-													<div class="table-wrapper">
-														<table class="alt uniform fixed">
-															<tbody>
-																<tr>
-																	<td><code>fullscreen</code></td>
-																	<td>Fills the height of the screen.</td>
-																</tr>
-																<tr class="alt">
-																	<td colspan="2"></td>
-																</tr>
-																<tr>
-																	<td><code>content-align-left</code></td>
-																	<td>Left-aligns content.</td>
-																</tr>
-																<tr>
-																	<td><code>content-align-center</code></td>
-																	<td>Center-aligns content.</td>
-																</tr>
-																<tr>
-																	<td><code>content-align-right</code></td>
-																	<td>Right-aligns content.</td>
-																</tr>
-																<tr class="alt">
-																	<td colspan="2"></td>
-																</tr>
-																<tr>
-																	<td><code>image-position-left</code></td>
-																	<td>Left-positions image.</td>
-																</tr>
-																<tr>
-																	<td><code>image-position-center</code></td>
-																	<td>Center-positions image.</td>
-																</tr>
-																<tr>
-																	<td><code>image-position-right</code></td>
-																	<td>Right-positions image.</td>
-																</tr>
-																<tr class="alt">
-																	<td colspan="2"></td>
-																</tr>
-																<tr>
-																	<td><code>onload-content-fade-up</code></td>
-																	<td>Fades content up on page load.</td>
-																</tr>
-																<tr>
-																	<td><code>onload-content-fade-down</code></td>
-																	<td>Fades content down on page load.</td>
-																</tr>
-																<tr>
-																	<td><code>onload-content-fade-left</code></td>
-																	<td>Fades content left on page load.</td>
-																</tr>
-																<tr>
-																	<td><code>onload-content-fade-right</code></td>
-																	<td>Fades content right on page load.</td>
-																</tr>
-																<tr>
-																	<td><code>onload-content-fade-in</code></td>
-																	<td>Fades in content on page load.</td>
-																</tr>
-																<tr>
-																	<td><code>onload-image-fade-in</code></td>
-																	<td>Fades in image on page load.</td>
-																</tr>
-																<tr class="alt">
-																	<td colspan="2"></td>
-																</tr>
-																<tr>
-																	<td><code>onscroll-content-fade-up</code></td>
-																	<td>Fades content up on page scroll.</td>
-																</tr>
-																<tr>
-																	<td><code>onscroll-content-fade-down</code></td>
-																	<td>Fades content down on page scroll.</td>
-																</tr>
-																<tr>
-																	<td><code>onscroll-content-fade-left</code></td>
-																	<td>Fades content left on page scroll.</td>
-																</tr>
-																<tr>
-																	<td><code>onscroll-content-fade-right</code></td>
-																	<td>Fades content right on page scroll.</td>
-																</tr>
-																<tr>
-																	<td><code>onscroll-content-fade-in</code></td>
-																	<td>Fades in content on page scroll.</td>
-																</tr>
-																<tr>
-																	<td><code>onscroll-image-fade-in</code></td>
-																	<td>Fades in image on page scroll.</td>
-																</tr>
-																<tr class="alt">
-																	<td colspan="2"></td>
-																</tr>
-																<tr>
-																	<td><code>invert</code></td>
-																	<td>Inverts the color scheme.</td>
-																</tr>
-																<tr>
-																	<td><code>color1</code></td>
-																	<td>Uses background color #1.</td>
-																</tr>
-																<tr>
-																	<td><code>color2</code></td>
-																	<td>Uses background color #2.</td>
-																</tr>
-																<tr>
-																	<td><code>color3</code></td>
-																	<td>Uses background color #3.</td>
-																</tr>
-																<tr>
-																	<td><code>color4</code></td>
-																	<td>Uses background color #4.</td>
-																</tr>
-																<tr>
-																	<td><code>color5</code></td>
-																	<td>Uses background color #5.</td>
-																</tr>
-																<tr>
-																	<td><code>color6</code></td>
-																	<td>Uses background color #6.</td>
-																</tr>
-																<tr>
-																	<td><code>color7</code></td>
-																	<td>Uses background color #7.</td>
-																</tr>
-															</tbody>
-														</table>
-													</div>
-												</section>
-
-										</div>
-									</section>
-
-								<!-- Spotlight -->
-									<section id="reference-spotlight">
-										<header>
-											<h3>Spotlight</h3>
-										</header>
-										<div class="content">
-
-											<h4>HTML</h4>
-<pre><code>&lt;section class="spotlight style<em>(N)</em> <em>(optional modifiers)</em>"&gt;
-  &lt;div class="content"&gt;
-    <em>(content)</em>
-  &lt;/div&gt;
-  &lt;div class="image"&gt;
-    &lt;img src="<em>(image URL)</em>" alt="Alternate text" /&gt;
-  &lt;/div&gt;
-&lt;/section&gt;</code></pre>
-
-											<hr />
-
-											<!-- style1 -->
-												<section>
-													<h4><code>spotlight style1</code></h4>
-													<p>A 30/70 (or 70/30, depending on orientation) vertical split between content and an image. Supports these modifiers:</p>
-
-													<div class="table-wrapper">
-														<table class="alt uniform fixed">
-															<tbody>
-																<tr>
-																	<td><code>orient-left</code></td>
-																	<td>Shows content on the left, image on the right.</td>
-																</tr>
-																<tr>
-																	<td><code>orient-right</code></td>
-																	<td>Shows content on the right, image on the left.</td>
-																</tr>
-																<tr class="alt">
-																	<td colspan="2"></td>
-																</tr>
-																<tr>
-																	<td><code>content-align-left</code></td>
-																	<td>Left-aligns content.</td>
-																</tr>
-																<tr>
-																	<td><code>content-align-center</code></td>
-																	<td>Center-aligns content.</td>
-																</tr>
-																<tr>
-																	<td><code>content-align-right</code></td>
-																	<td>Right-aligns content.</td>
-																</tr>
-																<tr class="alt">
-																	<td colspan="2"></td>
-																</tr>
-																<tr>
-																	<td><code>image-position-left</code></td>
-																	<td>Left-positions image.</td>
-																</tr>
-																<tr>
-																	<td><code>image-position-center</code></td>
-																	<td>Center-positions image.</td>
-																</tr>
-																<tr>
-																	<td><code>image-position-right</code></td>
-																	<td>Right-positions image.</td>
-																</tr>
-																<tr class="alt">
-																	<td colspan="2"></td>
-																</tr>
-																<tr>
-																	<td><code>onload-content-fade-up</code></td>
-																	<td>Fades content up on page load.</td>
-																</tr>
-																<tr>
-																	<td><code>onload-content-fade-down</code></td>
-																	<td>Fades content down on page load.</td>
-																</tr>
-																<tr>
-																	<td><code>onload-content-fade-left</code></td>
-																	<td>Fades content left on page load.</td>
-																</tr>
-																<tr>
-																	<td><code>onload-content-fade-right</code></td>
-																	<td>Fades content right on page load.</td>
-																</tr>
-																<tr>
-																	<td><code>onload-content-fade-in</code></td>
-																	<td>Fades in content on page load.</td>
-																</tr>
-																<tr>
-																	<td><code>onload-image-fade-in</code></td>
-																	<td>Fades in image on page load.</td>
-																</tr>
-																<tr class="alt">
-																	<td colspan="2"></td>
-																</tr>
-																<tr>
-																	<td><code>onscroll-content-fade-up</code></td>
-																	<td>Fades content up on page scroll.</td>
-																</tr>
-																<tr>
-																	<td><code>onscroll-content-fade-down</code></td>
-																	<td>Fades content down on page scroll.</td>
-																</tr>
-																<tr>
-																	<td><code>onscroll-content-fade-left</code></td>
-																	<td>Fades content left on page scroll.</td>
-																</tr>
-																<tr>
-																	<td><code>onscroll-content-fade-right</code></td>
-																	<td>Fades content right on page scroll.</td>
-																</tr>
-																<tr>
-																	<td><code>onscroll-content-fade-in</code></td>
-																	<td>Fades in content on page scroll.</td>
-																</tr>
-																<tr>
-																	<td><code>onscroll-image-fade-in</code></td>
-																	<td>Fades in image on page scroll.</td>
-																</tr>
-																<tr class="alt">
-																	<td colspan="2"></td>
-																</tr>
-																<tr>
-																	<td><code>invert</code></td>
-																	<td>Inverts the color scheme.</td>
-																</tr>
-																<tr>
-																	<td><code>color1</code></td>
-																	<td>Uses background color #1.</td>
-																</tr>
-																<tr>
-																	<td><code>color2</code></td>
-																	<td>Uses background color #2.</td>
-																</tr>
-																<tr>
-																	<td><code>color3</code></td>
-																	<td>Uses background color #3.</td>
-																</tr>
-																<tr>
-																	<td><code>color4</code></td>
-																	<td>Uses background color #4.</td>
-																</tr>
-																<tr>
-																	<td><code>color5</code></td>
-																	<td>Uses background color #5.</td>
-																</tr>
-																<tr>
-																	<td><code>color6</code></td>
-																	<td>Uses background color #6.</td>
-																</tr>
-																<tr>
-																	<td><code>color7</code></td>
-																	<td>Uses background color #7.</td>
-																</tr>
-															</tbody>
-														</table>
-													</div>
-												</section>
-
-											<hr />
-
-											<!-- style2 -->
-												<section>
-													<h4><code>spotlight style2</code></h4>
-													<p>An image within a circular frame placed to the side of content. Supports these modifiers:</p>
-
-													<div class="table-wrapper">
-														<table class="alt uniform fixed">
-															<tbody>
-																<tr>
-																	<td><code>orient-left</code></td>
-																	<td>Places the content on the left, image on the right.</td>
-																</tr>
-																<tr>
-																	<td><code>orient-right</code></td>
-																	<td>Places the content on the right, image on the left.</td>
-																</tr>
-																<tr class="alt">
-																	<td colspan="2"></td>
-																</tr>
-																<tr>
-																	<td><code>content-align-left</code></td>
-																	<td>Left-aligns content.</td>
-																</tr>
-																<tr>
-																	<td><code>content-align-center</code></td>
-																	<td>Center-aligns content.</td>
-																</tr>
-																<tr>
-																	<td><code>content-align-right</code></td>
-																	<td>Right-aligns content.</td>
-																</tr>
-																<tr class="alt">
-																	<td colspan="2"></td>
-																</tr>
-																<tr>
-																	<td><code>image-position-left</code></td>
-																	<td>Left-positions image.</td>
-																</tr>
-																<tr>
-																	<td><code>image-position-center</code></td>
-																	<td>Center-positions image.</td>
-																</tr>
-																<tr>
-																	<td><code>image-position-right</code></td>
-																	<td>Right-positions image.</td>
-																</tr>
-																<tr class="alt">
-																	<td colspan="2"></td>
-																</tr>
-																<tr>
-																	<td><code>onload-content-fade-up</code></td>
-																	<td>Fades content up on page load.</td>
-																</tr>
-																<tr>
-																	<td><code>onload-content-fade-down</code></td>
-																	<td>Fades content down on page load.</td>
-																</tr>
-																<tr>
-																	<td><code>onload-content-fade-left</code></td>
-																	<td>Fades content left on page load.</td>
-																</tr>
-																<tr>
-																	<td><code>onload-content-fade-right</code></td>
-																	<td>Fades content right on page load.</td>
-																</tr>
-																<tr>
-																	<td><code>onload-content-fade-in</code></td>
-																	<td>Fades in content on page load.</td>
-																</tr>
-																<tr>
-																	<td><code>onload-image-fade-up</code></td>
-																	<td>Fades image up on page load.</td>
-																</tr>
-																<tr>
-																	<td><code>onload-image-fade-down</code></td>
-																	<td>Fades image down on page load.</td>
-																</tr>
-																<tr>
-																	<td><code>onload-image-fade-left</code></td>
-																	<td>Fades image left on page load.</td>
-																</tr>
-																<tr>
-																	<td><code>onload-image-fade-right</code></td>
-																	<td>Fades image right on page load.</td>
-																</tr>
-																<tr>
-																	<td><code>onload-image-fade-in</code></td>
-																	<td>Fades in image on page load.</td>
-																</tr>
-																<tr class="alt">
-																	<td colspan="2"></td>
-																</tr>
-																<tr>
-																	<td><code>onscroll-content-fade-up</code></td>
-																	<td>Fades content up on page scroll.</td>
-																</tr>
-																<tr>
-																	<td><code>onscroll-content-fade-down</code></td>
-																	<td>Fades content down on page scroll.</td>
-																</tr>
-																<tr>
-																	<td><code>onscroll-content-fade-left</code></td>
-																	<td>Fades content left on page scroll.</td>
-																</tr>
-																<tr>
-																	<td><code>onscroll-content-fade-right</code></td>
-																	<td>Fades content right on page scroll.</td>
-																</tr>
-																<tr>
-																	<td><code>onscroll-content-fade-in</code></td>
-																	<td>Fades in content on page scroll.</td>
-																</tr>
-																<tr>
-																	<td><code>onscroll-image-fade-up</code></td>
-																	<td>Fades image up on page scroll.</td>
-																</tr>
-																<tr>
-																	<td><code>onscroll-image-fade-down</code></td>
-																	<td>Fades image down on page scroll.</td>
-																</tr>
-																<tr>
-																	<td><code>onscroll-image-fade-left</code></td>
-																	<td>Fades image left on page scroll.</td>
-																</tr>
-																<tr>
-																	<td><code>onscroll-image-fade-right</code></td>
-																	<td>Fades image right on page scroll.</td>
-																</tr>
-																<tr>
-																	<td><code>onscroll-image-fade-in</code></td>
-																	<td>Fades in image on page scroll.</td>
-																</tr>
-																<tr class="alt">
-																	<td colspan="2"></td>
-																</tr>
-																<tr>
-																	<td><code>invert</code></td>
-																	<td>Inverts the color scheme.</td>
-																</tr>
-																<tr>
-																	<td><code>color1</code></td>
-																	<td>Uses background color #1.</td>
-																</tr>
-																<tr>
-																	<td><code>color2</code></td>
-																	<td>Uses background color #2.</td>
-																</tr>
-																<tr>
-																	<td><code>color3</code></td>
-																	<td>Uses background color #3.</td>
-																</tr>
-																<tr>
-																	<td><code>color4</code></td>
-																	<td>Uses background color #4.</td>
-																</tr>
-																<tr>
-																	<td><code>color5</code></td>
-																	<td>Uses background color #5.</td>
-																</tr>
-																<tr>
-																	<td><code>color6</code></td>
-																	<td>Uses background color #6.</td>
-																</tr>
-																<tr>
-																	<td><code>color7</code></td>
-																	<td>Uses background color #7.</td>
-																</tr>
-															</tbody>
-														</table>
-													</div>
-												</section>
-
-											<hr />
-
-											<!-- style3 -->
-												<section>
-													<h4><code>spotlight style3</code></h4>
-													<p>An image within a phone-shaped frame placed to the side of content. Supports these modifiers:</p>
-
-													<div class="table-wrapper">
-														<table class="alt uniform fixed">
-															<tbody>
-																<tr>
-																	<td><code>orient-left</code></td>
-																	<td>Places the content on the left, image on the right.</td>
-																</tr>
-																<tr>
-																	<td><code>orient-right</code></td>
-																	<td>Places the content on the right, image on the left.</td>
-																</tr>
-																<tr class="alt">
-																	<td colspan="2"></td>
-																</tr>
-																<tr>
-																	<td><code>content-align-left</code></td>
-																	<td>Left-aligns content.</td>
-																</tr>
-																<tr>
-																	<td><code>content-align-center</code></td>
-																	<td>Center-aligns content.</td>
-																</tr>
-																<tr>
-																	<td><code>content-align-right</code></td>
-																	<td>Right-aligns content.</td>
-																</tr>
-																<tr class="alt">
-																	<td colspan="2"></td>
-																</tr>
-																<tr>
-																	<td><code>image-position-left</code></td>
-																	<td>Left-positions image.</td>
-																</tr>
-																<tr>
-																	<td><code>image-position-center</code></td>
-																	<td>Center-positions image.</td>
-																</tr>
-																<tr>
-																	<td><code>image-position-right</code></td>
-																	<td>Right-positions image.</td>
-																</tr>
-																<tr class="alt">
-																	<td colspan="2"></td>
-																</tr>
-																<tr>
-																	<td><code>onload-content-fade-up</code></td>
-																	<td>Fades content up on page load.</td>
-																</tr>
-																<tr>
-																	<td><code>onload-content-fade-down</code></td>
-																	<td>Fades content down on page load.</td>
-																</tr>
-																<tr>
-																	<td><code>onload-content-fade-left</code></td>
-																	<td>Fades content left on page load.</td>
-																</tr>
-																<tr>
-																	<td><code>onload-content-fade-right</code></td>
-																	<td>Fades content right on page load.</td>
-																</tr>
-																<tr>
-																	<td><code>onload-content-fade-in</code></td>
-																	<td>Fades in content on page load.</td>
-																</tr>
-																<tr>
-																	<td><code>onload-image-fade-up</code></td>
-																	<td>Fades image up on page load.</td>
-																</tr>
-																<tr>
-																	<td><code>onload-image-fade-down</code></td>
-																	<td>Fades image down on page load.</td>
-																</tr>
-																<tr>
-																	<td><code>onload-image-fade-left</code></td>
-																	<td>Fades image left on page load.</td>
-																</tr>
-																<tr>
-																	<td><code>onload-image-fade-right</code></td>
-																	<td>Fades image right on page load.</td>
-																</tr>
-																<tr>
-																	<td><code>onload-image-fade-in</code></td>
-																	<td>Fades in image on page load.</td>
-																</tr>
-																<tr class="alt">
-																	<td colspan="2"></td>
-																</tr>
-																<tr>
-																	<td><code>onscroll-content-fade-up</code></td>
-																	<td>Fades content up on page scroll.</td>
-																</tr>
-																<tr>
-																	<td><code>onscroll-content-fade-down</code></td>
-																	<td>Fades content down on page scroll.</td>
-																</tr>
-																<tr>
-																	<td><code>onscroll-content-fade-left</code></td>
-																	<td>Fades content left on page scroll.</td>
-																</tr>
-																<tr>
-																	<td><code>onscroll-content-fade-right</code></td>
-																	<td>Fades content right on page scroll.</td>
-																</tr>
-																<tr>
-																	<td><code>onscroll-content-fade-in</code></td>
-																	<td>Fades in content on page scroll.</td>
-																</tr>
-																<tr>
-																	<td><code>onscroll-image-fade-up</code></td>
-																	<td>Fades image up on page scroll.</td>
-																</tr>
-																<tr>
-																	<td><code>onscroll-image-fade-down</code></td>
-																	<td>Fades image down on page scroll.</td>
-																</tr>
-																<tr>
-																	<td><code>onscroll-image-fade-left</code></td>
-																	<td>Fades image left on page scroll.</td>
-																</tr>
-																<tr>
-																	<td><code>onscroll-image-fade-right</code></td>
-																	<td>Fades image right on page scroll.</td>
-																</tr>
-																<tr>
-																	<td><code>onscroll-image-fade-in</code></td>
-																	<td>Fades in image on page scroll.</td>
-																</tr>
-																<tr class="alt">
-																	<td colspan="2"></td>
-																</tr>
-																<tr>
-																	<td><code>invert</code></td>
-																	<td>Inverts the color scheme.</td>
-																</tr>
-																<tr>
-																	<td><code>color1</code></td>
-																	<td>Uses background color #1.</td>
-																</tr>
-																<tr>
-																	<td><code>color2</code></td>
-																	<td>Uses background color #2.</td>
-																</tr>
-																<tr>
-																	<td><code>color3</code></td>
-																	<td>Uses background color #3.</td>
-																</tr>
-																<tr>
-																	<td><code>color4</code></td>
-																	<td>Uses background color #4.</td>
-																</tr>
-																<tr>
-																	<td><code>color5</code></td>
-																	<td>Uses background color #5.</td>
-																</tr>
-																<tr>
-																	<td><code>color6</code></td>
-																	<td>Uses background color #6.</td>
-																</tr>
-																<tr>
-																	<td><code>color7</code></td>
-																	<td>Uses background color #7.</td>
-																</tr>
-															</tbody>
-														</table>
-													</div>
-												</section>
-
-											<hr />
-
-											<!-- style4 -->
-												<section>
-													<h4><code>spotlight style4</code></h4>
-													<p>Boxed-in content set against an image background, and attached to either side of the screen or centered. Supports these modifiers:</p>
-
-													<div class="table-wrapper">
-														<table class="alt uniform fixed">
-															<tbody>
-																<tr>
-																	<td><code>fullscreen</code></td>
-																	<td>Fills the height of the screen.</td>
-																</tr>
-																<tr>
-																	<td><code>halfscreen</code></td>
-																	<td>Fills half the height of the screen.</td>
-																</tr>
-																<tr class="alt">
-																	<td colspan="2"></td>
-																</tr>
-																<tr>
-																	<td><code>orient-left</code></td>
-																	<td>Attaches the content box to the left edge of the screen.</td>
-																</tr>
-																<tr>
-																	<td><code>orient-center</code></td>
-																	<td>Places the content box in the center of the screen.</td>
-																</tr>
-																<tr>
-																	<td><code>orient-right</code></td>
-																	<td>Attaches the content box to the right edge of the screen.</td>
-																</tr>
-																<tr class="alt">
-																	<td colspan="2"></td>
-																</tr>
-																<tr>
-																	<td><code>content-align-left</code></td>
-																	<td>Left-aligns content.</td>
-																</tr>
-																<tr>
-																	<td><code>content-align-center</code></td>
-																	<td>Center-aligns content.</td>
-																</tr>
-																<tr>
-																	<td><code>content-align-right</code></td>
-																	<td>Right-aligns content.</td>
-																</tr>
-																<tr class="alt">
-																	<td colspan="2"></td>
-																</tr>
-																<tr>
-																	<td><code>image-position-left</code></td>
-																	<td>Left-positions image.</td>
-																</tr>
-																<tr>
-																	<td><code>image-position-center</code></td>
-																	<td>Center-positions image.</td>
-																</tr>
-																<tr>
-																	<td><code>image-position-right</code></td>
-																	<td>Right-positions image.</td>
-																</tr>
-																<tr class="alt">
-																	<td colspan="2"></td>
-																</tr>
-																<tr>
-																	<td><code>onload-content-fade-up</code></td>
-																	<td>Fades content up on page load.</td>
-																</tr>
-																<tr>
-																	<td><code>onload-content-fade-down</code></td>
-																	<td>Fades content down on page load.</td>
-																</tr>
-																<tr>
-																	<td><code>onload-content-fade-left</code></td>
-																	<td>Fades content left on page load.</td>
-																</tr>
-																<tr>
-																	<td><code>onload-content-fade-right</code></td>
-																	<td>Fades content right on page load.</td>
-																</tr>
-																<tr>
-																	<td><code>onload-content-fade-in</code></td>
-																	<td>Fades in content on page load.</td>
-																</tr>
-																<tr>
-																	<td><code>onload-image-fade-in</code></td>
-																	<td>Fades in image on page load.</td>
-																</tr>
-																<tr class="alt">
-																	<td colspan="2"></td>
-																</tr>
-																<tr>
-																	<td><code>onscroll-content-fade-up</code></td>
-																	<td>Fades content up on page scroll.</td>
-																</tr>
-																<tr>
-																	<td><code>onscroll-content-fade-down</code></td>
-																	<td>Fades content down on page scroll.</td>
-																</tr>
-																<tr>
-																	<td><code>onscroll-content-fade-left</code></td>
-																	<td>Fades content left on page scroll.</td>
-																</tr>
-																<tr>
-																	<td><code>onscroll-content-fade-right</code></td>
-																	<td>Fades content right on page scroll.</td>
-																</tr>
-																<tr>
-																	<td><code>onscroll-content-fade-in</code></td>
-																	<td>Fades in content on page scroll.</td>
-																</tr>
-																<tr>
-																	<td><code>onscroll-image-fade-in</code></td>
-																	<td>Fades in image on page scroll.</td>
-																</tr>
-																<tr class="alt">
-																	<td colspan="2"></td>
-																</tr>
-																<tr>
-																	<td><code>invert</code></td>
-																	<td>Inverts the color scheme.</td>
-																</tr>
-																<tr>
-																	<td><code>color1</code></td>
-																	<td>Uses background color #1.</td>
-																</tr>
-																<tr>
-																	<td><code>color2</code></td>
-																	<td>Uses background color #2.</td>
-																</tr>
-																<tr>
-																	<td><code>color3</code></td>
-																	<td>Uses background color #3.</td>
-																</tr>
-																<tr>
-																	<td><code>color4</code></td>
-																	<td>Uses background color #4.</td>
-																</tr>
-																<tr>
-																	<td><code>color5</code></td>
-																	<td>Uses background color #5.</td>
-																</tr>
-																<tr>
-																	<td><code>color6</code></td>
-																	<td>Uses background color #6.</td>
-																</tr>
-																<tr>
-																	<td><code>color7</code></td>
-																	<td>Uses background color #7.</td>
-																</tr>
-															</tbody>
-														</table>
-													</div>
-												</section>
-
-											<hr />
-
-											<!-- style5 -->
-												<section>
-													<h4><code>spotlight style5</code></h4>
-													<p>Boxed-in content set against an image background. Supports these modifiers:</p>
-
-													<div class="table-wrapper">
-														<table class="alt uniform fixed">
-															<tbody>
-																<tr>
-																	<td><code>fullscreen</code></td>
-																	<td>Fills the height of the screen.</td>
-																</tr>
-																<tr>
-																	<td><code>halfscreen</code></td>
-																	<td>Fills half the height of the screen.</td>
-																</tr>
-																<tr class="alt">
-																	<td colspan="2"></td>
-																</tr>
-																<tr>
-																	<td><code>orient-left</code></td>
-																	<td>Places the content box on the left of the screen.</td>
-																</tr>
-																<tr>
-																	<td><code>orient-center</code></td>
-																	<td>Places the content box in the center of the screen.</td>
-																</tr>
-																<tr>
-																	<td><code>orient-right</code></td>
-																	<td>Places the content box on the right side of the screen.</td>
-																</tr>
-																<tr class="alt">
-																	<td colspan="2"></td>
-																</tr>
-																<tr>
-																	<td><code>content-align-left</code></td>
-																	<td>Left-aligns content.</td>
-																</tr>
-																<tr>
-																	<td><code>content-align-center</code></td>
-																	<td>Center-aligns content.</td>
-																</tr>
-																<tr>
-																	<td><code>content-align-right</code></td>
-																	<td>Right-aligns content.</td>
-																</tr>
-																<tr class="alt">
-																	<td colspan="2"></td>
-																</tr>
-																<tr>
-																	<td><code>image-position-left</code></td>
-																	<td>Left-positions image.</td>
-																</tr>
-																<tr>
-																	<td><code>image-position-center</code></td>
-																	<td>Center-positions image.</td>
-																</tr>
-																<tr>
-																	<td><code>image-position-right</code></td>
-																	<td>Right-positions image.</td>
-																</tr>
-																<tr class="alt">
-																	<td colspan="2"></td>
-																</tr>
-																<tr>
-																	<td><code>onload-content-fade-up</code></td>
-																	<td>Fades content up on page load.</td>
-																</tr>
-																<tr>
-																	<td><code>onload-content-fade-down</code></td>
-																	<td>Fades content down on page load.</td>
-																</tr>
-																<tr>
-																	<td><code>onload-content-fade-left</code></td>
-																	<td>Fades content left on page load.</td>
-																</tr>
-																<tr>
-																	<td><code>onload-content-fade-right</code></td>
-																	<td>Fades content right on page load.</td>
-																</tr>
-																<tr>
-																	<td><code>onload-content-fade-in</code></td>
-																	<td>Fades in content on page load.</td>
-																</tr>
-																<tr>
-																	<td><code>onload-image-fade-in</code></td>
-																	<td>Fades in image on page load.</td>
-																</tr>
-																<tr class="alt">
-																	<td colspan="2"></td>
-																</tr>
-																<tr>
-																	<td><code>onscroll-content-fade-up</code></td>
-																	<td>Fades content up on page scroll.</td>
-																</tr>
-																<tr>
-																	<td><code>onscroll-content-fade-down</code></td>
-																	<td>Fades content down on page scroll.</td>
-																</tr>
-																<tr>
-																	<td><code>onscroll-content-fade-left</code></td>
-																	<td>Fades content left on page scroll.</td>
-																</tr>
-																<tr>
-																	<td><code>onscroll-content-fade-right</code></td>
-																	<td>Fades content right on page scroll.</td>
-																</tr>
-																<tr>
-																	<td><code>onscroll-content-fade-in</code></td>
-																	<td>Fades in content on page scroll.</td>
-																</tr>
-																<tr>
-																	<td><code>onscroll-image-fade-in</code></td>
-																	<td>Fades in image on page scroll.</td>
-																</tr>
-																<tr class="alt">
-																	<td colspan="2"></td>
-																</tr>
-																<tr>
-																	<td><code>invert</code></td>
-																	<td>Inverts the color scheme.</td>
-																</tr>
-																<tr>
-																	<td><code>color1</code></td>
-																	<td>Uses background color #1.</td>
-																</tr>
-																<tr>
-																	<td><code>color2</code></td>
-																	<td>Uses background color #2.</td>
-																</tr>
-																<tr>
-																	<td><code>color3</code></td>
-																	<td>Uses background color #3.</td>
-																</tr>
-																<tr>
-																	<td><code>color4</code></td>
-																	<td>Uses background color #4.</td>
-																</tr>
-																<tr>
-																	<td><code>color5</code></td>
-																	<td>Uses background color #5.</td>
-																</tr>
-																<tr>
-																	<td><code>color6</code></td>
-																	<td>Uses background color #6.</td>
-																</tr>
-																<tr>
-																	<td><code>color7</code></td>
-																	<td>Uses background color #7.</td>
-																</tr>
-															</tbody>
-														</table>
-													</div>
-												</section>
-
-										</div>
-									</section>
-
-								<!-- Gallery -->
-									<section id="reference-gallery">
-										<header>
-											<h3>Gallery</h3>
-										</header>
-										<div class="content">
-
-											<h4>HTML</h4>
-<pre><code>&lt;div class="gallery style<em>(N)</em> <em>(optional modifiers)</em>"&gt;
-  &lt;article&gt;
-    &lt;a href="<em>(full image URL)</em>" class="image"&gt;
-      &lt;img src="<em>(thumbnail image URL)</em>" alt="Alternate text" /&gt;
-    &lt;/a&gt;
-    &lt;div class="caption"&gt;
-      <em>(caption)</em>
-    &lt;/div&gt;
-  &lt;/article&gt;
-  &lt;article&gt;
-    &lt;a href="<em>(full image URL)</em>" class="image"&gt;
-      &lt;img src="<em>(thumbnail image URL)</em>" alt="Alternate text" /&gt;
-    &lt;/a&gt;
-    &lt;div class="caption"&gt;
-      <em>(caption)</em>
-    &lt;/div&gt;
-  &lt;/article&gt;
-  &lt;article&gt;
-    &lt;a href="<em>(full image URL)</em>" class="image"&gt;
-      &lt;img src="<em>(thumbnail image URL)</em>" alt="Alternate text" /&gt;
-    &lt;/a&gt;
-    &lt;div class="caption"&gt;
-      <em>(caption)</em>
-    &lt;/div&gt;
-  &lt;/article&gt;
-  <em>...</em>
-&lt;/div&gt;</code></pre>
-
-											<hr />
-
-											<!-- style1 -->
-												<section>
-													<h4><code>gallery style1</code></h4>
-													<p>A grid of thumbnails with optional lightbox support. Supports these modifiers:</p>
-
-													<div class="table-wrapper">
-														<table class="alt uniform fixed">
-															<tbody>
-																<tr>
-																	<td><code>small</code></td>
-																	<td>Uses small thumbnails.</td>
-																</tr>
-																<tr>
-																	<td><code>medium</code></td>
-																	<td>Uses medium thumbnails.</td>
-																</tr>
-																<tr>
-																	<td><code>big</code></td>
-																	<td>Uses big thumbnails.</td>
-																</tr>
-																<tr class="alt">
-																	<td colspan="2"></td>
-																</tr>
-																<tr>
-																	<td><code>lightbox</code></td>
-																	<td>Enables lightbox behavior.</td>
-																</tr>
-																<tr class="alt">
-																	<td colspan="2"></td>
-																</tr>
-																<tr>
-																	<td><code>onload-fade-in</code></td>
-																	<td>Fades in thumbnails on page load.</td>
-																</tr>
-																<tr class="alt">
-																	<td colspan="2"></td>
-																</tr>
-																<tr>
-																	<td><code>onscroll-fade-in</code></td>
-																	<td>Fades in thumbnails on page scroll.</td>
-																</tr>
-															</tbody>
-														</table>
-													</div>
-												</section>
-
-											<hr />
-
-											<!-- style2 -->
-												<section>
-													<h4><code>gallery style2</code></h4>
-													<p>A carousel of thumbnails with optional lightbox support. Supports these modifiers:</p>
-
-													<div class="table-wrapper">
-														<table class="alt uniform fixed">
-															<tbody>
-																<tr>
-																	<td><code>small</code></td>
-																	<td>Uses small thumbnails.</td>
-																</tr>
-																<tr>
-																	<td><code>medium</code></td>
-																	<td>Uses medium thumbnails.</td>
-																</tr>
-																<tr>
-																	<td><code>big</code></td>
-																	<td>Uses big thumbnails.</td>
-																</tr>
-																<tr class="alt">
-																	<td colspan="2"></td>
-																</tr>
-																<tr>
-																	<td><code>lightbox</code></td>
-																	<td>Enables lightbox behavior.</td>
-																</tr>
-																<tr class="alt">
-																	<td colspan="2"></td>
-																</tr>
-																<tr>
-																	<td><code>onload-fade-in</code></td>
-																	<td>Fades in thumbnails on page load.</td>
-																</tr>
-																<tr class="alt">
-																	<td colspan="2"></td>
-																</tr>
-																<tr>
-																	<td><code>onscroll-fade-in</code></td>
-																	<td>Fades in thumbnails on page scroll.</td>
-																</tr>
-															</tbody>
-														</table>
-													</div>
-												</section>
-
-										</div>
-									</section>
-
-								<!-- Items -->
-									<section id="reference-items">
-										<header>
-											<h3>Items</h3>
-										</header>
-										<div class="content">
-
-											<h4>HTML</h4>
-<pre><code>&lt;div class="items style<em>(N)</em> <em>(size modifier)</em> <em>(optional modifiers)</em>"&gt;
-  &lt;section&gt;
-    <em>(content)</em>
-  &lt;/section&gt;
-  &lt;section&gt;
-    <em>(content)</em>
-  &lt;/section&gt;
-  &lt;section&gt;
-    <em>(content)</em>
-  &lt;/section&gt;
-  &lt;section&gt;
-    <em>(content)</em>
-  &lt;/section&gt;
-  <em>...</em>
-&lt;/div&gt;</code></pre>
-
-											<hr />
-
-											<!-- style1 -->
-												<section>
-													<h4><code>items style1</code></h4>
-													<p>A grid of items separated by borders.</p>
-
-													<div class="table-wrapper">
-														<table class="alt uniform fixed">
-															<tbody>
-																<tr>
-																	<td><code>small</code></td>
-																	<td>Uses small items.</td>
-																</tr>
-																<tr>
-																	<td><code>medium</code></td>
-																	<td>Uses medium items.</td>
-																</tr>
-																<tr>
-																	<td><code>big</code></td>
-																	<td>Uses big items.</td>
-																</tr>
-																<tr class="alt">
-																	<td colspan="2"></td>
-																</tr>
-																<tr>
-																	<td><code>onload-fade-in</code></td>
-																	<td>Fades in items on page load.</td>
-																</tr>
-																<tr class="alt">
-																	<td colspan="2"></td>
-																</tr>
-																<tr>
-																	<td><code>onscroll-fade-in</code></td>
-																	<td>Fades in items on page scroll.</td>
-																</tr>
-															</tbody>
-														</table>
-													</div>
-												</section>
-
-											<hr />
-
-											<!-- style2 -->
-												<section>
-													<h4><code>items style2</code></h4>
-													<p>An outlined grid of items separated by borders.</p>
-
-													<div class="table-wrapper">
-														<table class="alt uniform fixed">
-															<tbody>
-																<tr>
-																	<td><code>small</code></td>
-																	<td>Uses small items.</td>
-																</tr>
-																<tr>
-																	<td><code>medium</code></td>
-																	<td>Uses medium items.</td>
-																</tr>
-																<tr>
-																	<td><code>big</code></td>
-																	<td>Uses big items.</td>
-																</tr>
-																<tr class="alt">
-																	<td colspan="2"></td>
-																</tr>
-																<tr>
-																	<td><code>onload-fade-in</code></td>
-																	<td>Fades in items on page load.</td>
-																</tr>
-																<tr class="alt">
-																	<td colspan="2"></td>
-																</tr>
-																<tr>
-																	<td><code>onscroll-fade-in</code></td>
-																	<td>Fades in items on page scroll.</td>
-																</tr>
-															</tbody>
-														</table>
-													</div>
-												</section>
-
-											<hr />
-
-											<!-- style3 -->
-												<section>
-													<h4><code>items style3</code></h4>
-													<p>A borderless grid of items.</p>
-
-													<div class="table-wrapper">
-														<table class="alt uniform fixed">
-															<tbody>
-																<tr>
-																	<td><code>small</code></td>
-																	<td>Uses small items.</td>
-																</tr>
-																<tr>
-																	<td><code>medium</code></td>
-																	<td>Uses medium items.</td>
-																</tr>
-																<tr>
-																	<td><code>big</code></td>
-																	<td>Uses big items.</td>
-																</tr>
-																<tr class="alt">
-																	<td colspan="2"></td>
-																</tr>
-																<tr>
-																	<td><code>onload-fade-in</code></td>
-																	<td>Fades in items on page load.</td>
-																</tr>
-																<tr class="alt">
-																	<td colspan="2"></td>
-																</tr>
-																<tr>
-																	<td><code>onscroll-fade-in</code></td>
-																	<td>Fades in items on page scroll.</td>
-																</tr>
-															</tbody>
-														</table>
-													</div>
-												</section>
-
-										</div>
-									</section>
-
-								<!-- Wrapper -->
-									<section id="reference-wrapper">
-										<header>
-											<h3>Wrapper</h3>
-										</header>
-										<div class="content">
-
-											<h4>HTML</h4>
-<pre><code>&lt;div class="wrapper <em>(optional modifiers)</em>"&gt;
-  <em>(content)</em>
-&lt;/div&gt;</code></pre>
-
-											<h4>Modifiers</h4>
-
-											<div class="table-wrapper">
-												<table class="alt uniform fixed">
-													<tbody>
-														<tr>
-															<td><code>invert</code></td>
-															<td>Inverts the color scheme.</td>
-														</tr>
-														<tr>
-															<td><code>color1</code></td>
-															<td>Uses background color #1.</td>
-														</tr>
-														<tr>
-															<td><code>color2</code></td>
-															<td>Uses background color #2.</td>
-														</tr>
-														<tr>
-															<td><code>color3</code></td>
-															<td>Uses background color #3.</td>
-														</tr>
-														<tr>
-															<td><code>color4</code></td>
-															<td>Uses background color #4.</td>
-														</tr>
-														<tr>
-															<td><code>color5</code></td>
-															<td>Uses background color #5.</td>
-														</tr>
-														<tr>
-															<td><code>color6</code></td>
-															<td>Uses background color #6.</td>
-														</tr>
-														<tr>
-															<td><code>color7</code></td>
-															<td>Uses background color #7.</td>
-														</tr>
-													</tbody>
-												</table>
-											</div>
-
-										</div>
-									</section>
-
-							</div>
-
-
-						</div>
-					</section>
-
+				
 				<!-- Footer -->
-					<footer class="wrapper style1 align-center">
+					<footer id="seven" class="wrapper style1 align-center">
 						<div class="inner">
-							<ul class="icons">
-								<li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
-								<li><a href="#" class="icon brands style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
-								<li><a href="#" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
-							</ul>
-							<p>&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+							<p>&copy;University of Washington 2020, <a href="https://cirg.washington.edu" target="_blank">Clinical Informatics Research Group</a><br/>
+							questions? <a href="mailto:info.cirg+site.ViiV-Draft@gmail.com?subject=ViiV-Draft site inquiry&body=Principal Investigators: Heidi Crane and Bill Lober%0A%0AHeidi and Bill -%0A%0A"><u>click to send us an email</u></a></p>
 						</div>
 					</footer>
+					
 
 			</div>
 
 		<!-- Scripts -->
+			<script src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver"></script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
@@ -2811,9 +393,6 @@ print 'It took ' + i + ' iterations to sort the deck.';
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
-		<!-- Note: Only needed for demo purposes. Delete for production sites. -->
-			<script src="assets/js/demo.js"></script>
 
 	</body>
 </html>
