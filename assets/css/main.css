@@ -7273,6 +7273,8 @@ input, select, textarea {
 	}
 
 
+
+
 /* Wrapper (style1) */
 
 	.wrapper.style1 > .inner {
@@ -7289,6 +7291,10 @@ input, select, textarea {
 		.wrapper.style1 > .inner.small {
 			width: 32rem;
 		}
+	/*Toolkit wrapper*/
+		.wrapper.style1.toolkit > .inner {
+			margin: 200 auto;
+		}
 
 	@media screen and (max-width: 1680px) {
 
@@ -7303,10 +7309,14 @@ input, select, textarea {
 		.wrapper.style1 > .inner {
 			padding: 4rem 4rem 2rem 4rem ;
 		}
+		
+		.wrapper.style1 > .inner { 
+			margin: 0 auto; 
+		}
 
 	}
 
-	@media screen and (max-width: 980px) {
+	@media screen and (max-width: 900px) {
 
 		.wrapper.style1 > .inner {
 			padding: 4.5rem 3rem 2.5rem 3rem ;
