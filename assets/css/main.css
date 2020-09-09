@@ -7329,6 +7329,11 @@ input, select, textarea {
 		.wrapper.style1 > .inner {
 			padding: 3rem 2rem 1rem 2rem ;
 		}
+		
+		/*Toolkit wrapper*/
+		.wrapper.style1.toolkit > .inner {
+			margin-left: 0px;
+		}
 
 	}
 
