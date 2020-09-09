@@ -7293,7 +7293,7 @@ input, select, textarea {
 		}
 	/*Toolkit wrapper*/
 		.wrapper.style1.toolkit > .inner {
-			margin-left: 200;
+			margin-left: 200px;
 		}
 
 	@media screen and (max-width: 1680px) {
