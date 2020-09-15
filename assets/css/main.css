@@ -4434,7 +4434,7 @@ input, select, textarea {
 	.banner .image {
 		/*	background-color: rgba(0, 0, 0, 0.125); */
 		background-color: hsla(0, 0%, 0%, 0.75);
-		background-image: url('../../images/meeting1.jpg');
+		background-image: url('../../images/tablet.png.jpg');
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: bottom center;
