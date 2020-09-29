@@ -16,6 +16,7 @@
 				else
 					e.style.display = 'block';
 				}
+			
 		</script>
 	</head>
 	<body class="is-preload">
@@ -296,17 +297,17 @@
 							<!--Click on the image associated with each domain below to view a list of brief, validated measures currently used in HIV care.--></p>
 							
 							<!-- Toggle Test -->
-							<button onclick="toggle(); textswap();"><p id="dbutton">Show Details of Each Topic</p></button>
+							<!--<button onclick="toggle(); textswap();"><p id="dbutton">Show Details of Each Topic</p></button>-->
 											
 							
 							<div class="items style1 medium">
 								<section>
 									<h3>Mental Health</h3>
-									<a href="images/mental health.round.larger.jpg" class="image" style=padding: 0 0 7em 0;>
+									<a onclick="toggle_visibility_id('MH');" class="image" style=padding: 0 0 7em 0;>
 										<span class="image fit"><img data-src="images/mental health.round.larger.jpg" alt="" /></span>
 										<!-- <img src="images/mental health.round.larger.jpg" alt="" /> -->
 									</a>	
-									<p class="detail" style="display:none;"> Common PRO measures of mental health include the PHQ-9 <sup><a href="#ref" class="smooth-scroll-top">29,30</a></sup> for depression, the PHQ-5 <sup><a href="#ref" class="smooth-scroll-top">29,30</a></sup> and GAD-7 <sup><a href="#ref" class="smooth-scroll-top">31</a></sup> for anxiety. </p>
+									<p class="MH" style="display:none;"> Common PRO measures of mental health include the PHQ-9 <sup><a href="#ref" class="smooth-scroll-top">29,30</a></sup> for depression, the PHQ-5 <sup><a href="#ref" class="smooth-scroll-top">29,30</a></sup> and GAD-7 <sup><a href="#ref" class="smooth-scroll-top">31</a></sup> for anxiety. </p>
 								</section>
 								<section>
 									<h3>Substance Use</h3>
