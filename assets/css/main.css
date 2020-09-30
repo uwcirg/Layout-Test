@@ -7512,6 +7512,15 @@ input, select, textarea {
 	.toolkitChap {
 		margin-left:20em;
 	}
+
+	@media screen and (max-width: 900px) {
+		.toolkitMenu {
+			display: none;
+		}
+		
+		.toolkitChap {
+			margin-left:0em;
+		}
 	
 
 /* Sidebar */
