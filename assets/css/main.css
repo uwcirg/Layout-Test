@@ -7506,10 +7506,10 @@ input, select, textarea {
 	}
 
 /*Toolkit*/
-	#toolkitMenu {
+	.toolkitMenu {
 	
 	}
-	#toolkitChap {
+	.toolkitChap {
 		margin-left:20em;
 	}
 	
