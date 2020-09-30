@@ -7,11 +7,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
-		
-		<!-- Sidebar -->
-			<section style="height: 100vh;
+		<script> 
+			.toolkitMenu {
+				height: 100vh;
 				width: 18em;
 				background-color: #d7ccc8;
 				cursor: default;
@@ -21,7 +19,27 @@
 				overflow-y: auto;
 				text-align: left;
 				z-index: 10000;
-				left: 0;">
+				left: 0;
+			}
+			.toolkitChap {
+				margin-left:20em;
+			}
+
+			@media screen and (max-width: 900px) {
+				.toolkitMenu {
+					display: none;
+				}
+
+				.toolkitChap {
+					margin-left:0em;
+				}
+			}
+		</script>
+	</head>
+	<body class="is-preload">
+		
+		<!-- Sidebar -->
+			<section class="toolkitMenu">
 				<div>
 					<nav>
 						<ul style="list-style: none; padding: 0;">
