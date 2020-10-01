@@ -7,54 +7,99 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style> 
+			.toolkitMenu {
+				z-index:10000;
+			}
+			
+			.toolkitMenu > ul {
+				list-style: none;
+				padding: 0;
+			}
+			
+			.toolkitMenu > li {
+				margin: 1em;
+			} 
+			
+			.toolkitChap {
+				margin-left:20em;
+			}
+
+			@media screen and (max-width: 900px) {
+				.toolkitMenu {
+					display: none;
+				}
+
+				.toolkitChap {
+					margin-left:0em;
+				}
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 		
-		<!-- Sidebar 
-			<section id="sidebar">
-				<div class="inner">
+		<!-- Sidebar -->
+			<section style="height: 100vh;
+				width: 18em;
+				background-color: #d7ccc8;
+				cursor: default;
+				position: fixed;
+				top: 0;
+				overflow-x: hidden;
+				overflow-y: auto;
+				text-align: left;
+				z-index: 10000;
+				left: 0;" 
+				class="toolkitMenu">
+				<div>
 					<nav>
-						<ul>
-							<li><a href="index.html#five" class="smooth-scroll-middle"><img src="images/PRO HIV icon.png" alt="" style="height: 75%; vertical-align: middle;"/></a></li>
-							<li><a href="#toc" class="smooth-scroll-middle">Table of Contents</a></li>
-							<li><a href="#chapter1" class="smooth-scroll-middle">One</a></li>
-							<li><a href="#chapter2" class="smooth-scroll-middle">Two</a></li>
-							<li><a href="#chapter3" class="smooth-scroll-middle">Three</a></li>
-							<li><a href="#chapter4" class="smooth-scroll-middle">Four</a></li>
-							<li><a href="#chapter5" class="smooth-scroll-middle">Five</a></li>
-							<li><a href="#chapter6" class="smooth-scroll-middle">Six</a></li>
-							<li><a href="#chapter7" class="smooth-scroll-middle">Seven</a></li>
+						<ul style="list-style: none; padding: 0;">
+							<li style="padding: 1em; background: hsla(0, 0%, 0%, 0.75);"><a href="index.html#five" class="smooth-scroll-middle" style="color: #ffffff;">&nbsp;&nbsp;&nbsp;Back to &nbsp;&nbsp;<img src="images/PRO HIV icon.png" alt="PRO HIV" style="height: 2em; vertical-align: middle;"/></a></li>
+							<li style="margin: 1em;"><a href="#summary" class="smooth-scroll-middle">OVERVIEW</a></li>
+							<li style="margin: 1em;"><a href="#chapter1" class="smooth-scroll-middle">CHAPTER 1. <br>ASSESSING AND IMPROVING READINESS TO IMPLEMENT PROs IN HIV CLINICAL CARE	<br></a></li>
+							<li style="margin: 1em;"><a href="#chapter2" class="smooth-scroll-middle">CHAPTER 2. <br>ENGAGE STAKEHOLDERS	<br></a></li>
+							<li style="margin: 1em;"><a href="#chapter3" class="smooth-scroll-middle">CHAPTER 3. <br>BUILD TECHNICAL INFRASTRUCTURE</a></li>
+							<li style="margin: 1em;"><a href="#chapter4" class="smooth-scroll-middle">CHAPTER 4. <br>CREATE PRO ASSESSMENT</a></li>
+							<li style="margin: 1em;"><a href="#chapter5" class="smooth-scroll-middle">CHAPTER 5. <br>OUTLINE WORKFLOW</a></li>
+							<li style="margin: 1em;"><a href="#chapter6" class="smooth-scroll-middle">CHAPTER 6. <br>TRAIN CLINIC PERSONNEL</a></li>
+							<li style="margin: 1em;"><a href="#chapter7" class="smooth-scroll-middle">CHAPTER 7. <br>MONITOR AND EVALUATE</a></li>
+							<li style="margin: 1em;"><a href="#REF" class="smooth-scroll-middle">REFERENCES</a></li>	
+							<li style="margin: 1em;"><a href="#APP1" class="smooth-scroll-middle">APPENDIX 1. <br>List of Abbreviations</a></li>
+							<li style="margin: 1em;"><a href="#APP2" class="smooth-scroll-middle">APPENDIX 2. <br>Glossary</a></li>	
 						</ul>
 					</nav>	
-			</section>-->
+			</section>
 	
-			<!--<section id="hambagaMenu" role="navigation">    
+			<section id="hambagaMenu" role="navigation">    
 				<div id="menuToggle">        
 					<input type="checkbox" />       
 					<span></span>        
 					<span></span>        
 					<span></span>        
-					<ul id="menu">            
-						<li><a href="index.html#five" class="smooth-scroll-middle"><b>HIV PROs</b></a></li>
-						<li><a href="#toc" class="smooth-scroll-middle">Table of Contents</a></li>
-						<li><a href="#chapter1" class="smooth-scroll-middle">One</a></li>
-						<li><a href="#chapter2" class="smooth-scroll-middle">Two</a></li>
-						<li><a href="#chapter3" class="smooth-scroll-middle">Three</a></li>
-						<li><a href="#chapter4" class="smooth-scroll-middle">Four</a></li>
-						<li><a href="#chapter5" class="smooth-scroll-middle">Five</a></li>
-						<li><a href="#chapter6" class="smooth-scroll-middle">Six</a></li>
-						<li><a href="#chapter7" class="smooth-scroll-middle">Seven</a></li>    
+					<ul id="menu" style="background-color: #d7ccc8; font-size: 12pt;">            
+						<li><a href="index.html#five" class="smooth-scroll-middle" style="font-size: 10pt;">BACK TO PROHIV.ORG</a></li>
+						<li><a href="#summary" class="smooth-scroll-middle" style="font-size: 10pt;">OVERVIEW</a></li>
+						<li><a href="#chapter1" class="smooth-scroll-middle" style="font-size: 10pt;">CHAPTER 1. <br>ASSESSING AND IMPROVING READINESS TO IMPLEMENT PROs IN HIV CLINICAL CARE	<br></a></li>
+						<li><a href="#chapter2" class="smooth-scroll-middle" style="font-size: 10pt;">CHAPTER 2. <br>ENGAGE STAKEHOLDERS	<br></a></li>
+						<li><a href="#chapter3" class="smooth-scroll-middle" style="font-size: 10pt;">CHAPTER 3. <br>BUILD TECHNICAL INFRASTRUCTURE</a></li>
+						<li><a href="#chapter4" class="smooth-scroll-middle" style="font-size: 10pt;">CHAPTER 4. <br>CREATE PRO ASSESSMENT</a></li>
+						<li><a href="#chapter5" class="smooth-scroll-middle" style="font-size: 10pt;">CHAPTER 5. <br>OUTLINE WORKFLOW</a></li>
+						<li><a href="#chapter6" class="smooth-scroll-middle" style="font-size: 10pt;">CHAPTER 6. <br>TRAIN CLINIC PERSONNEL</a></li>
+						<li><a href="#chapter7" class="smooth-scroll-middle" style="font-size: 10pt;">CHAPTER 7. <br>MONITOR AND EVALUATE</a></li>
+						<li><a href="#REF" class="smooth-scroll-middle" style="font-size: 10pt;">REFERENCES</a></li>	
+						<li><a href="#APP1" class="smooth-scroll-middle" style="font-size: 10pt;">APPENDIX 1. <br>List of Abbreviations</a></li>
+						<li><a href="#APP2" class="smooth-scroll-middle" style="font-size: 10pt;">APPENDIX 2. <br>Glossary</a></li>	   
 					</ul>    
 				</div>
-			</section>-->
-		<div class="button" style="position: fixed; margin: 2.5em 2.5em 0.5em 2.5em; background: hsla(0, 0%, 0%, 0.75); z-index: 10000;"><a href="index.html" class="smooth-scroll-middle"><img src="images/PRO HIV icon.png" alt="" style="height: 75%; vertical-align: middle;"/> <span style="color: #ffffff;">&nbsp;&nbsp;return to HIV PROs main page</span></a></div>
-
+</section>
+		<!--<div class="button" style="position: fixed; margin: 2.5em 2.5em 0.5em 2.5em; background: hsla(0, 0%, 0%, 0.75); z-index: 10000;"><a href="index.html" class="smooth-scroll-middle"><img src="images/PRO HIV icon.png" alt="" style="height: 75%; vertical-align: middle;"/> <span style="color: #ffffff;">&nbsp;&nbsp;return to HIV PROs main page</span></a></div>
+-->
 				
 		<!-- Wrapper -->
 			<div id="wrapper" class="divided">
-
+			
 				<!-- One -->
-					<section id="intro" class="banner style2 orient-center content-align-center image-position-right onload-image-fade-in onload-content-fade-right">
+					<!--<section id="intro" class="banner style2 orient-center content-align-center image-position-right">
 						<div class="content">
 							<h1>HIV PROs Implementation Toolkit</h1>
 							
@@ -62,12 +107,14 @@
 						<div class="image">
 							<img src="images/structure.jpg" alt="" />
 						</div>
-					</section>
+					</section>-->
 				
 				<!--more -->	
-					<section id="more" class="wrapper style1 align-left">
-				
-								<div class="inner">
+					<section id="more" class="wrapper style1 align-left toolkitChap">
+						<div class="inner">
+							<h1><br>HIV PROs Implementation Toolkit</h1>
+						</div>
+								<!--<div class="inner">
 									<h3 id="toc">Table of Contents</h3>
 									<p><i>these will be linked and better formatted in final version</i><br>
 									OVERVIEW<br>
@@ -125,7 +172,7 @@
 									Resources	<br>
 									REFERENCES	<br>
 									APPENDIX 1. List of Abbreviations	<br>
-									APPENDIX 2. Glossary</p>
+									APPENDIX 2. Glossary</p>-->
 
 
 
@@ -190,7 +237,7 @@
 
 					
 				</section>
-				<section class="wrapper style1 align-left">
+				<section class="wrapper style1 align-left toolkitChap">
 					<div class="inner">
 						<h3>Authors</h3>
 						<p>Rob J. Fredericksen, PhD, MPH – University of Washington, Seattle, USA<br>
@@ -202,9 +249,9 @@
 							Heidi M. Crane, MD, MPH – University of Washington, Seattle, USA</p>
 					</div>
 				</section>
-				<section class="wrapper style1 align-left">
-					<div id= "summary" class="inner">
-						<h2>Overview</h2>
+				<section class="wrapper style1 align-left toolkitChap">
+					<div  class="inner">
+						<h2 id="summary">Overview</h2>
 						<h3>Introduction: What is a PRO?</h3>
 						<p>A patient-reported measure or outcome (PRO) is defined as “any report of the status of a patient’s health condition that comes directly from the patient without interpretation of the patient’s response by a clinician or anyone else”1. PROs provide the patient perspective of the effects of disease and treatment including comprehensive assessment of symptoms such as mental health symptoms like depression/anxiety; well-being and satisfaction; health behaviors such as medication adherence; risk behaviors such as substance use and sexual risk behavior; as well as other social determinants of health and practical or safety information such as housing status and intimate partner violence. </p>
 						<h3>Evolution of PROs in care</h3>
@@ -233,7 +280,7 @@
 							<li>Add Dossier</li>
 						</ul>
 				</section>
-				<section class="wrapper style1 align-left">
+				<section class="wrapper style1 align-left toolkitChap">
 					<div class="inner">
 						<h2 id="chapter1">CHAPTER 1. ASSESSING AND IMPROVING READINESS TO IMPLEMENT PROs IN HIV CLINICAL CARE</h3>
 						
@@ -500,7 +547,7 @@
 							 
 						</script>
 
-				<section class="wrapper style1 align-left">
+				<section class="wrapper style1 align-left toolkitChap">
 					<div class="inner">
 						<h2 id= "chapter2" >CHAPTER 2.  ENGAGE STAKEHOLDERS</h3>
 						<p>content</p>
@@ -522,7 +569,7 @@
 					</div>
 				</section>
 
-				<section class="wrapper style1 align-left">
+				<section class="wrapper style1 align-left toolkitChap">
 					<div  class="inner">
 						<h2 id="chapter3">CHAPTER 3.  BUILD TECHNICAL INFRASTRUCTURE</h2>
 						<p>[VERB-driven chapter subheadings needed here please]</p>
@@ -535,7 +582,7 @@
 					</div>
 				</section>
 
-				<section class="wrapper style1 align-left">
+				<section class="wrapper style1 align-left toolkitChap">
 					<div  class="inner">
 						<h2 id="chapter4">CHAPTER 4.  CREATE PRO ASSESSMENT</h2>
 						<p>content</p>
@@ -570,7 +617,7 @@
 					</div>
 				</section>
 
-				<section class="wrapper style1 align-left">
+				<section class="wrapper style1 align-left toolkitChap">
 					<div  class="inner">
 						<h2 id="chapter5">CHAPTER 5.  TRAIN CLINIC PERSONNEL</h2>
 						<p>content</p>
@@ -589,7 +636,7 @@
 					</div>
 				</section>
 
-				<section class="wrapper style1 align-left">
+				<section class="wrapper style1 align-left toolkitChap">
 					<div class="inner">
 						<h2 id="chapter6">CHAPTER 6.  INTEGRATE INTO WORKFLOW	</h2>
 						<p>content</p>
@@ -625,7 +672,7 @@
 					</div>
 				</section>
 
-				<section class="wrapper style1 align-left">
+				<section class="wrapper style1 align-left toolkitChap">
 					<div class="inner">
 						<h2 id="chapter7">CHAPTER 7.  MONITOR AND EVALUATE</h2>
 						<p>content</p>
@@ -647,7 +694,7 @@
 					</div>
 				</section>
 				
-			<section class="wrapper style1 align-left">
+			<section class="wrapper style1 align-left toolkitChap">
 					<div class="inner">
 						<h3 id="ref">References</h3>
 						<ol>
@@ -697,7 +744,8 @@
 				</section>
 								
 		</div>
-		<div style="
+					
+		<!--<div style="
 		display: flex;
 		flex-direction: row;
 		position: fixed;
@@ -705,10 +753,10 @@
 		right: 10px;
   		bottom: 20px;">
 			<a href="#toc" class="button smooth-scroll-middle" style="background: hsla(0, 0%, 0%, 0.75);"><p style="color: white;">Return to Table of Contents</p></a>
-		</div>
+		</div>-->
 
 					<!-- Footer -->
-					<footer id="seven" class="wrapper style1 align-center">
+					<footer id="seven" class="wrapper style1 align-center toolkitChap">
 						<div class="inner">
 							<p>&copy;University of Washington 2020, <a href="https://cirg.washington.edu" target="_blank">Clinical Informatics Research Group</a><br/>
 							questions? <a href="mailto:info.cirg+site.ViiV-Draft@gmail.com?subject=ViiV-Draft site inquiry&body=Principal Investigators: Heidi Crane and Bill Lober%0A%0AHeidi and Bill -%0A%0A"><u>click to send us an email</u></a></p>
