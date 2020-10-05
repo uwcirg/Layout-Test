@@ -35,16 +35,7 @@
 				}
 			}
 
-			#summation {
-				font-size: 18px;
-				font-weight: bold;
-				color:#174C68;
-			}
-			.txt {
-				background-color: #FEFFB0;
-				font-weight: bold;
-				text-align: right;
-			}
+
 		</style>
 
 		<script type="text/javascript">
@@ -55,32 +46,23 @@
 				else
 					e.style.display = 'block';
 				}
-			$(document).ready(function(){
-				//iterate through each textboxes and add keyup
-				//handler to trigger sum event
-				$(".txt").each(function() {
+			
 
-					$(this).keyup(function(){
-						calculateSum();
-					});
-				});
-
-			});
-
-			function calculateSum() {
-
-				var sum = 0;
-				//iterate through each textboxes and add the values
-				$(".txt").each(function() {
-
-					//add only if the value is number
-					if(!isNaN(this.value) && this.value.length!=0) {
-						sum += parseFloat(this.value);
-					}
-
-				});
-				//.toFixed() method will roundoff the final sum to 2 decimal places
-				$("#sum").html(sum.toFixed(2));
+			window.sumInputs = function() {
+			    var inputs = document.getElementsByTagName('input'),
+			        result = document.getElementById('total'),
+			        sum = 0;            
+			    
+			    for(var i=0; i<inputs.length; i++) {
+			        var ip = inputs[i];
+			    
+			        if (ip.name && ip.name.indexOf("total") < 0) {
+			            sum += parseInt(ip.value) || 0;
+			        }
+			    
+			    }
+			    
+			    result.value = sum;
 			}
 		</script>
 
@@ -411,45 +393,18 @@
 						<p>Again, some costs, such as internet use, will not apply in most clinical care settings (e.g., if internet resources already exist, and cost of personnel time is likely the most significant.</p>
 
 						<h3>Sample cost itemization tool</h3>
-						<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+						<p>Qty1 : <input type="text" name="qty1" id="qty"/><br>
+						Qty2 : <input type="text" name="qty2" id="qty"/><br>
+						Qty3 : <input type="text" name="qty3" id="qty"/><br>
+						Qty4 : <input type="text" name="qty4" id="qty"/><br>
+						Qty5 : <input type="text" name="qty5" id="qty"/><br>
+						Qty6 : <input type="text" name="qty6" id="qty"/><br
+						Qty7 : <input type="text" name="qty7" id="qty"/><br>
+						Qty8 : <input type="text" name="qty8" id="qty"/><br>
+						<br><br>
+						Total : <input type="text" name="total" id="total"/>
 
-						<table width="300px" border="1" style="border-collapse:collapse;background-color:#E8DCFF">
-							<tr>
-								<td width="40px">1</td>
-								<td>Butter</td>
-								<td><input class="txt" type="text" name="txt"/></td>
-							</tr>
-							<tr>
-								<td>2</td>
-								<td>Cheese</td>
-								<td><input class="txt" type="text" name="txt"/></td>
-							</tr>
-							<tr>
-								<td>3</td>
-								<td>Eggs</td>
-								<td><input class="txt" type="text" name="txt"/></td>
-							</tr>
-							<tr>
-								<td>4</td>
-								<td>Milk</td>
-								<td><input class="txt" type="text" name="txt"/></td>
-							</tr>
-							<tr>
-								<td>5</td>
-								<td>Bread</td>
-								<td><input class="txt" type="text" name="txt"/></td>
-							</tr>
-							<tr>
-								<td>6</td>
-								<td>Soap</td>
-								<td><input class="txt" type="text" name="txt"/></td>
-							</tr>
-							<tr id="summation">
-								<td>&nbsp;</td>
-								<td align="right">Sum :</td>
-								<td align="center"><span id="sum">0</span></td>
-							</tr>
-						</table>
+						<a href="javascript:sumInputs()">Sum</a></p>
 
 
 						<p>Below is an itemization of startup and maintenance costs for integrating and administering PROs. Enter costs in the left hand column to determine:</p>
