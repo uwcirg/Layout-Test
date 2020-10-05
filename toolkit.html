@@ -35,6 +35,17 @@
 				}
 			}
 		</style>
+
+		<script type="text/javascript">
+			function toggle_visibility_id(id) {
+				var e = document.getElementById(id);
+				if(e.style.display == 'block')
+					e.style.display = 'none';
+				else
+					e.style.display = 'block';
+				}
+		</script>
+
 	</head>
 	<body class="is-preload">
 		
@@ -198,9 +209,12 @@
 						
 						<h3>Patient population:</h3>
 						<p>Does the majority of the clinic patient population possess literacy skills to read at the 6th grade level?</p>
-						<p class="box">If “no”: PROs that are based on text only may be appropriate for only a subset of the population. An enhancement to text is use of a pre-recorded voice to help guide patients through a brief set of PROs. While this has advantages if reading levels are low, it adds a great deal of time/patient burden to the assessment and therefore should be considered only if needed or only for those patients who need it.</p>
+						<a class="button fit">Yes</a>
+						<a onclick="toggle_visibility_id('q1');" class="button fit">No</a>
+
+						<p class="box" id="q1">If “<b>no</b>” (or unsure): PROs that are based on text only may be appropriate for only a subset of the population. An enhancement to text is use of a pre-recorded voice to help guide patients through a brief set of PROs. While this has advantages if reading levels are low, it adds a great deal of time/patient burden to the assessment and therefore should be considered only if needed or only for those patients who need it.</p>
 						<p>Does the majority of the clinic patient population possess the cognitive and physical capacity to complete a brief PRO assessment?</p>
-						<p class="box">If “no”: self-administered PROs may be less appropriate for these patients, and time may be better spent eliciting verbal self-report or the report of caretakers. Clinic staff may need a consistent means of distinguishing these patients from those with the ability to self-administer PROs. Of note, the ability to complete a brief PRO assessment on a tablet has been found to be feasible in many patient populations including the elderly (particularly if no mouse or keyboard as in tablets)21,22. This is often much more feasible than expected.</p>
+						<p class="box">If “<b>no</b>”: self-administered PROs may be less appropriate for these patients, and time may be better spent eliciting verbal self-report or the report of caretakers. Clinic staff may need a consistent means of distinguishing these patients from those with the ability to self-administer PROs. Of note, the ability to complete a brief PRO assessment on a tablet has been found to be feasible in many patient populations including the elderly (particularly if no mouse or keyboard as in tablets)<sup><a href="#REF">25,26</a></sup> and broadly among diverse populations of PLWH<sup><a href="#REF">27,28</a></sup>. This is often much more feasible than expected.</p>
 						
 						<h3>Clinic leadership:</h3>
 						<p>Is the clinic’s leadership likely to support the implementation of PROs?</p>
