@@ -7408,7 +7408,7 @@ input, select, textarea {
 	#hambagaMenu {    
 		display: none;
 	}
-	@media (max-width: 900px) {    
+	@media (max-width: 1150px) {    
 		#hambagaMenu {        
 			display: block;        
 			width: 100%;       
@@ -7857,7 +7857,7 @@ input, select, textarea {
 
 		/*}*/
 
-		@media screen and (max-width: 900px) {
+		@media screen and (max-width: 1150px) {
 			
 			#sidebar {
 				display: none;
