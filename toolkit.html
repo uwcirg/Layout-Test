@@ -34,7 +34,49 @@
 					margin-left:0em;
 				}
 			}
+			.tip {
+				background-color: #d7ccc8;
+			}
+			.figure {
+				border-color: rgba(0, 0, 0, 0.2);
+				border-radius: 4px;
+			    border: solid 1px;
+			    margin-bottom: 2rem;
+			    padding: 1.5rem;
+			}
+
+
+
 		</style>
+
+		<script type="text/javascript">
+			function toggle_visibility_id(id) {
+				var e = document.getElementById(id);
+				if(e.style.display == 'block')
+					e.style.display = 'none';
+				else
+					e.style.display = 'block';
+				}
+			
+
+			window.sumInputs = function() {
+			    var inputs = document.getElementsByTagName('input'),
+			        result = document.getElementById('total'),
+			        sum = 0;            
+			    
+			    for(var i=0; i<inputs.length; i++) {
+			        var ip = inputs[i];
+			    
+			        if (ip.name && ip.name.indexOf("total") < 0) {
+			            sum += parseInt(ip.value) || 0;
+			        }
+			    
+			    }
+			    
+			    result.value = sum;
+			}
+		</script>
+
 	</head>
 	<body class="is-preload">
 		
@@ -55,7 +97,7 @@
 					<nav>
 						<ul style="list-style: none; padding: 0;">
 							<li style="padding: 1em; background: hsla(0, 0%, 0%, 0.75);"><a href="index.html#five" class="smooth-scroll-middle" style="color: #ffffff;">&nbsp;&nbsp;&nbsp;Back to &nbsp;&nbsp;<img src="images/PRO HIV icon.png" alt="PRO HIV" style="height: 2em; vertical-align: middle;"/></a></li>
-							<li style="margin: 1em;"><a href="#summary" class="smooth-scroll-middle">OVERVIEW</a></li>
+							<li style="margin: 1em;"><a href="#intro" class="smooth-scroll-middle">Introduction</a></li>
 							<li style="margin: 1em;"><a href="#chapter1" class="smooth-scroll-middle">CHAPTER 1. <br>ASSESSING AND IMPROVING READINESS TO IMPLEMENT PROs IN HIV CLINICAL CARE	<br></a></li>
 							<li style="margin: 1em;"><a href="#chapter2" class="smooth-scroll-middle">CHAPTER 2. <br>ENGAGE STAKEHOLDERS	<br></a></li>
 							<li style="margin: 1em;"><a href="#chapter3" class="smooth-scroll-middle">CHAPTER 3. <br>BUILD TECHNICAL INFRASTRUCTURE</a></li>
@@ -78,7 +120,7 @@
 					<span></span>        
 					<ul id="menu" style="background-color: #d7ccc8; font-size: 12pt;">            
 						<li><a href="index.html#five" class="smooth-scroll-middle" style="font-size: 10pt;">BACK TO PROHIV.ORG</a></li>
-						<li><a href="#summary" class="smooth-scroll-middle" style="font-size: 10pt;">OVERVIEW</a></li>
+						<li><a href="#intro" class="smooth-scroll-middle" style="font-size: 10pt;">Introduction</a></li>
 						<li><a href="#chapter1" class="smooth-scroll-middle" style="font-size: 10pt;">CHAPTER 1. <br>ASSESSING AND IMPROVING READINESS TO IMPLEMENT PROs IN HIV CLINICAL CARE	<br></a></li>
 						<li><a href="#chapter2" class="smooth-scroll-middle" style="font-size: 10pt;">CHAPTER 2. <br>ENGAGE STAKEHOLDERS	<br></a></li>
 						<li><a href="#chapter3" class="smooth-scroll-middle" style="font-size: 10pt;">CHAPTER 3. <br>BUILD TECHNICAL INFRASTRUCTURE</a></li>
@@ -109,174 +151,84 @@
 					</section>-->
 				
 				<!--more -->	
-					<section id="more" class="wrapper style1 align-left toolkitChap">
-						<div class="inner">
-							<h1><br>HIV PROs Implementation Toolkit</h1>
-						</div>
-								<!--<div class="inner">
-									<h3 id="toc">Table of Contents</h3>
-									<p><i>these will be linked and better formatted in final version</i><br>
-									OVERVIEW<br>
-									Introduction: What is a PRO?	<br>
-									Evolution of PROs in care	<br>
-									Relevance of PROs to modern HIV care	<br>
-									Evidence-based support for PROs in HIV Care	<br>
-									Toolkit purpose	<br>
-									Chapter overview: steps toward implementation	<br>
-									How this Toolkit was developed	<br>
-									Language	<br>
-									Resources	<br>
-									CHAPTER 1. ASSESSING AND IMPROVING READINESS TO IMPLEMENT PROs IN HIV CLINICAL CARE	<br>
-									Are PROs right for my clinic right now? If not, how do we get there?	<br>
-									Startup and recurring costs	<br>
-									Creating a business case for PRO implementation	<br>
-									Resources	<br>
-									CHAPTER 2. ENGAGE STAKEHOLDERS	<br>
-									Identify stakeholders	<br>
-									Prepare demonstration of value	<br>
-									Meet with stakeholders	<br>
-									Address common concerns	<br>
-									Include providers in PRO selection process and output design	<br>
-									Secure implementation champion	<br>
-									References	<br>
-									CHAPTER 3. BUILD TECHNICAL INFRASTRUCTURE	<br>
-									Build PRO infrastructure	<br>
-									Resources	<br>
-									CHAPTER 4. CREATE PRO ASSESSMENT	<br>
-									Determine mode of administration	<br>
-									Select PROs: domains and attributes to consider	<br>
-									Identify scoring and interpretation needs	<br>
-									Determine order of PRO measures in assessment	<br>
-									Determine frequency of administration overall and for each measure	<br>
-									Format results	<br>
-									Build your own PRO assessment	<br>
-									Resources	<br>
-									CHAPTER 5. OUTLINE WORKFLOW	<br>
-									Select workflow: when, where, and how to administer PROs	<br>
-									Define staff roles and centralize responsibility	<br>
-									Create protocol: when NOT to administer PROs	<br>
-									Set a standard for introducing PROs to patients	<br>
-									Define emergency and high-risk protocols	<br>
-									Pilot	<br>
-									Launch	<br>
-									Resources	<br>
-									CHAPTER 6. TRAIN CLINIC PERSONNEL	<br>
-									Initial training	<br>
-									Ongoing training	<br>
-									Resources	<br>
-									CHAPTER 7. MONITOR AND EVALUATE	<br>
-									Identify indicators of success	<br>
-									Determine process and timing	<br>
-									Implement a process of continuous quality improvement	<br>
-									Resources	<br>
-									REFERENCES	<br>
-									APPENDIX 1. List of Abbreviations	<br>
-									APPENDIX 2. Glossary</p>-->
-
-
-
-									<!--<h3 id="toc">What Is the Purpose of the Implementation Toolkit?</h3>
-									<p>This toolkit has been designed to support PRO uptake in routine HIV care by highlighting key considerations for implementers; this includes implementation insights, example materials and testimonies from stakeholders who have first-hand experience with PRO implementation, covering key areas that need to be actioned or assessed. The objective is to facilitate easier and more effective PRO use where appropriate.</p>
-									<p>Much of the real world evidence and practical tips found in the Toolkit are drawn from conversations with staff from the Center for Aids Research (CFAR) Network of Integrated Clinical Systems (CNICS).  CNICS is an electronic medical records-based network of HIV clinics.  It provides a research infrastructure to support research on HIV clinical outcomes and comparative effectiveness trials.  CNICS sites include routine collection of PROs electronically as part of their clinical care (see, for example, Crane et al. 2017; Fredericksen et al. 2012; Fredericksen et al. 2016).<p>
-									<h3>What Steps Are Needed for PRO Implementation?</h3>
-									<p>PRO implementation involves several stages of planning and execution, as well as follow-up and assessment. Each chapter in the toolkit considers a different step in the implementation process. The order in which the steps are followed depends on the needs of the individual clinic. The chapters available in this resource are outlined below:</p>
-									
-									<h4><a href="#chapter1"> Chapter 1: Choosing PROs and Implementation Approaches to Meet Patient and Clinic Needs</a></h4>
-									<p>The focus of this chapter is the appropriate selection of PROs based on clinic’s needs and their HIV patient population; it includes links to available PROs and a discussion of the administration, scoring, and interpretation process</p>
-										<ul class="actions stacked">
-											<li><a href="#chapter1" id="PDF" class="button smooth-scroll-middle">Jump to Chapter 1</a></li>
-										</ul>
-								
-									<h4>Chapter 2: Obtaining Stakeholder Buy-in</h4>
-									<p>The focus of this chapter is on identifying stakeholders who are critical to implementing PROs in an HIV clinic, the information stakeholders need to provide buy-in, and considerations for approaching stakeholders</p>
-										<ul class="actions stacked">
-											<li><a href="#chapter2" id="PDF" class="button smooth-scroll-middle">Jump to Chapter 2</a></li>
-										</ul>
-
-									<h4>Chapter 3: Making the Business Case for PRO Implementation</h4>
-									<p>This focus of this chapter is on building a compelling case to secure funding or endorsement of the program</p>
-										<ul class="actions stacked">
-											<li><a href="#chapter3" id="PDF" class="button smooth-scroll-middle">Jump to Chapter 3</a></li>
-										</ul>
-									
-									<h4>Chapter 4: Building PRO Infrastructure</h4>
-									<p>The focus of this chapter is on setting up the PROs to be administered electronically and the potential approaches connecting the electronic PRO (ePRO) system to the electronic health records as well as key considerations for IT</p>
-										<ul class="actions stacked">
-											<li><a href="#chapter4" id="PDF" class="button smooth-scroll-middle">Jump to Chapter 4</a></li>
-										</ul>
-									
-									<h4>Chapter 5: Integrating PROs into Clinic Care Settings</h4>
-									<p>The focus of this chapter is the integration of the PRO system into the clinic flow including considerations of when and where to administer the PROs</p>
-										<ul class="actions stacked">
-											<li><a href="#chapter5" id="PDF" class="button smooth-scroll-middle">Jump to Chapter 5</a></li>
-										</ul>
-									<h4>Chapter 6: Training Clinic Personnel</h4>
-									<p>The focus of this chapter is on training the various staff on what they need to know about the PRO implementation and how they may engage with patients</p>
-										<ul class="actions stacked">
-											<li><a href="#chapter6" id="PDF" class="button smooth-scroll-middle">Jump to Chapter 6</a></li>
-										</ul>
-									<h4>Chapter 7: Monitoring and Evaluation</h4>
-									<p>The focus of this chapter is how to monitor, evaluate and update the PRO system used in a clinic</p>
-										<ul class="actions stacked">
-											<li><a href="#chapter7" id="PDF" class="button smooth-scroll-middle">Jump to Chapter 7</a></li>
-										</ul>
-																
-									<p>All chapters where possible include comments from stakeholders and practical tips from implementers.</p>
-									<h3>What Other Guides Are Available?</h3>
-									<p>This toolkit was developed specifically for implementation of PROs in HIV routine care. Other more general guides exist, and provide somewhat different—though useful—information. These include the “Users Guide to Implementing Patient-Reported Outcomes Assessments in Clinical Practice” by the International Society for Quality of Life Research (ISOQOL) (Version 2, 2015), and the results of a workshop held by the Patient-Centered Outcomes Research Institute (PCORI) in 2013.</p>
-									<p>The ISOQOL guide focuses on the PROs, the types, timing of administration, score assessment and presentation and evaluation of use. The current document provides broader information on identification of stakeholders, finance, training, information technology (IT) issues, monitoring, and evaluation. The PCORI document summarizes a far-ranging workshop, and provides recommendations in areas of infrastructure/shared resources, as well as recommendations for methods and health systems.</p>-->
-									
-									<!--<section class="wrapper style1 align-center">
-										<ul class="actions stacked">
-											<li><a href="" id="PDF" class="button">View Full PDF</a></li>
-										</ul>
-									</section>-->
-									
-								</div>
-
+				<section id="more" class="wrapper style1 align-left toolkitChap">
+					<div class="inner">
+						<h1><br>HIV PROs Implementation Toolkit</h1>
+					</div>
 					
 				</section>
 				<section class="wrapper style1 align-left toolkitChap">
 					<div class="inner">
 						<h3>Authors</h3>
-						<p>Rob J. Fredericksen, PhD, MPH – University of Washington, Seattle, USA<br>
-							Duncan Short, PhD – ViiV Healthcare, UK<br>
-							Emma Fitzsimmons, BA – University of Washington, Seattle, USA<br>
-							Justin McReynolds, MS – University of Washington, Seattle, USA<br>
-							Sierramatice Karras, BS – University of Washington, Seattle, USA<br>
-							William Lober, MD – University of Washington, Seattle, USA<br>
-							Heidi M. Crane, MD, MPH – University of Washington, Seattle, USA</p>
+						<p>Rob J. Fredericksen, PhD, MPH – University of Washington, Medicine, Seattle, USA<br>
+						Duncan Short, PhD – ViiV Healthcare, Global Implementation Science, UK<br>
+						Emma Fitzsimmons, BA – University of Washington, Medicine, Seattle, USA<br>
+						Justin McReynolds, MS – University of Washington, Health Informatics, Seattle, USA<br>
+						Sierramatice Karras, BS – University of Washington, Health Informatics, Seattle, USA<br>
+						William Lober, MD – University of Washington, Health Informatics, Seattle, USA<br>
+						Heidi M. Crane, MD, MPH – University of Washington, Medicine, Seattle, USA</p>
 					</div>
 				</section>
 				<section class="wrapper style1 align-left toolkitChap">
+					<div class="inner">
+						<h2 id="forward">Foreword</h2>
+						<p>This PRO Implementation Toolkit was assembled by the PROgress study team from the University of Washington and ViiV Healthcare and reviewed by the PROgress Study Steering Group. The purpose of this document is to provide practical insights gathered from the implementation of PROs in routine HIV care to support those who may be considering this process.</p>
+						<p>PROgress is a research workstream entitled: Improving HIV care through the implementation of PROs within routine patient management. This is comprised of three complementary components:</p>
+						<ol>
+							<li>An implementation science research study (The PROgress Study), integrating PROs into two HIV clinical care settings in order to identify the essential program elements that can improve the sustainable adoption and implementation of PROs into routine HIV care. This study was designed to examine the added value of implementing PROs into routine HIV care for the salient stakeholders, including the patient, the providers, and other clinic staff. It is generating evidence of the value, barriers and facilitators involved in PRO integration in community settings.<a href="">[Add link to PROgress website, or web address for text version]</a></li>
+							<li>An Evidence Review and Summary, which is designed to raise awareness of the evidence relating to PROs in the care of PLWH and to outline the potential for well implemented instruments within routine care. It draws on evidence from published literature characterizing the impact of PROs in routine clinical care for patients with chronic comorbidities including HIV-related literature as well as other fields, particularly oncology. <a href="">[Add Link]</a></li>
+							<li>This PRO Implementation Toolkit, which is a resource for those considering implementing PROs in clinical HIV care. This is designed to provide practical advice to support the introduction of clinical PRO assessments into routine HIV care. These insights draw from a range of sources, including practical experience integrating PROs into HIV clinical care at multiple sites, including the PROgress sites, published literature, and additional primary interviews with stakeholders with experience integrating PROs into HIV clinical care. This toolkit was designed to help provide resources, tips, and learning to help implement PROs adapted as needed for individual clinics.</li>
+						</ol>
+						<p>The PRO Implementation Toolkit and Evidence Review Summary serve as complimentary resources with the Toolkit designed to provide practical hands-on approaches and the Evidence Summary designed to summarize available real-world evidence supporting the integration of PROs within routine HIV clinical care settings with each informing the other.</p>
+					</div>
+				</section>
+						
+				<section class="wrapper style1 align-left toolkitChap">
 					<div  class="inner">
-						<h2 id="summary">Overview</h2>
-						<h3>Introduction: What is a PRO?</h3>
-						<p>A patient-reported measure or outcome (PRO) is defined as “any report of the status of a patient’s health condition that comes directly from the patient without interpretation of the patient’s response by a clinician or anyone else”1. PROs provide the patient perspective of the effects of disease and treatment including comprehensive assessment of symptoms such as mental health symptoms like depression/anxiety; well-being and satisfaction; health behaviors such as medication adherence; risk behaviors such as substance use and sexual risk behavior; as well as other social determinants of health and practical or safety information such as housing status and intimate partner violence. </p>
+						<h2 id="intro">Introduction</h2>
+						<h3>What is a PRO?</h3>
+						<p>A patient-reported measure or outcome (PRO, also less commonly known as PROM) is defined as “any report of the status of a patient’s health condition that comes directly from the patient without interpretation of the patient’s response by a clinician or anyone else”<sup><a href="#REF">6</a></sup>. PROs provide the patient perspective of the effects of disease and treatment including comprehensive assessment of factors such as mental health symptoms like depression/anxiety; well-being and satisfaction; health behaviors such as medication adherence; risk behaviors such as substance use and sexual risk behavior; as well as other social determinants of health and practical or safety information such as housing status and intimate partner violence.</p>
+						<h3>How PROs integrate into clinic flow</h3>
+						<p>What might the end result of PRO integration into care look like? How will it fit into existing clinic flow? The example below, based on clinical integration of PROs in the PROgress Study in two HIV care clinics, provides an overview of what happens- and when.</p>
+						<p><b>Figure 1. PRO implementation example in HIV clinical care</b></p>
 						<h3>Evolution of PROs in care</h3>
-						<p>While historically PROs have had a much larger role in research than care, the use of PROs in clinical care has been increasing as a result of several key developments. These include the rapid progression of technological infrastructure leading to the expanded incorporation of touch-screen tablets, internet-based applications, and electronic health records (EHRs) in clinical care2. Furthermore, PROs are increasingly being demanded by regulators, payers, accreditors, professional organizations, and providers to measure and address PRO-related outcomes at the level of the patient, clinic, and healthcare system as well as provide population information2. Legislative demands to improve health care outcomes without increasing costs puts more emphasis on quality of care, value-based reimbursement and patient engagement and has led to PROs increasingly be identified as the most direct and relevant measure to demonstrate high-quality patient-centered care2. The most common reasons cited for implementing PROs in clinical care among stakeholders who have already implemented them included screening, monitoring, treatment evaluation and treatment planning; and quality improvement including that mandated by external agencies3. Other reasons cited in interviews of respondents from a range of health care settings where PROs had been implemented included shared-decision making between patients and providers, and less often for reasons related to satisfaction or reimbursement3.</p>
+						<p>While historically PROs have had a much larger role in research than care, the use of PROs in clinical care has been increasing as a result of several key developments. These include the rapid progression of technological infrastructure leading to the expanded incorporation of touch-screen tablets, internet-based applications, and electronic health records (EHRs) in clinical care<sup><a href="#REF">7</a></sup>. Furthermore, PROs are increasingly demanded by regulators, payers, accreditors, professional organizations, and providers to measure and address PRO-related outcomes at the level of the patient, clinic, and healthcare system as well as provide population information<sup><a href="#REF">7</a></sup>. Legislative demands to improve healthcare outcomes without increasing costs has put more emphasis on quality of care, value-based reimbursement and patient engagement. As such, PROs have been increasingly identified as the most direct and relevant measure to demonstrate high-quality patient-centered care<sup><a href="#REF">7</a></sup>. The most common reasons cited for implementing PROs in clinical care among stakeholders who have already implemented them included screening, monitoring, treatment evaluation and treatment planning, and quality improvement including that mandated by external agencies<sup><a href="#REF">1</a></sup>. Other reasons cited in interviews of respondents from a range of health care settings in which PROs had been implemented included shared-decision making between patients and providers, and, less often, reasons related to satisfaction or reimbursement<sup><a href="#REF">1</a></sup>.</p>
 						<h3>Relevance of PROs to modern HIV care</h3>
-						<p>Advances in antiretroviral therapy (ART) over the past decades have increased the life expectancy of people living with HIV (PLWH) and transformed HIV from a fatal disease to a chronic manageable condition4. The associated decline in mortality since ART has been introduced has led to increased emphasis on managing quality of life and comorbidities, including those associated with HIV and its treatment. Many of the symptoms, health behaviors, and life circumstances associated with living with HIV and these comorbidities are not directly observable and are more easily measured by direct patient report. Yet, many such variables are under-addressed and not measured well in clinical care: in HIV care, examples include antiretroviral medication adherence, substance use, sexual risk behavior, and depression5. Reasons for this have included social desirability bias, time constraints, limited communication skills to convey symptoms or feelings, or linguistic and/or cultural barriers6-9. PROs help address these barriers. On-site PRO collection prior to routine clinical care appointments, via hand-held computer tablets with real-time results available to providers during clinic visits, has improved provider ability to detect and address depression/suicidal ideation, inadequate antiretroviral (ART) adherence, and substance use in HIV care5,10. Integrating PROs into clinical care of patients with chronic conditions, such as cancer, rheumatoid arthritis, and HIV, have been shown to be acceptable to patients and providers and valuable in clinical care10-12; they have improved patient-provider communication13-17 and increased patient satisfaction with care16,18-20.</p>
+						<p>Advances in antiretroviral therapy (ART) over the past decades have increased the life expectancy of people living with HIV (PLWH) and transformed HIV from a fatal disease to a chronic manageable condition8. The associated decline in mortality since ART has been introduced has led to increased emphasis on managing quality of life and comorbidities, including those associated with HIV and its treatment. Many of the symptoms, health behaviors, and life circumstances associated with living with HIV and these comorbidities are not directly observable and are more easily measured by direct patient report. Yet, many such variables are under-addressed and not measured well in clinical care: in HIV care, examples include antiretroviral medication adherence, substance use, sexual risk behavior, and depression<sup><a href="#REF">9</a></sup>. Reasons for this have included social desirability bias, time constraints, limited communication skills to convey symptoms or feelings, or linguistic and/or cultural barriers<sup><a href="#REF">10-13</a></sup>. PROs help address these barriers. On-site PRO collection prior to routine clinical care appointments, via hand-held computer tablets with real-time results available to providers during clinic visits, has improved provider ability to detect and address depression/suicidal ideation, inadequate antiretroviral (ART) adherence, and substance use in HIV care<sup><a href="#REF">9,14</a></sup>. Integrating PROs into clinical care of patients with chronic conditions, such as cancer, rheumatoid arthritis, and HIV, have been shown to be acceptable to patients and providers and valuable in clinical care<sup><a href="#REF">14-16</a></sup>; they have improved patient-provider communication<sup><a href="#REF">17-21</a></sup> and increased patient satisfaction with care<sup><a href="#REF">20,22-24</a></sup>.</p>
 						<h3>Evidence-based support for PROs in HIV Care</h3>
-						<p>PROs have been found to be highly useful to providers and acceptable to patients. An in-depth dossier of evidence details this evidence here [add Dossier link] and supports the idea that implementing PROs in HIV care can:</p>
-						<ul>
-							<li>Improve detection of health behaviors, symptoms, and mental health issues</li>
-							<li>Increase provider awareness and interventions to address depression, drug and alcohol use, intimate partner violence, and other domains in order to improve health outcomes</li>
-							<li>Improve patient-provider communication, by helping patients prioritize and raise concerns and helping providers identify and initiate areas of discussion that can be difficult to know are needed and/or difficult to initiate without the PROs (e.g., sexual risk behavior)</li>
-							<li>Improve delivery of care, e.g., allow providers to focus on the most relevant issues during the visit rather than identifying the issues, improving symptom management and other care and therefore reducing emergency department visits and hospitalizations. *Note this is based on a compendium of studies in chronic disease populations: data regarding reducing hospitalizations is not based on PLWH.</li>
-						</ul>
+						<p>PROs have been highly useful to providers and acceptable to patients. An in-depth review of evidence details this here <a href="">[add Dossier link]</a> and supports the idea that implementing PROs in HIV care can:</p>
+						<ol>
+							<li>Improve detection of health behaviors, symptoms, and mental health issues.</li>
+							<li>Increase provider awareness and interventions to address depression, drug and alcohol use, intimate partner violence, and other domains in order to improve health outcomes.</li>
+							<li>Improve patient-provider communication, by helping patients prioritize and raise concerns, and by helping providers identify and initiate discussion of less-observable issues and/or discussion of topics that are highly sensitive or personal to the patient (e.g., depression, substance use, sexual risk behavior).</li>
+							<li>Improve delivery of care, for example, allow providers to focus on the most relevant issues during the visit, increase referrals, more closely monitor treatment, and improve symptom management.</li>
+							<li>Improve outcomes such as depression scores and symptom burden.</li>
+						</ol>
 						<h3>Toolkit purpose</h3>
-						<p>This Toolkit is designed to provide practical advice to support the introduction of clinical PRO assessments into routine HIV care. These insights draw from a range of sources, including practical experience integrating PROs into HIV clinical care at multiple sites, published literature, and primary interviews with stakeholders with experience integrating PROs into HIV clinical care. While some of the information in this Toolkit applies to all formats of PRO assessment, we focus on implementation of tablet-based patient self-administered PRO assessments in clinical care due to the clear advantages outlined in Chapter 3 [add Chapter 3 link]. Every HIV clinic is a little bit different so no one-size-fits all approach will allow PRO integration into every HIV clinic. Therefore, this toolkit was designed to help provide resources, tips, and learning to help implement PROs adapted as needed for individual clinics.</p>
+						<p>This Toolkit provides practical advice to support the introduction of clinical PRO assessments into routine HIV care. These insights draw from a range of sources, including practical experience integrating PROs into HIV clinical care at multiple sites, published literature, and interviews with stakeholders with experience integrating PROs into HIV clinical care. While some of the information in this Toolkit applies to all formats of PRO assessment, we focus on implementation of tablet-based patient self-administered PRO assessments in clinical care due to the clear advantages outlined in <a href="">Chapter 3 [add Chapter 3 link]</a>. Given differences between HIV clinics, a one-size-fits-all approach to PRO integration is unlikely to fit every clinic’s needs. With this in mind, this toolkit provides resources, tips, and effective practices to help implement PROs adapted as needed for individual clinics.</p>
+
 						<h3>Chapter overview: steps toward implementation</h3>
-						<p>Though the process of PRO implementation is iterative, the chapters of this Toolkit sequence tasks into a general chronologic order starting with planning and decision-making (Chapters 1-3), then implementation (Chapters 4-6), and finally ongoing collection, maintenance, evaluation and improvement (Chapter 7). Chapter 1 helps assess and improve a clinic’s readiness for PRO implementation. Chapter 2 offers a pathway for stakeholder engagement. Chapter 3 itemizes steps needed in order to build technical infrastructure for electronic data collection. Chapter 4 operationalizes important steps to create a PRO assessment that best suits the needs of an individual HIV clinic and its patients. Chapter 5 outlines the decisions and protocols to support integration and ongoing success. Chapter 6 offers insight into initial and ongoing staff training needs. Chapter 7 provides strategies for monitoring, evaluating and sustaining the success of integration of PROs into clinical HIV care.</p>
+						<p>Though the process of PRO implementation is iterative, the chapters of this Toolkit sequence tasks into a general chronologic order starting with planning and decision-making (Chapters 1-3), then implementation (Chapters 4-6), and finally ongoing collection, maintenance, evaluation and improvement (Chapter 7).</p>
+						<p>Chapter 1 helps assess and improve a clinic’s readiness for PRO implementation.</p>
+						<p>Chapter 2 offers a pathway for stakeholder engagement. </p>
+						<p>Chapter 3 itemizes steps needed in order to build technical infrastructure for electronic data collection. </p>
+						<p>Chapter 4 operationalizes important steps to create a PRO assessment that best suits the needs of an individual HIV clinic and its patients. </p>
+						<p>Chapter 5 outlines the decisions and protocols to support integration and ongoing success. </p>
+						<p>Chapter 6 offers insight into initial and ongoing staff training needs. </p>
+						<p>Chapter 7 provides strategies for monitoring, evaluating and sustaining the success of integration of PROs into clinical HIV care.</p>
+
 						<h3>How this Toolkit was developed</h3>
-						<p>Evidence and practical tips found in this Toolkit are drawn from real-world PRO implementation experiences and data collected 1) within the PROgress study, a ViiV-funded project evaluating impact, effectiveness, and sustainability of PRO collection in routine clinical HIV care at Midway Specialty Care in Ft. Pierce, FL, and St. Michael’s Hospital in Toronto, ON; and 2) within the Centers for AIDS Research (CFAR) Network of Integrated Clinical Systems (CNICS), a network of 8 U.S. HIV clinics. As of early 2020, >85,000 clinical PRO assessments had been completed by >20,000 patients with HIV across CNICS sites as part of routine clinical care visits to improve care and facilitate research on health domains important to long-term outcomes among PLWH. </p>
+						<p>Evidence and practical tips found in this Toolkit are drawn from real-world PRO implementation experiences and data collected from:</p>
+						<ol>
+							<li>The PROgress study, a ViiV-funded project evaluating impact, effectiveness, and sustainability of PRO collection in routine clinical HIV care at Midway Specialty Care in Ft. Pierce, FL, and St. Michael’s Hospital in Toronto, ON. The study and Toolkit were developed in conjunction with a Steering Committee comprised of HIV care providers, people living with HIV (PLWH), and HIV care researchers.</li>
+							<li>The Centers for AIDS Research (CFAR) Network of Integrated Clinical Systems (CNICS), a network of 8 U.S. HIV clinics. As of early 2020, >85,000 clinical PRO assessments had been completed by >20,000 PLWH across CNICS sites as part of routine clinical care visits to improve care and facilitate research on health domains important to long-term outcomes among PLWH. </li>
+						</ol>
 						<h3>Language</h3>
-						<p>There are a number of acronyms throughout this toolkit. They are defined in Appendix 1. We also define terms that may be unfamiliar or whose meaning differs by context in Appendix 2. For example, we use the term provider to refer to the physician, fellow, nurse practitioner, physician assistant or other clinician who is providing patient care. We realize in different contexts, terms such as provider have broader or narrower meaning and therefore include a glossary.</p>
+						<p>There are a number of acronyms throughout this toolkit. They are defined in Appendix 1. We also define terms that may be unfamiliar or whose meaning differs by context with use. For example, we use the term provider to refer to the physician, fellow, nurse practitioner, physician assistant or other clinician who is providing patient care. We realize in different contexts, terms such as provider have broader or narrower meaning.</p>
 						<h3>Resources</h3>
 						<ul>
-							<li>Add citation for website including URL</li>
-							<li>Add Dossier</li>
+							<li><a href="">Add citation for website including URL</a></li>
+							<li><a href="">Add Dossier</a></li>
 						</ul>
 				</section>
 				<section class="wrapper style1 align-left toolkitChap">
@@ -288,42 +240,45 @@
 						
 						<h3>Patient population:</h3>
 						<p>Does the majority of the clinic patient population possess literacy skills to read at the 6th grade level?</p>
-						<p class="box">If “no”: PROs that are based on text only may be appropriate for only a subset of the population. An enhancement to text is use of a pre-recorded voice to help guide patients through a brief set of PROs. While this has advantages if reading levels are low, it adds a great deal of time/patient burden to the assessment and therefore should be considered only if needed or only for those patients who need it.</p>
+						<!--<a class="button fit">Yes</a>
+						<a onclick="toggle_visibility_id('q1');" class="button fit">No</a>-->
+
+						<p class="box" id="q1">If “<b>no</b>” (or unsure): PROs that are based on text only may be appropriate for only a subset of the population. An enhancement to text is use of a pre-recorded voice to help guide patients through a brief set of PROs. While this has advantages if reading levels are low, it adds a great deal of time/patient burden to the assessment and therefore should be considered only if needed or only for those patients who need it.</p>
 						<p>Does the majority of the clinic patient population possess the cognitive and physical capacity to complete a brief PRO assessment?</p>
-						<p class="box">If “no”: self-administered PROs may be less appropriate for these patients, and time may be better spent eliciting verbal self-report or the report of caretakers. Clinic staff may need a consistent means of distinguishing these patients from those with the ability to self-administer PROs. Of note, the ability to complete a brief PRO assessment on a tablet has been found to be feasible in many patient populations including the elderly (particularly if no mouse or keyboard as in tablets)21,22. This is often much more feasible than expected.</p>
+						<p class="box">If “<b>no</b>”: self-administered PROs may be less appropriate for these patients, and time may be better spent eliciting verbal self-report or the report of caretakers. Clinic staff may need a consistent means of distinguishing these patients from those with the ability to self-administer PROs. Of note, the ability to complete a brief PRO assessment on a tablet has been found to be feasible in many patient populations including the elderly (particularly if no mouse or keyboard as in tablets)<sup><a href="#REF">25,26</a></sup> and broadly among diverse populations of PLWH<sup><a href="#REF">27,28</a></sup>. This is often much more feasible than expected.</p>
 						
 						<h3>Clinic leadership:</h3>
 						<p>Is the clinic’s leadership likely to support the implementation of PROs?</p>
-						<p class="box">If “no”: consider what is driving this perceived lack of support. What are the clinic leadership’s key goals and priorities, and what evidence regarding the use of PROs may align with them? Leadership typically supports PRO implementation for a variety of reasons including improving patient care, better assessing needs, and enabling better data collection for administrative tasks such as mandated reporting and quality assurance from external agencies (See Chapter 2, “Engage Stakeholders”). [Add Link to Chapter 2 here]</p>
-						<p>Is there an individual or individuals on staff that can generate stakeholder interest in PRO collection and champion PROs as a priority? Stakeholder support or clinic champions have been shown to be useful for successful integration of PROs in clinical care.6</p>
-						<p class="box">If “no”: see Chapter 2, “Engage Stakeholders” which offers support for illustrating the benefits of PROs in clinical care. [Add Link to Chapter 2 here]</p>
+						<p class="box">If “<b>no</b>”: consider what is driving this perceived lack of support. What are the clinic leadership’s key goals and priorities, and what evidence regarding the use of PROs may align with them? Leadership typically supports PRO implementation for a variety of reasons including improving patient care, better assessing needs, and enabling better data collection for administrative tasks such as mandated reporting and quality assurance from external agencies (See Chapter 2, “Engage Stakeholders”). <a href="">[Add Link to Chapter 2 here]</a></p>
+						<p>Is there an individual or individuals on staff that can cultivate stakeholder interest in PRO collection and champion PROs as a priority? Stakeholder support or clinic champions have been critical for successful integration of PROs in clinical care.<sup><a href="#REF">10</a></sup></p>
+						<p class="box">If “<b>no</b>”: see Chapter 2, “Engage Stakeholders” which offers support for illustrating the benefits of PROs in clinical care. <a href="">[Add Link to Chapter 2 here]</a></p>
 						<p>Is there an individual or individuals on staff that can champion PRO data collection with respect to managing day-to-day operations?</p>
-						<p class="box">If “no”: consider what steps would be needed to identify such an individual or allot time in an existing individual’s duties that would be accountable for the ongoing success of this operation. For example, this individual may supervise front desk staff, or may be a designated medical assistant.</p>
+						<p class="box">If “<b>no</b>”: consider what steps would be needed to identify such an individual or allot time in an existing individual’s duties that would be accountable for the ongoing success of this operation. For example, this individual may supervise front desk staff, or may be a designated medical assistant.</p>
 
 						<h3>Providers:</h3>
 						<p>Are clinic providers supportive of the use of PRO measures in clinical care?</p>
-						<p class="box">If “no”: consider the basis for this. What are their perceptions of the value of PROs? What experiences form their basis for the lack of support? What are their concerns (see Chapter 2’s section, “Address Common Concerns”)? Have your providers had negative experiences with PROs? To what extent are these concerns still relevant in the context of brief tablet-based PRO collection? Provider concerns often focus on potential impact on clinic flow or visit length. Does focusing on specific domains that may be particularly relevant for improving care in a clinical setting but otherwise are assessed poorly such as substance use or intimate partner violence impact support? Does focusing on a brief assessment with plans to implement in such a way to minimize impact on flow minimize these concerns?</p>
+						<p class="box">If “<b>no</b>”: consider the basis for this. What are their perceptions of the value of PROs? What experiences form their basis for the lack of support? What are their concerns <a href="">(see Chapter 2’s section, “Address Common Concerns” [Link])</a>? Have your providers had negative experiences with PROs? To what extent could these concerns be addressed? Provider concerns often focus on potential impact on clinic flow or visit length. Does focusing on specific, difficult-to-assess domains relevant to improving care, such as substance use or intimate partner violence, impact support? Does focusing on a brief assessment with plans to implement in such a way to minimize impact on flow minimize these concerns?</p>
 						<p>Has their response to changes in prior clinic protocols been positive?</p>
-						<p class="box">If “no”: identify what is driving this. To what extent may the evidence supporting the benefits of PROs in terms of improving clinical care ameliorate these concerns? [Add Link to Chapter 2 here]</p>
+						<p class="box">If “<b>no</b>”: identify the key factors driving this. Evidence supporting the benefits of PROs to improve clinical care may minimize these concerns. <a href="">[Add Link to Chapter 2 here]</a></p>
 
 						<h3>Logistics and flow:</h3>
-						<p>Is there a plan as to how the clinic can allot time at the beginning of the visit for patients to take a PRO assessment without disrupting flow?</p>
-						<p class="box">If “no”: do opportunities exist to collect information from patients while they are waiting for their provider? Do opportunities exist for patients to complete PROs prior to the appointment, off-site, using personal electronic devices? While this can lessen the impact on clinic flow, as a stand-alone approach it excludes patients who lack such devices. It may however be useful as a supplementary approach to within-clinic PRO collection to decrease impact on clinic flow. This may be a particularly useful approach in care settings with Telehealth visits, an increasingly common practice as a response to the COVID-19 pandemic. See Chapter 5, “Outline Workflow”. [Add Link to Chapter 5 here]</p>
-						<p>Does the clinic have a plan to allot space on-site for patients to take a PRO assessment?</p>
-						<p class="box">If “no”: can patients complete the PROs while they are waiting for their provider’s in the examination rooms? Do opportunities exist for patients to complete PROs prior to the appointment, off-site, using personal electronic devices? While this cannot replace in-person PROs, as many patients do not have the resources to complete PROs off-site, it may decrease the numbers of patients completing PROs in the clinic setting. See Chapter 5, “Outline Workflow”. [Add Link to Chapter 5 here]</p>
+						<p>Can the clinic allot time at the beginning of the visit for patients to take a PRO assessment without disrupting flow?<br><i>Note, amount of time needed will depend on assessment length.</i></p>
+						<p class="box">If “<b>no</b>”: do opportunities exist to collect PROs from patients while they are waiting for their provider, or, off-site, using personal electronic devices? <i>Note: while offsite PRO administration may lessen the impact on clinic flow, as a stand-alone approach it excludes patients who lack such devices. It may however be useful as a supplementary approach to within-clinic PRO collection to decrease impact on clinic flow. This may be a particularly useful approach in care settings with Telehealth visits, an increasingly common practice as a response to the COVID-19 pandemic. See <a href="">Chapter 5, “Outline Workflow”. [Add Link to Chapter 5 here]</a></i>. A PRO timing estimation tool is available <a href="">here. [Link it]</a></p>
+						<p>Does the clinic have a plan to allot space on-site for patients to self-administer a PRO assessment?</p>
+						<p class="box">If “<b>no</b>”: can patients complete the PROs while they are waiting for their provider’s in the examination rooms, or off-site? <i>[See above note regarding off-site PRO administration]</i>.</p>
 
 						<h3>Technical capacity:</h3>
-						<p>Does the clinic possess the technical capacity to support electronic data collection?</p>
-						<p class="box">If “no” or “not sure”: see Chapter 3, “Building Technical Infrastructure”. [Add Link to Chapter 3 here]</p>
+						<p>Does the clinic have the technical capacity to support electronic data collection?</p>
+						<p class="box">If “<b>no</b>” or “not sure”: see <a href="">Chapter 3, “Building Technical Infrastructure”. [Add Link to Chapter 3 here]</a></p>
 
 						<h3>Cost:</h3>
-						<p>Can my clinic afford the resources necessary, such as the staff time and electronic equipment (e.g., iPads or other tablets)?</p>
-						<p class="box">If “no” or “not sure”, see the section detailing startup and recurring costs, below, bearing in mind that equipment costs change over time and are decreasing at the time of this writing.</p>
+						<p>Can the clinic afford the resources necessary, such as the staff time and equipment (e.g., iPads or other tablets)?</p>
+						<p class="box">If “<b>no</b>” or “not sure”, see the section detailing startup and recurring costs.</p>
 
 						<h3>Startup and recurring costs</h3>
 						<p>Understanding the financial costs associated with implementing PROs is fundamental to long-term success. There are different types of costs to consider: initial start-up (or one-time capital costs), and recurring fixed costs.</p>
 						<p>Start-up costs bring a project to operational status (e.g., software development, purchase of office equipment, licenses, etc.). These costs incur at the beginning of the project or at a single point in time, and not as a year-to-year or month-to-month expense.</p>
-						<p>Table 1 contains some of the start-up costs to consider when developing a program budget.</p>
+						<p>Table 1 contains typical start-up costs to consider when developing a program budget.</p>
 						<div class="table-wrapper">
 							<table class="alt">
 								<thead>
@@ -334,62 +289,79 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Personnel</td>
-										<td><ul>
-											<li>Dedicated staff to oversee the PRO process implementation (often existing clinic staff who manage this as part of their portfolio of duties)</li>
+										<td>Clinic Personnel</td>
+										<td>
+											Dedicated staff to oversee the PRO implementation (often existing clinic staff who manage this as part of their portfolio of duties). Tasks include:
 											<ul>
-												<li>Coordinate the process</li>
-												<li>Manage the PRO devices (e.g. tablets)</li>
-												<li>vailable to address any immediate issues raised by either patients or clinic staff</li>
+												<li>Train staff to use PROs, and develop protocol for training new staff</li>
+												<li>Establish how PROs will fit into and minimize disruption to clinic flow (e.g., requesting early arrival for patients to take PRO if long assessment or short waiting times; when and how to deliver results to providers)</li>
+												<li>Develop script for explaining PRO to patients</li>
+												<li>Test connectivity</li>
+												<li>Maintain and store PRO devices</li>
+												<li>Address any immediate issues raised by patients or clinic staff, e.g., technical or flow-related concerns</li>
 											</ul>
-											<li>Part-time or short-term staff to help with IT program start-up (e.g., IT professional)</li>
-										</ul></td>
+											Part-time or short-term staff to help with IT program start-up (e.g., IT professional)
+										</td>
 									</tr>
 									<tr>
 										<td>Office expenses</td>
 										<td>
 											<ul>
-												<li>Materials for new staff overseeing PRO adoption if staff are being added: additional chairs, tables/workstations</li>
-												<li>New space requirements: modification of existing space or rental of new space for new staff if staff are being added, or dedicated space for PRO completion by patients (in many settings patients complete the PROs in the examination room while waiting for their provider and new space is not necessary)</li>
+												<li>Dedicated space for patients to complete PROs (if not existing exam room or other space)</li>
+												<li>Paper for printing PRO results</li>
+												<li>Printer and ink</li>
+												<li>Wipes for sterilizing tablets after each use</li>
+												<li>If new staff added: workstation, chairs, space</li>
 											</ul>
 										</td>					
 									</tr>
 									<tr>
-										<td>Item 3</td>
-										<td> Morbi faucibus arcu accumsan lorem.</td>
+										<td>Equipment</td>
+										<td>
+											<ul>
+												<li>Hardware: tablets for patients to complete PROs, including protective cover; computers if new staff; pagers for responding to PRO-based alerts</li>
+												<li>Software: licenses for computers, software for PRO</li>
+											</ul>
+										</td>
 									</tr>
 									<tr>
-										<td>Item 4</td>
-										<td>Vitae integer tempus condimentum.</td>
+										<td>Communication</td>
+										<td>
+											<ul>
+												<li>Network costs: internet connectivity, pager network subscription</li>
+											</ul>
+										</td>
 									</tr>
-									<tr>
-										<td>Item 5</td>
-										<td>Ante turpis integer aliquet porttitor.</td>
-									</tr>
+									
 								</tbody>
 													
 							</table>
 						</div>
 
-						<p>Of note, many of the costs (e.g. internet) do not necessarily apply to many clinical settings as these resources are already available. Personnel are likely the most important component of costs in most clinics whether it is adding new staff or shuffling duties. IT costs can include platform development vs. integration of existing platforms (several are available as Shareware but still will require programming (see Chapter 3).  [Add Link to Chapter 3 here]</p>
+						<p>Of note, some costs (e.g. internet) will not apply to many clinical settings, as these resources are already available. Personnel are likely the most important component of costs in most clinics whether it is adding new staff or reallocating duties. IT costs can include platform development vs. integration of existing platforms (several are available as Shareware but still will require programming <a href="">(see Chapter 3).  [Add Link to Chapter 3 here]</a></p>
 
-						<p>Recurring costs occur on a regular basis, and typically fall within an annual budget period. Unlike one-time costs, recurring costs generally remain the same within the budget year (e.g., general administrative costs, rent, license renewal, etc.). However, normal price increases (e.g., rent increases, pay raises, or other cost-of-living increases) should be budgeted for each coming year. Again, many of these will not apply to many clinic settings however personnel considerations are key. Table 2 shows examples of recurring costs.</p>
+						<p>Recurring costs occur on a regular basis, and typically fall within an annual budget period. Unlike one-time costs, recurring costs generally remain the same within the budget year (e.g., general administrative costs, rent, license renewal, etc.). However, normal price increases (e.g., rent increases, pay raises, or other cost-of-living increases) should be budgeted for each coming year. Again, many of these will not apply to many clinic settings however personnel considerations are key.</p>
+
+						<p>Table 2 shows examples of recurring costs.</p>
 
 						<div class="table-wrapper">
 							<table class="alt">
 								<thead>
 									<tr>
-										<th>Budget Category</th>
-										<th>Description</th>
+										<th><i>Table 2.</i> Examples of recurring costs</th>
 									</tr>
 								</thead>
 								<tbody>
 									<tr>
+										<td>Budget Category</td>
+										<td>Description</td>
+									</tr>
+									<tr>
 										<td>Personnel</td>
 										<td>
 											<ul>
-												<li>Staff to oversee the continued implementation of PROs e.g. connectivity issues, updating PRO devices, ongoing intermittent support</li>
-												<li>Can sometimes be implemented into duties of existing staff (e.g. front desk staff or medical assistants) depending on clinic flow</li>
+												<li>Staff to oversee continued maintenance of PROs (e.g. connectivity issues, updating PRO devices, care of devices, ongoing intermittent support)</li>
+												<li>May integrate into duties of existing staff (e.g. front desk staff or medical assistants) depending on clinic flow</li>
 											</ul>
 										</td>
 									</tr>
@@ -397,7 +369,7 @@
 										<td>Office expenses</td>
 										<td>
 											<ul>
-												<li>Office supplies/space</li>
+												<li>Office supplies (printer ink, paper, wipes)/space</li>
 											</ul>
 										</td>					
 									</tr>
@@ -413,7 +385,7 @@
 										<td>Communication</td>
 										<td>
 											<ul>
-												<li>Network costs: wi-fi, phone lines</li>
+												<li>Network costs: Wi-Fi, phone lines</li>
 											</ul>
 										</td>
 									</tr>
@@ -429,26 +401,29 @@
 													
 							</table>
 						</div>
-						<p>Of note, many of these costs do not apply in most clinical care settings (e.g. communication costs in most clinics do not apply as phone and internet resources already exist and do not include incremental additional costs when adding programs). Personnel likely is the most significant of cost in most clinical care settings even when some tasks are integrated into existing roles such as the front desk staff.</p>
+						<p>Again, some costs, such as internet use, will not apply in most clinical care settings (e.g., if internet resources already exist, and cost of personnel time is likely the most significant.</p>
 
 						<h3>Sample cost itemization tool</h3>
-						<p>Below is an itemization of startup and maintenance costs for integrating and administering PROs. Enter costs in the left hand column to determine:</p>
-						<p>Fixed Costs</p>
-						<ul>
-							<li>Device or devices (e.g. iPads or other tablets). You may wish to purchase more than one device in order to administer PROs to more than one patient at a time</li>
-							<li>Printer, if PRO results are printed out (printer is not a cost if integrated into electronic health record (EHR) or presented to provider on screen at start of visit)</li>
-						</ul>
-						<p>Recurring costs in 1 year</p>
-						<ul>
-							<li>WiFi access (monthly fee X 12 months)</li> 
-							<li>Paper, 1 page of PRO results per patient (no cost if electronic) multiplied by number of visits for which PROs are administered in a year</li>
-							<li>Toner for printer. Number of cartridges needed depends on number of PROs administered. A standard cartridge prints 220 pages </li>
-							<li>Salary associated with % FTE for staff member setting up and overseeing use of tablets. In the PROgress study, staff estimated a maximum of 4 minutes per patient for explanation of procedure, setup, collection of device, and delivery of paper–based results</li>
-						</ul>
+						<p>Below is an itemization of startup and maintenance costs for integrating and administering PROs. Enter costs in the left-hand column to determine:</p>
 
-						<p>One of the biggest issues that lead to delays and practical barriers including unplanned costs with PRO implementation involves integration with the EHR. Creating new platforms can be expensive and time consuming, integrating with EHRs is sometimes not feasible and the burden of the slow and/or complex EHR control processes have been noted as a hurdle3. This is even before taking into account the frequent changes in EHR products that are occurring across many healthcare settings.</p>
-						<p>Practical tip: A plan regarding technical approaches (Chapter 3) is important before realistic costs estimates can be conducted. EHR-based approaches are not necessarily the most effective (due to many PLWH not being linked to patient portals), efficient, modifiable, or practical. However, this is a quickly moving area and will need to be assessed on a site-by-site basis (Chapter 3). [Add Link to Chapter 3 here]</p>
-						<p>Practical tip: A plan regarding technical approaches (Chapter 3) is important before realistic costs estimates can be conducted. EHR-based approaches are not necessarily the most effective (due to many PLWH not being linked to patient portals), efficient, modifiable, or practical. However, this is a quickly moving area and will need to be assessed on a site-by-site basis (Chapter 3). [Add Link to Chapter 3 here]</p>
+						<p>Fixed Costs</p>
+						<p>Device or devices (e.g. iPads or other tablets). You may wish to purchase more than one device in order to administer PROs to more than one patient at a time: <input type="text" name="qty1" id="qty"/></p>
+
+						<p>Printer, if PRO results are printed out (printer is not a cost if integrated into electronic health record (EHR) or presented to provider on screen at start of visit): <input type="text" name="qty2" id="qty"/></p>
+
+						<p>Recurring costs in 1 year</p>
+						<p>WiFi access (monthly fee X 12 months): <input type="text" name="qty3" id="qty"/></p>
+						<p>Paper, 1 page of PRO results per patient (no cost if electronic) multiplied by number of visits for which PROs are administered in a year: <input type="text" name="qty4" id="qty"/></p>
+						<p>Toner for printer. Number of cartridges needed depends on number of PROs administered. A standard cartridge prints 220 pages: <input type="text" name="qty5" id="qty"/></p>
+						<p>Salary associated with % FTE for staff member setting up and overseeing use of tablets.: <input type="text" name="qty6" id="qty"/></p>
+						<p><i>In the PROgress study, staff estimated a maximum of 4 minutes per patient for explanation of procedure, setup, collection of device, and delivery of paper–based results. This estimate is based on the one-on-one interaction time of the staff member with the patient as well as time handing the tablet and not the full completion time of the PRO assessment by the patient as the staff member often left the room and did other activities while the patient completed the assessment.</i></p>
+						
+						<p><br><br>Total : <input type="text" name="total" id="total"/>
+
+						<a href="javascript:sumInputs()" class="button">Sum</a></p>
+
+						<p>One of the biggest issues that lead to delays and practical barriers including unplanned costs with PRO implementation involves integration with the EHR. Creating new platforms can be expensive and time consuming, integrating with EHRs is sometimes not feasible and the burden of the slow and/or complex EHR control processes have been noted as a hurdle1. This is even before taking into account the frequent changes in EHR products that are occurring across many healthcare settings. Fortunately, stand-alone platforms can be used that are much less expensive than developing new platforms, that allow PRO collection to continue regardless of EHR changes and facilitate implementation with PRO feedback even before EHR integration.</p>
+						<p class="box tip">Practical tip: A plan regarding technical approaches (Chapter 3) is important when estimating costs. EHR-based approaches are not necessarily the most effective (due to many PLWH not being linked to patient portals), efficient, modifiable, or practical. However, this is a quickly moving area and will need to be assessed on a site-by-site basis <a href="">(Chapter 3). [Add Link to Chapter 3 here]</a></p>
 
 						<h3>Creating a business case for PRO implementation</h3>
 						<p>Your organization may require the development of a formal business case for PRO implementation in order to assist in identifying short and long-term goals and associated budget requirements. Needs, solutions, approaches, risk assessments, and value analyses may be included in a business case. Table 3 shows an example of this format.</p>
@@ -463,23 +438,26 @@
 								<tbody>
 									<tr>
 										<td>Executive Summary</td>
-										<td>This is a brief description of the overall plan including the goals, milestones and a summary of implementation</td>
+										<td>Brief description of overall plan including goals, milestones, summary of implementation</td>
 									</tr>
 									<tr>
 										<td>The case for investing in PRO elicitation in routine HIV care</td>
 										<td>This section should succinctly outline the case for investment in PRO adoption.
-											<br>This can draw upon the complementary report to this Toolkit, the Evidence Dossier [Add Link here], which outlines the value of clinically relevant PROs use; this evidence is drawn from published literature across multiple therapy areas, including HIV, and highlights how PROs can enhance care including increasing the detection of relevant diagnoses and risk behaviors, facilitate improved patient-provider communication and can be integrated within workflows without adverse effects.
-											<br>This can contrast current service provision against an enhanced service with PROs and how this will benefit.
-											<br>The overview may also describe key elements such as the likely patient numbers and impact of the service.</td>					
+										<ol>
+											<li>Outlines case for integrating PROs into care</li>
+											<li>See complementary report to this Toolkit, the Evidence Review and Summary [Add Link here], which outlines the value of clinically relevant PROs to HIV care</li>
+											<li>Contrast current service provision with an enhanced service that includes PROs</li>
+											<li>Describe key elements, e.g., likely patient numbers, impact</li>
+										</td>					
 									</tr>
 									<tr>
 										<td>Statement of Goals and Objectives</td>
-										<td>This section articulates what is to be accomplished both short- and long-term so the scope of the service is clear</td>
+										<td>Includes long and short-term goals</td>
 									</tr>
 									<tr>
 										<td>Service overview</td>
 										<td>
-											<p>The proposed new service can be described in more detail, including:</p>
+											The proposed new service can be described in more detail, including:
 											<ul>
 												<li>How PROs will be gathered</li>
 												<li>How the PRO process will integrate into the current workflow (mapping the patient and information journey)</li>
@@ -493,19 +471,24 @@
 									</tr>
 									<tr>
 										<td>Project team</td>
-										<td>It is important to outline who is leading the project, and any proposed roles for existing or new personnel required to ensure adoption. This will include any champion role. Formation of a reference or steering group or updating of a community action board could be considered to support prioritization and for continued momentum in project progression.</td>
+										<td>
+											<ul>
+												<li>Proposed project leadership, and any proposed roles for existing or new personnel required to ensure adoption.</li>
+												<li>Formation of a reference or steering group or updating of a community action board could be considered to support prioritization and for continued momentum in project progression</li>
+											</ul>
+										</td>
 									</tr>
 									<tr>
 										<td>Milestones and deliverables for implementation</td>
-										<td>Conveying confidence in how the project will be managed and monitored will be important to secure buy in</td>
+										<td>Convey confidence in how the project will be managed and monitored</td>
 									</tr>
 									<tr>
 										<td>Financial Analysis</td>
-										<td>There should be a clear and carefully estimated cost of what investment is required. This should include start-up and recurring costs</td>
+										<td>Carefully estimated cost of investment required; include start-up and recurring costs</td>
 									</tr>
 									<tr>
 										<td>Risk Management Plan</td>
-										<td>This section details risks specific to the business plan. This may include process failures such as IT/wi-fi, staff turnover etc.</td>
+										<td>This section details risks specific to the business plan. This may include process failures such as IT/Wi-Fi, staff turnover etc.</td>
 									</tr>
 									<tr>
 										<td>Measurable and Achievable Outcomes</td>
@@ -516,68 +499,338 @@
 							</table>
 						</div>
 
-						<h3>Resources</h3>
-						<ul>
-							<li>Wallace Foundation – Budget Builder, Resources for Financial Accounting</li>
-							<li>Parkland Hospital – Developing a Budget</li>
-						</ul>
+						
 					</div>
 				</section>
-					
-						<script>
-							function togglec1() {
-							  var x = document.getElementsById("chapter1");
-							  for (var i =0; i < x.length; i++) {	
-							  if (x[i].style.display === "none") {
-							    x[i].style.display = "block";
-							  } else {
-							    x[i].style.display = "none";
-							  }
-							  }
-							}
-							function textswap() {
-							  var x = document.getElementById("dbutton");
-							  if (x.innerHTML === "Hide Details") {
-							    x.innerHTML = "Show Chapter";
-							  } else {
-							    x.innerHTML = "Hide Chapter";
-							  }
-							}
-							 
-						</script>
 
 				<section class="wrapper style1 align-left toolkitChap">
 					<div class="inner">
 						<h2 id= "chapter2" >CHAPTER 2.  ENGAGE STAKEHOLDERS</h3>
-						<p>content</p>
-
 						<h3>Identify stakeholders</h3>
-						<p>content</p>
+						<p>Early stakeholder engagement facilitates successful PRO implementation and its sustained use. Stakeholders include clinic leadership, patients, providers, and staff, and may also include others, such as hospital administrators or researchers. Each brings unique perspective, concerns, and valuable input. The broad goal of improving care tends to engage stakeholder interest with very specific concrete examples such as identifying otherwise undetectable suicidal ideation, depression, or inadequate adherence to antiretroviral therapy being very relatable goals that almost all stakeholders can appreciate. Furthermore, these types of goals have a strong evidence base supporting their likely success.</p>
+						<p>Stakeholder goals may vary. Early, preliminary discussions to understand stakeholder concerns and goals can help tailoring information and helping secure valuable support. For example, providers may be most motivated to adopt PROs to increase the appropriate diagnoses or identification of issues such as inadequate adherence; nurse managers may be concerned with impact on flow; patients may wish PROs included areas such as HIV stigma or social support to provide context to health needs; administrators may want to know if PROs can help satisfy external reporting requirements such as the percentage of clinic patients who complete a mental health instrument. Regardless of the stakeholder or motivation, engagement early in the process can identify and address benefits and concerns around PRO implementation (see section in this chapter, “Addressing Common Concerns”. [Add Link]</p>
 
-						<h3>Demonstrate value</h3> 
-						<p>Describe value to patient outcomes, relative to cost/labor/effort considerations. Tools: meeting agenda; timeline; poss include Barnes et al 2009 Table 5 from earlier iteration; other tools or materials re how to demonstrate value to be included as figures or tables.</p>
+						<h3>Prepare demonstration of value</h3> 
+						<p>Stakeholder interest depends on clear demonstration of value relative to cost. Ideally, a value demonstration takes the form of a brief presentation, or a simple summary sheet. A presentation demonstrating the impact of PROs on provider awareness and documentation of depression, substance use, and inadequate medication adherence is here<sup><a href="#REF">29</a></sup>. [ADD LINK] While clinical benefits such as increased provider awareness of risk behaviors are relevant for all HIV clinics, additional benefits may be applicable for specific settings (e.g. reporting requirements or meeting annual depression screening requirements for specific state-based payees). Providers have particularly valued improved identification of suicidal ideation and substance use<sup><a href="#REF">30,31</a></sup>.</p>
+						<p>In the case of PRO, adoption in the clinical setting, a value demonstration should consider who the beneficiaries are (e.g., the patient, the provider) and what the advantage unique to the stakeholder might be (e.g., better quality patient data for diagnosis, and improved provide/patient interaction, more comprehensive care, improved health outcomes for the patient).</p>
+
+						<p class="box tip"><i>Practical tip: Provide a clear justification for PRO data collection as providers and staff are more likely to support PRO implementation if they understand the value <sup><a href="#REF">1</a></sup>. Short practical examples are more compelling.</i></p>
+						<p>Example 1. Improve patient engagement in care via better detection of treatable problems. On average, ~30% of PLWH in the United States report depression at any one time, and this is associated with many poor outcomes such as mortality 2 . It is notable that even among PLWH with known depression there are substantial gaps in the depression treatment cascade with lack of follow up to see if treatments are effective <sup><a href="#REF">3</a></sup>. We plan to integrate a brief clinical assessment of PROs including depression to identify the ~20% of our clinic with undiagnosed or undertreated depression to improve care for those PLWH.</p>
+						<p>Example 2. Reduce preventable death. Two patients in the past year were killed as a result of intimate partner violence (IPV). The CDC has estimated that the rate of IPV among women with HIV is double the rate of those without HIV (~55%) 5 . PROs may effectively detect IPV. We are also seeing increasing heroin overdoses. We would like to implement a brief clinical assessment of PROs to allow a standardized approach to screening for IPV, drug and alcohol use, depression and inadequate adherence to allow us to better identify those PLWH in our clinic who may benefit from additional interventions such as addressing IPV and ensuring Narcan for those using illicit opioids.</p>
+
+						<h3>Meet with stakeholders</h3>
+						<p>Meeting with diverse stakeholders as a group presents an opportunity to describe the purpose of PROs, alleviate concerns or misapprehensions, and to coalesce support for their known value in improving care and clinical outcomes.9 An adaptable sample presentation for this purpose is here. [Add Link here]</p>
+						<p>Beyond the presentation of static information, we recommend giving stakeholders the opportunity in this meeting to interact with PRO measures and their output in order to better understand the process and its potential. This step, in our experience, has been a key turning point in generating enthusiasm and helping stakeholders visualize integration into daily routine. An example of an electronically administered touch-screen PRO assessment for this purpose is here, [Add Link here] which your audience may self-administer on their own or other devices. Sample output, or the results generated for providers is here [Add Link here] and in Figure 6 (Chapter 4). An interactive tool for determining average timing to completion for varied combinations of individual PRO measures is here. [Add Link here] Screenshots of the interactive tool can also be found in Appendix 2.</p>
+						<p>Figure 2 shows a sample agenda for an initial meeting with stakeholders.</p>
+
+						<div class="table-wrapper">
+							<table class="alt">
+								<thead>
+									<tr>
+										<th>Figure 2: Sample initial stakeholder meeting agenda</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Initial orientation to PROs:
+											<ul>
+												<li>PROs-introduction, definition</li>
+												<li>History/current status of PRO science</li>
+												<li>Reasons to use PROs- clinical/research value, reduces social desirability bias</li>
+												<li>Advantages computer-based, patient self-administration</li>
+												<li>PROs: common measurable domains of HIV care</li>
+												<li>iPad or other tablet demo of PROs: what patients see</li>
+												<li>Delivery of results: what providers see</li>
+												<li>Potential for electronic alerts in real time for intimate partner violence (IPV), suicidal ideation, other alerts</li>
+												<li>Evidence detailing elements of successful implementation; reasons for prior failures</li>
+												<li>Discussion: thoughts, concerns, potential for integration into clinic</li>
+											</ul>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Further discussion could include:
+											<ul>
+												<li>Integrating PROs into clinic flow</li>
+												<li>Integrating PROs into EHR</li>
+												<li>Concerns, questions, identification of opportunities for using PROs to improve workflow/effectiveness
+												with patients</li>
+												<li>Opportunities for the use of aggregate PRO data</li>
+											</ul>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						
+						<p>A sample presentation for this purpose is here [Link] and Appendix 3.</p>
+
+						<h3>Provide overview of value</h3>
+						<p class="box tip">Practical tip: Bring tablets and a demonstration version. Showing how straight forward it is for PLWH to complete, and how straight forward it is to get PLWH started with an assessment is crucial to alleviate staff concerns. Shorten the agenda as needed to ensure adequate time for the demonstration.</p>
+						<p>A comprehensive overview of the potential value of PROs is available in the form of the PROgress Evidence Review and Summary, as a companion document to this toolkit. [Add Link here]</p>
+
+						<h3>Address common concerns</h3>
+						<p>Stakeholders will likely have many valid concerns about introducing PROs into their practice. Below is a list of common initial stakeholder concerns regarding the implementation and ongoing use of PROs. Many of these concerns have proven addressable in the past integration efforts. Table 4 summarizes common concerns, followed by suggestions regarding how they can be effectively addressed.</p>
+
+						<div class="table-wrapper">
+							<table class="alt">
+								<thead>
+									<tr>
+										<th>Table 4: Common initial stakeholder concerns, and how to address them</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Common concern</td>
+										<td>How to address</td>
+									</tr>
+									<tr>
+										<td>PROs create too much additional work for providers in terms of the need to document additional non-urgent issues.</td>
+										<td>Evidence shows that while there is a modest increase in workload with respect to documentation, providers value the additional information that they believe may otherwise have been missed, such as suicidality, depression, ART non-adherence, substance use, and HIV transmission risk behavior<sup><a href="#REF">4,14</a></sup>.
+										<br><br>
+										Additionally, there are ways in which PROs may reduce this burden. In the Review of Symptoms Index, for example, patients select the degree to which they are bothered by symptoms; the most bothersome ones can be prioritized/prominently displayed in a results report (see example here). [Add Link here]
+										Focusing on targeted domains (health topics) that measure key clinical domains that are highly actionable such as substance use can alleviate this concern.
+										</td>
+									</tr>
+									<tr>
+										<td>Addressing PRO results adds too much time to the visit. </td>
+										<td>Evidence shows that providers perceived time expenditure as not having necessarily increased, but rather as having been prioritized differently<sup><a href="#REF">4</a></sup>.</td>
+									</tr>
+									<tr>
+										<td>PROs take the focus of the visit away from the patient’s chief complaint and force providers to address issues that would not otherwise have been top-of-mind for the patient.</td>
+										<td>It is true that the additional information potentially provided by PRO results likely impacts discussions. Additional issues may get raised that would not have otherwise been identified. PROs can focus on highly actionable and clinically relevant domains that providers agree are important to address such as substance use. Alternatively, if a broader PRO assessment is addressed, providers can review results with patients and ask which concerns they are most interested in addressing today. The experience remains patient-driven, presuming the absence of more serious concerns found in the PROs (e.g., suicidality).</td>
+									</tr>
+									<tr>
+										<td>PROs are redundant. I have great rapport with my patients, and they are honest with me about their needs and behaviors already.</td>
+										<td>Evidence shows that patients are more honest in responding to questions on a computer tablet than answering questions in person, particularly on sensitive topics<sup><a href="#REF">13,32-34</a></sup>. Social desirability bias among patients toward their providers may impede complete reporting even when there is good rapport. HIV care clinicians have expressed surprise at patients’ PRO responses, particularly on sensitive topics, among patients they assumed they knew well<sup><a href="#REF">14</a></sup>.</td>
+									</tr>
+									<tr>
+										<td>Addressing an itemized list of symptoms and behaviors is at odds with my professional style, which prioritizes connecting with the patient as a human being rather than a list of problems to be solved.</td>
+										<td>PROs are not meant to replace communication with providers, but rather to enhance it. PROs have been shown to empower the patient to take inventory of their health and better prioritize their needs in preparation for their visit<sup><a href="#REF">27,35</a></sup>. PROs can be viewed as a means of amplifying, organizing, and articulating the patient’s voice in care. They allow relevant issues to be identified so the provider can focus the discussion in a productive manner in those areas most likely to benefit the patient rather than spending most of the interaction gathering information about potential issues. </td>
+									</tr>
+									<tr>
+										<td>Patients will not tolerate a PRO assessment.</td>
+										<td>Evidence does not support this. Across several clinical settings and diverse populations of PLWH, tablet-based PRO assessments administered on site prior to the clinic visit have proven to be well-tolerated, with patients reporting high levels of satisfaction with the process<sup><a href="#REF">27,28,35</a></sup>.</td>
+									</tr>
+									<tr>
+										<td>PROs will negatively impact clinic flow.</td>
+										<td>Prior implementations suggest minimal impact on flow after the initial ramp-up if done well<sup><a href="#REF">10</a></sup>. The impact of PROs on flow is modifiable, and there are many ways to reduce it. Suggestions include minimizing the length of PRO assessment to include only the most clinically important domains of care; varying the frequency with which specific measures are administered (e.g., annually for less mutable domains, such as gender identity); administering PROs only when patient has arrived sufficiently early or on time (or if the provider is running late); remote PRO completion.  [Add Link here]</td>
+									</tr>
+									<tr>
+										<td>PROs require too much staff time to administer.</td>
+										<td>The staff burden required depends on the format of PROs used. This toolkit is focuses on tablet-based collection as it requires less time, patients prefer it and complete it more efficiently, there is no scoring or data entry steps, and results are available to providers in real-time. If using tablet-based data collection, the labor involved consists of explanation to patients of the procedure, peripheral monitoring to determine when the patient is finished, and device stewardship and sanitization. Depending on the clinic flow, these responsibilities can be performed by a dedicated staff member, or integrated into front desk staff duties (incorporated into check-in procedures), or integrated into medical assistant duties (incorporated into rooming and completion of vital signs). By incorporating PROs into rooming or check-in procedures the amount of staff burden can be decreased but still exists.</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<h3>Include providers in PRO selection process and output design</h3>
+						<p>Without clear relevance or usefulness to providers, PROs will be less likely to succeed long term in the clinic. Therefore, consider early engagement of providers to determine what PRO domains would be of most use to improve their ability to provide the best possible care for PLWH, and, by extension, patient outcomes.</p>
+						<p>Providers are the end users of PRO data: the results need to be highly relevant, interpretable, and easy to interact with. To help ensure this, always include providers in decision-making processes on the content, format, and design of PRO results. This includes: what form of presentation the reporting will take (e.g., paper vs. electronic, multiple vs. single time points), how scoring is displayed and explained (e.g., PHQ-9 for depression), organization of information (e.g., which domains at the top of the page vs. bottom), and aesthetics (e.g., use of color or bolding to highlight pertinent information). Early provider engagement helps ensure inclusion of clinically relevant, actionable domains, and, ultimately, investment in the PROs as a clinically useful tool tailored toward your clinic’s specific needs. See the sections titled “Select PROs: domains and attributes to consider” and “Format Results” in Chapter 4, “Create PRO Assessment”.  [Add Link here]</p>
+						<p class="box tip">Practical tip: A very common concern among providers is that PROs will lengthen visits <sup><a href="#REF">1</a></sup>. When presenting plans to implement PROs to stakeholders, emphasize evidence showing this is not likely the outcome 4 . Demonstrate the actual time to complete the assessment during stake-holder discussions using tablets and a demonstration assessment. Propose a plan for minimizing impact on flow, such as having patients arrive 10 minutes early to appointments.
+						<br><br>
+						Practical tip: Impact of PROs on clinical flow is an almost universal stakeholder concern <sup><a href="#REF">1</a></sup>. Reassuring stakeholders with a clear plan to start slowly in order to minimize impact on care processes is crucial. PROs can then be expanded once any implementation issues have been addressed. Examples of successful roll-out approaches that have been used to minimize impact on flow include starting on the least-busy clinic days of the week, starting with one full-time provider invested in the success of PROs and able to work with the team during integration, and starting with a very targeted brief PRO assessment.</p>
 
 						<h3>Secure implementation champion</h3>
-						<p>Supporting figure- bullet list of characteristics of this individual, and what one must expect this individual to do</p>
+						<p>One effective strategy for building momentum around PRO implementation is to identify or cultivate a “champion” in the setting where PRO implementation will take place. This person is tasked with advocating for the use of PROs, inspiring the range of stakeholders and increasing/maintaining commitment to maintain momentum of PRO adoption. The champion will remain close to the process as it evolves and will serve as a communication conduit for all parties, including eliciting arising concerns and issues, and communicating plans and successes in navigating these as the project evolves. This person is often the clinic director – with a PRO coordinator acting in this role once implementation occurs. Champions provide leadership, guidance, and encouragement to stakeholders, and focus on the sustainability of the PRO implementation.</p>
 
-						<h3>Resources</h3>
-						<p>content</p>
-
-						<h3>References</h3>
-						<p>citations</p>
 					</div>
 				</section>
 
 				<section class="wrapper style1 align-left toolkitChap">
 					<div  class="inner">
-						<h2 id="chapter3">CHAPTER 3.  BUILD TECHNICAL INFRASTRUCTURE</h2>
-						<p>[VERB-driven chapter subheadings needed here please]</p>
+						<h2 id="chapter3">CHAPTER 3. TECHNICAL CHOICES AND INFRASTRUCTURE</h2>
+						<h3>Understanding PRO Choices</h3>
+						<p>A successful PRO implementation should integrate both treatment- and patient-centered perspectives into one health information system, which should be crafted to optimize the patient experience, to enhance the provider’s clinical use of the data, to minimize any challenges to clinic flow and efficiency, and to maximize population health utility of the information. In this context, population health may include clinic-level, research, and public health uses of the data. </p>
+						<p>The first major step is confirming that all stakeholders share the intent to implement computerized collection of PRO data. While PROs may be collected by paper, the manual approach, while traditional, will likely be dismissed once a variety of factors are considered. The disadvantages of paper-based collection include increased clinic workload to administer PROs and enter responses, workload, decreased accuracy from required data entry, provider effort in summarizing data to realize clinical utility, and patient perceptions of both the utility and process of providing PRO responses. See Chapter 4 for more details regarding relative advantages and disadvantages. [Add link] </p>
+						<p>The second step is deciding which of four types of PRO systems to consider:</p>
+						<ol>
+							<li>a commercial “standalone” PRO system that can be integrated with an EHR,</li>
+							<li>an EHR vendor’s “built-in” questionnaire tools,</li>
+							<li>a developed PRO system developed “in-house”, or </li>
+							<li>a PRO system supplied as part of participation in a research or clinical network.</li>
+						</ol>
+						<p>All EHR and standalone PRO system vendors highlight their system’s ability to gather PRO questionnaire responses, provide those responses to providers, and ensure they become part of the medical record. However, it is important to examine each of these four options carefully to compare: the true cost of acquiring, integrating and supporting any particular product; the experience of the patient in accessing the system and recording their responses; the experience of the provider in accessing and using a clinically relevant summary of longitudinal patient data; and the “cost” (licensing, implementation, maintenance”) of persisting the data in the EHR – and if the data are persisted, whether that is done as a scanned image, an electronically transmitted summary form and/or discrete observations. How the data are stored impacts the ability to derive secondary value, beyond clinical utility, from population health applications.</p>
+						<p>Often IT organizations strongly favor using tools from their existing EHR vendor, in order to avoid a new vendor relationship and contract, simplify implementation of interfaces, avoid a new set of security considerations, to advance an agenda such as increasing patient use of a patient portal system, or simply to make use of existing vendor support mechanisms. However, the impact of a choice made only on these technical and operational considerations can significantly impact the experience of the patient and the value to the provider, which should be paramount to maximize data collection and use.</p>
+						<p>Once the four types of PRO systems have been considered, and an evaluation is determined the approach that best balances function and cost, has provider support, and is acceptable to any applicable IT governance process, than the particular pathway choice will then drive other technical needs (i.e., for software/operating system support, hardware platform, data storage attributes to support high data integrity, data center needs to ensure secure operation).</p>
+
+						<h3>Identify Issues to Guide Choices</h3>
+						<p>It may be helpful to organize the issues to be addressed according to the phases of gathering, using, storing, and reusing PRO data. These include: </p>
+						<ol>
+							<li>the flow of information from the patient to the provider, </li>
+							<li>the use of the information by the provider, </li>
+							<li>storing the information to meet medico-legal requirements for medical record collection, retention and accounting of disclosures, and</li>
+							<li>reuse of the data for population health purposes.</li>
+						</ol>
+						<p>Gathering information from the patient:</p>
+						<ul>
+							<li>In what settings will the patient use the system?  Only in the clinic?  At home, or in another location of their choosing?
+								<br>o What kind of support can be provided for in-clinic use?
+								<br>o In what locations can the patient use the system prior to their clinic visits?
+								<br>o What support is available for out-of-clinic use?
+								<br>o Can in-clinic use serve as a “backup” plan for patient’s unable to complete PROs outside the clinic, and if so, how does the communication occur to ensure that the patient can be prompted?</li>
+							<li>Can the system deliver reminders to the patient to complete PROs, or to the staff that a PRO has not been completed prior to a visit?
+								<br>o What hardware will deliver those reminders and what constraints does that place?</li>
+							<li>What devices will the patient use in clinic? Tablets or iPads are a common choice.
+								<br>o Can concerns about damage or loss of in-clinic devices be assuaged?
+								<br>o Are there valid concerns about device cleanliness?
+								<br>o How will defective or mis-configured devices be identified and repaired?
+								<br>o What level of duplicate devices are needed to ensure tolerance of faulty hardware?</li>
+							<li>Can the patient use the device of their own choosing out of the clinic? Can they use that device in clinic?
+								<br>o Can they use their phone?
+								<br>o Can they use a computer?
+								<br>o What security considerations are there if they are using a device that is not theirs?</li>
+							<li>How do we validate the identity of the patient when initially enrolling them?</li>
+							<li>How do we authenticate patients when they are using the system?
+								<br>o Is that done in person, for in-clinic use?
+								<br>o Do we sign them in with a patient-specific username/password and what kind of registration process do we use to support that?
+								<br>o How do we manage support for recovering passwords, or other login issues?
+								<br>o Does logging in present too much of a barrier to use and are there strategies such as one-time questionnaire links which can be used?
+								<br>- What are the institutional concerns around using one-time links?  
+								<br>- How does it impact the data that can be shown to the patient?
+								<br>- How does it impact the value to the patient?</li>
+							<li>What controls the patient’s periodic usage of the system?
+								<br>o Can the patient use the system electively, like a diary in their control, or only on a fixed schedule, as if it were an in-clinic questionnaire?
+								<br>o Can they edit/correct/revise their responses? How do they address errors?
+								<br>o Can the system deliver reminders to the patient to complete PROs, or to the staff that a PRO has not been completed prior to a visit?
+								<br>o What hardware will deliver those reminders and what constraints does that place?</li>
+							<li>Do we need to implement a patient’s “right be forgotten” in a particular setting?
+								<br>o Does that conflict with the need to maintain records, or to make data available for population health uses?</li>
+						</ul>
+						<p>Presenting information to the provider</p>
+						<ul>
+							<li>How can the information be presented to the provider?
+								<br>o Discrete values sent to an EHR and viewed through charting or table functions?
+								<br>o Customized, domain-specific longitudinal patient summary?</li>
+							<li>How can the provider access those views of information?
+								<br>o While logged into the EHR, using EHR tools?
+								<br>o While logged into the EHR, viewing a static summary?
+								<br>o While logged into the EHR, using an application within the EHR to view the data interactively?
+								<br>o Similarly, the last two options may be options in a vendor system, locally developed system, or system provided as part of a research or clinical care network.
+								<br>o Are there visualization considerations that create opportunities to overlook or erroneously interpret information?
+								<br>o Especially if patients can use the system electively, are there visualizations which efficiently present a large amount of information?</li>
+							<li>Is viewing information closely linked to the providers documentation process?
+								<br>o Are there “macros” or summary information that can be imported into the documentation?</li>
+						</ul>
+						<p>Reuse of information for population health</p>
+						<ul>
+							<li>Are there individual level metrics of frequency and completeness of use? Is individual level data collected from patients and providers to monitor satisfaction and barriers to use?</li>
+							<li>Are there clinic level indicators of use available to show broad patterns of use and monitored for changes that might represent systematic barriers or enablers to use?</li>
+							<li>Are there clinical level metrics based on aggregate outcomes of clinical significance, so that PRO data may be used to monitor patient-reported impacts of changes in care patterns?</li>
+							<li>Are adequate data being collected to satisfy any research or public health goals for secondary use of those data?</li>
+							<li>Are the PRO data represented using standard formats and value sets, such that extracted data may have its structure and meaning consistent with that form other systems?</li>
+						</ul>
+
+						<p>As an example, in the PROgress study, after discussion with teams at St. Michaels and Midway clinics, including discussions with the IT staff, we addressed these issues as follows:</p>
+
+						<p><b>Gathering information from the patient:</b> Initial implementations at both sites were based on in-clinic administration of the PROs on a tablet. This simplifies both the direct support for the patient in using the system, if needed, as well as the issues of identity verification and account management for the patients. However, this comes at a cost of flexibility of administration. Both sites were pleased with their choices, but both had trouble making the transition to remote use with the onset of COVID-19 concerns and the shift to telehealth visits.</p>
+
+						<p><b>Presenting information to the provider:</b> Both sites valued integration with the EHR, however both were in transition to, or strongly considering new EHR vendors and would have needed a clear and economical path to integration with their existing vendors. We did explore both FHIR interfaces and SMART on FHIR integration with one of the vendors, but exchanging enough information to secure a firm bid proved elusive and both sites elected to use automated printing of a results summary on PRO completion, and delivery of that summary to the provider at the time of the visit. </p>
+
+						<p><b>Storing information into the medical record:</b> Both sites elected to scan the summary sheet into the electronic medical record, since an electronic interface was not implemented and they were soon going to transition to other EHRs.</p>
+
+						<p><b>Reuse of information for population health:</b> Both sites elected to rely on the built-in dashboard features in the administrative view to track usage and completion, and on the analysis data set download feature for further examination of population level responses.  Midway requested a “whiteboard” view to track waiting room completion status in real time in the provider room, which was implemented. This is similar to a feature that had been previously developed for another clinical setting and allowed a screen to always show progress of patients on the PROs in the clinic in real time.</p>
+
+						<h3>Consider System Features</h3>
+						<p>Table 5 describes considerations for the PRO system features, adapted from<sup><a href="#REF">36</a></sup>, which reflect a similar set of concerns.</p>
+
+						<div class="table-wrapper">
+							<table class="alt">
+								<thead>
+									<tr>
+										<th>Table 5. Key considerations for defining PRO system characteristics data</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Key Consideration</td>
+										<td>Definition</td>
+									</tr>
+									<tr>
+										<td>EHR infrastructure</td>
+										<td>Existence and type of EHR system. Important to consider because of both degrees of data integration and feature comparisons, between EHR vendor PRO tools, PRO tools that can be integrated with the existing EHR, and standalone PRO tools</td>
+									</tr>
+									<tr>
+										<td>Data standards</td>
+										<td>Methods, protocols, terminologies, and specifications for the collection, exchange, storage, and retrieval of information associated with PROs</td>
+									</tr>
+									<tr>
+										<td>Dashboard design and alerting</td>
+										<td>Frequency and scheduling of alerts, the data displayed in the dashboard to monitor system performance and usage, the number of clicks or steps required to access information, whether there should be capabilities to temporarily mute or turn off certain features, and the types of icons and graphics that are recognized most easily</td>
+									</tr>
+									<tr>
+										<td>Data accessibility</td>
+										<td>The data gathered by the PRO system must be accessible at both the individual and population levels, with quality, timeliness, and accuracy appropriate for each intended use</td>
+									</tr>
+									<tr>
+										<td>Interoperability</td>
+										<td>The ability of different vendor systems and software applications to communicate, exchange data, and use the information that has been exchanged; interoperability is enabled by common data standards</td>
+									</tr>
+									<tr>
+										<td>Adaptability of technology</td>
+										<td>Changes in the usage of PROs across different patient groups and/or different health domains; this capacity to adapt to new health system needs requires processes to be defined and documentation to be in place for local developers</td>
+									</tr>
+									<tr>
+										<td>Adaptability of content</td>
+										<td>Consulting patients and providers, and using their input to determine how to collate data received; responds to the need to align PROs with patient/provider needs, or to translate the content into new languages</td>
+									</tr>
+									<tr>
+										<td>Translatability</td>
+										<td>The capacity of PROs to function across different types of mobile devices and operating systems; ensuring hardware and system compatibility with technologies that are adaptable to a variety of needs will greatly facilitate the scaling up and sustainability of PRO systems in new settings</td>
+									</tr>
+									<tr>
+										<td>Language</td>
+										<td>PROs must be delivered in a language or set of languages that is accessible by patients or family members reporting their outcomes, and the results must be delivered in a language that is accessible by providers or others who must understand and act on those results</td>
+										
+									</tr>
+									<tr>
+										<td>Workflows</td>
+										<td>PRO usage must fit with the workflows and activities that both patients and providers undertake. Those workflows may be a change from existing workflows but planning for that change facilitates effective implementation.</td>
+									</tr>
+									<tr>
+										<td>Storage needs</td>
+										<td>PRO data used for clinical decision making must be considered part of the medical record and, whether stored within the EHR or apart from it, is subject to regulations and policies pertaining to data reliability, integrity and retention</td>
+									</tr>
+									<tr>
+										<td>Data security and privacy</td>
+										<td>PRO systems and the storage of data from PROs must comply with applicable privacy and security regulations</td>
+									</tr>
+								</tbody>
+								<tfoot>
+									<td>Adapted from<sup><a href="#REF">36</a></sup></td>
+								</tfoot>
+							</table>
+						</div>
+
+
+						<h3>Consider Data Quality</h3>
+						<p>System features may include creating a dashboard to enhance usage monitoring, improve data accessibility and monitor data quality. Minimizing data errors within the PRO system is critically important. Errors or missing data can be reduced through automated data quality assurance measures that assess data for inconsistencies (e.g., validation rules built into the application), and through consideration of issues that discourage patients from starting or completing PRO sessions. Figure 3 describes the characteristics that define data quality.</p>
+
+
+						<p><b>Figure 3. The characteristics that define data quality</b></p>
+						<p>Accuracy and precision refer to the exactness of the data. Accuracy in healthcare is worth high levels of investment. The data must not contain errors and must convey the correct information without being misleading. PRO answers that are considered valid or legitimate based on the survey’s requirement are allowable. </p>
+						<p>At the same time, it is important to realize that requiring a patient to answer a question does not guarantee accurate data, any more than requiring a health care provider to acknowledge an alert guarantees their thoughtful consideration of the underlying information. Patients should be given a pathway through the PRO process which encourages them to provide information useful to their care, and to understand the benefit of providing that information.</p>
+						<p>There must be a valid reason to collect the data to justify the time and effort required. PRO data collected that is not relevant can misrepresent a patient’s health status and drive inaccurate clinical decision-making. Incomplete data collection can lead to incomplete understanding of patient health. Providers need the right level of access to the PRO data to adequately evaluate the data in a timely manner.</p>
+						<p>There must be a reliable mechanism that collects and stores the PRO data without inconsistency or variance. The level of data detail is important, since inaccurate decisions can occur if the data is not clearly presented. Simple raw data may have a different meaning than data that has been aggregated and summarized.</p>
+						<p>A PRO system that offers a wide range of software features can adapt to specific patient or provider needs without significant additional programming and supports reporting and data visualization solutions.</p>
 
 						<h3>Resources</h3>
-						<p>content</p>
+						<p><b>Guidance on Infrastructure</b></p>
+						<ul>
+							<li>Snyder C, and Wu, A.W., eds. Users’ Guide to Integrating Patient-Reported Outcomes in Electronic Health Records. Baltimore, MD: Johns Hopkins University. 2017. Funded by Patient-Centered Outcomes Research Institute (PCORI); JHU Contract No. 10.01.14 TO2 08.01.15.
+							<br>Available at: http://www.pcori.org/document/users-guide-integrating-patient-reported-outcomes-electronic-health-records </li>
+							<li>Coons SJ, Eremenco S, Lundy JJ, O’Donohoe P, O’Gorman H, Malizia W. Capturing Patient-Reported Outcome (PRO) Data Electronically: The Past, Present, and Promise of ePRO Measurement in Clinical Trials. The Patient. 2015;8(4):301-309. doi:10.1007/s40271-014-0090-z.
+							</li>
+						</ul>
+						<p><b>Other Helpful Information or Examples</b></p>
+						<ul>
+							<li>ePROs in Clinical Care: Guidelines and tools for health systems. (https://epros.becertain.org/) 2020.</li>
+							<li>Clinical Data Capture and Management Evaluation Checklist, Oracle Data Sheet. </li>
+							<li>Review of Data Accessibility Methods In Healthcare (PDF Download Available).</li>
+							<br>Available from: https://www.researchgate.net/publication/280722426_REVIEW_OF_DATA_ACCESSIBILITY_METHODS_IN_HEALTHCARE [accessed Feb 12 2018].</ul>
+							<li>The MAPS Toolkit: mHealth assessment and planning for scale. World Health Organization (2015). United Nations Foundation. UNDP/UNFPA/WHO/World Bank Special Programme of Research, Development and Research Training in Human Reproduction. Johns Hopkins University.</li>
+							<li>REDCap is a secure web application for building and managing online surveys and databases http://projectredcap.org</li>
+						</ul>
 
-						<h3>References</h3>
-						<p>citations</p>
 					</div>
 				</section>
 
@@ -637,37 +890,78 @@
 
 				<section class="wrapper style1 align-left toolkitChap">
 					<div class="inner">
-						<h2 id="chapter6">CHAPTER 6.  INTEGRATE INTO WORKFLOW	</h2>
-						<p>content</p>
+						<h2 id="chapter6">CHAPTER 6. TRAIN CLINIC PERSONNEL</h2>
+						
+						<h3>Initial training</h3>
+						<p>A general overview of the PROs and their value will be relevant to all involved, with specific training elements relevant to the execution of individual roles.</p>
+						<p>Figure 7 shows a sample training agenda covering the topics necessary to equip staff and providers to begin administering PROs. This may be broken up into more than one training, such as one for orienting to PROs in general, and another detailing or developing protocols; or, for training different levels of staff. In our experience, initial trainings that include all staff types work well, particularly for smaller clinics. The training becomes a dynamic and iterative process in which staff members in different roles collaboratively think through how patients administered PROs will move through their visit, refining protocols in the process. </p>
+						<p>PRO output given to providers should be easy enough to interpret that no specialized training is needed.</p>
+						<h3>Ongoing Training</h3>
+						<p>Consider providing refresher training or process checks as time goes on to ensure that the process is operating optimally. Options include observation by another staff member or a formal refresher session.</p>
+						<p class="box tip">Practical Tip: If the clinic has an orientation manual for new hires, include a short paragraph about the PRO process
+						<br><br>
+						Practical Tip: Having staff complete a demonstration PRO assessment on the tablet can quickly demonstrate how easy it is and greatly decrease hurdles
+						<br><br>
+						Practical Tip: While formal refresher sessions are one option to provide ongoing training and maintain enthusiasm, we have found that annual brief presentations of key findings (e.g. % of PLWH reporting depression, methamphetamine use, etc.) to the entire staff (as part of quarterly staff and provider joint meetings) has resulted in ownership and ongoing support not just from the providers but also from other staff members.</p>
+						
+						<div class="table-wrapper">
+							<table class="alt">
+								<thead>
+									<tr>
+										<th>Figure 7. Sample training agenda</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Clinic staff training (all levels, group meeting)</td>
+									</tr>
+									<tr>
+										<td>
+											PROs: purpose and general orientation
+											<ul>
+												<li>PROs-introduction, definition</li>
+												<li>Value of PROs- known clinical/research value, reduces social desirability bias, prioritizes needs</li>
+												<li>PRO domains- examples</li>
+												<li>iPad demo of PROs: what patients see</li>
+												<li>Results: what providers see</li>
+												<li>Silent group activity: all staff members self-administer PRO assessment on separate devices (if possible),
+												as if at risk for all categories<br>
+												o Discussion of PRO assessment/experience of answering PROs<br>
+												o Discussion regarding improving, adding, or modifying content</li>
+											</ul>
+										</td>
+									</tr>
+									<tr>
 
-						<h3>Typical PRO workflows</h3>
-						<p>Supported by figures/graphics. We want readers to visualize what’s possible prior to getting into the details. Will compare workflows that are more productive vs. less productive in our experience.</p>
+										<td>Integration of PROs into clinic
 
-						<h3>Action Item</h3>
-						<p>Tool: “To do” checklist</p>
-						<ul>
-							<li>Define staff roles and centralize responsiblity</li>
-							<li>Develop protocols</li>
-							<ul>
-								<li>When and where to complete PROs: More granular level decision than in Chapter 4: Before appointment? If so how much longer before? During appointment? On site? If so, where? Off site remotely? Some remote and some on site? Etc.</li>
-								<li>How to introducce PROs to Patients: Provide script/language as the ‘tool’ for this</li>
-								<li>Whether to administer PROs</li>
-								<ul>
-									<li>Person attributes: Focus on when NOT to administer. Ex: low literacy level, poor cognitive function, acute illness.</li>
-									<li>Flow-related attributes: Ex: patient late, taking too long to answer; busy clinic day with no space or time.</li>
-								</ul>
-								<li>How to deliver results: timing, format</li>
-								<li>Emergency and high-rosk protocols: Emergency: Suicide, IPV; at risk: poor adherence, drug use, depression, sexual risk behavior</li>
-							</ul>
-							<li>Pilot: Explains how to pilot in phases (staff as mock patient, then amenable real patient)</li>
-							<li>Launch: Explains what initial day, subsequent days may look like; what things have come up during this time in our experience, what resources needed etc.</li>
-						</ul>
-
+										<ul>
+											<li>How PROs will fit into clinic flow: overview<br>
+											o Who follows up with patients at each step during their visit<br>
+											o How patient will move through the appointment post-PRO integration<br>
+											o Discussion of concerns, solicit feedback, refine protocol</li>
+											<li>How to schedule PROs (if applicable)</li>
+											<li>How to introduce PROs to patients</li>
+											<li>Protocol for late patients or patients that are too ill/impaired to complete PROs</li>
+											<li>Protocol for emergency (suicide/IPV) and other alerts</li>
+											<li>Results: scoring and interpretation</li>
+											<li>Results: delivery protocol</li>
+											<li>Communication protocols between staff regarding PROs</li>
+											<li>Care and storage of tablets</li>
+											<li>Using the PRO platform: scheduling, patient lookup, data sets, etc.</li>
+										</ul>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+							
+						
 						<h3>Resources</h3>
-						<p>content</p>
-
-						<h3>References</h3>
-						<p>citations</p>
+						<ul>
+							<li>Eye for Pharma: Using ePRO for the First Time: <a href="https://social.eyeforpharma.com/commercial/using-electronic-patient-reported-outcomes-epro-first-time-lessons-learned">Lessons Learned</a></li>
+							<li>Schick-Makaroff K, Molzahn A. Strategies to use tablet computers for collection of electronic patient-reported outcomes. Health and Quality of Life Outcomes. 2015;13:2. doi:10.1186/s12955-014-0205-1.</li>
+						</ul>
 					</div>
 				</section>
 
