@@ -17,6 +17,27 @@
 					e.style.display = 'block';
 				}
 		</script>
+		<style>
+			.row {
+  				display: flex;
+			}
+			.column {
+  				flex: 50%;
+				text-align: center;
+			}
+			#logos {
+				display: flex;
+			}
+			@media screen and (max-width: 900px) {
+				#logos {
+					display: none;	
+				}
+				#web_text {
+					flex: 100%;
+					text-align: left;
+				}
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 		<div class="loading-container loading"><div class="loader"></div></div>
@@ -99,11 +120,11 @@
 								<br>3.&nbsp;&nbsp;&nbsp;<b>The PROgress Evidence Review and Summary:</b> This collates evidence relating to PROs in the care of PLWH, to highlight the potential of a well implemented process within routine HIV care. </li>
 							</p>
 							<p>Each were designed as complementary outputs of PROgress, to support future HIV practice.   </p>
-							<div style="display: flex;">
-								<div style="flex: 50%;">
+							<div class="row">
+								<div class="column" id="web_text">
 									<p>This website is based on the expertise and insights of patients, providers, and researchers involved in the PROgress Study, funded by ViiV Healthcare. The study evaluated and summarized best practices regarding action and use of electronic PROs in clinical HIV care. </p>
 								</div>
-								<div style="flex: 50%; text-align: center;">
+								<div class="column" id="logos">
 									<img src="images/viiv_logo_RGB.png" style="height: 5em; margin: 2em;">
 									<img src="images/Signature_Stacked_Purple_Hex.png" style="height: 5em; margin: 2em;">
 								</div>
