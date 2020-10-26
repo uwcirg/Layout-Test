@@ -688,80 +688,90 @@
 
 				<section class="wrapper style1 align-left toolkitChap">
 					<div  class="inner">
-						<h2 id="chapter3">CHAPTER 3. TECHNICAL CHOICES AND INFRASTRUCTURE</h2>
-						<h3>Understanding PRO Choices</h3>
-						<p>A successful PRO implementation should integrate both treatment- and patient-centered perspectives into one health information system, which should be crafted to optimize the patient experience, to enhance the provider’s clinical use of the data, to minimize any challenges to clinic flow and efficiency, and to maximize population health utility of the information. In this context, population health may include clinic-level, research, and public health uses of the data. </p>
-						<p>The first major step is confirming that all stakeholders share the intent to implement computerized collection of PRO data. While PROs may be collected by paper, the manual approach, while traditional, will likely be dismissed once a variety of factors are considered. The disadvantages of paper-based collection include increased clinic workload to administer PROs and enter responses, workload, decreased accuracy from required data entry, provider effort in summarizing data to realize clinical utility, and patient perceptions of both the utility and process of providing PRO responses. See Chapter 4 for more details regarding relative advantages and disadvantages. [Add link] </p>
+						<h2 id="chapter3">3. TECHNICAL CHOICES AND INFRASTRUCTURE</h2>
+						<h3>3.1. Understanding PRO Choices</h3>
+						<p>A successful PRO implementation should integrate both treatment- and patient-centered perspectives into one health information system, which should be crafted to optimize the patient experience, to enhance the provider’s clinical use of the data, to minimize any challenges to clinic flow and efficiency, and to maximize population health utility of the information. In this context, population health may include clinic-level, research, and public health uses of the data.</p>
+						<p>The first major step is confirming that all stakeholders share the intent to implement computerized collection of PRO data. While PROs may be collected by paper, the manual approach, this will likely be dismissed once a variety of factors are considered. The disadvantages of paper-based collection include increased clinic workload to administer PROs and enter responses, decreased accuracy from required data entry, provider effort in summarizing data to realize clinical utility, and patient perceptions of both the utility and process of providing PRO responses. See <a href="#chapter4">Chapter 4</a> for more details regarding relative advantages and disadvantages.</p>
 						<p>The second step is deciding which of four types of PRO systems to consider:</p>
 						<ol>
-							<li>a commercial “standalone” PRO system that can be integrated with an EHR,</li>
-							<li>an EHR vendor’s “built-in” questionnaire tools,</li>
-							<li>a developed PRO system developed “in-house”, or </li>
+							<li>a commercial “standalone” PRO system that can be integrated with an EHR</li>
+							<li>an EHR vendor’s “built-in” questionnaire tools</li>
+							<li>a developed PRO system developed “in-house”</li>
 							<li>a PRO system supplied as part of participation in a research or clinical network.</li>
 						</ol>
-						<p>All EHR and standalone PRO system vendors highlight their system’s ability to gather PRO questionnaire responses, provide those responses to providers, and ensure they become part of the medical record. However, it is important to examine each of these four options carefully to compare: the true cost of acquiring, integrating and supporting any particular product; the experience of the patient in accessing the system and recording their responses; the experience of the provider in accessing and using a clinically relevant summary of longitudinal patient data; and the “cost” (licensing, implementation, maintenance”) of persisting the data in the EHR – and if the data are persisted, whether that is done as a scanned image, an electronically transmitted summary form and/or discrete observations. How the data are stored impacts the ability to derive secondary value, beyond clinical utility, from population health applications.</p>
+						<p>All EHR and standalone PRO system vendors highlight their system’s ability to gather PRO questionnaire responses, provide those responses to providers, and ensure they become part of the medical record. However, it is important to examine each of these four options carefully to compare: the true cost of acquiring, integrating and supporting any particular product; the experience of the patient in accessing the system and recording their responses; the experience of the provider in accessing and using a clinically-relevant summary of longitudinal patient data; and the ‘cost’ (licensing, implementation, maintenance) of persisting the data in the EHR – and if the data are persisted, whether that is done as a scanned image, an electronically-transmitted summary form and/or discrete observations. How the data are stored impacts the ability to derive secondary value, beyond clinical utility, from population health applications.</p>
 						<p>Often IT organizations strongly favor using tools from their existing EHR vendor, in order to avoid a new vendor relationship and contract, simplify implementation of interfaces, avoid a new set of security considerations, to advance an agenda such as increasing patient use of a patient portal system, or simply to make use of existing vendor support mechanisms. However, the impact of a choice made only on these technical and operational considerations can significantly impact the experience of the patient and the value to the provider, which should be paramount to maximize data collection and use.</p>
-						<p>Once the four types of PRO systems have been considered, and an evaluation is determined the approach that best balances function and cost, has provider support, and is acceptable to any applicable IT governance process, than the particular pathway choice will then drive other technical needs (i.e., for software/operating system support, hardware platform, data storage attributes to support high data integrity, data center needs to ensure secure operation).</p>
+						<p>Once the four types of PRO systems have been considered and an evaluation is determined, the approach that best balances function and cost, has provider support, and is acceptable to any applicable IT governance process, then the particular pathway choice will drive other technical needs (i.e. for software/operating system support, hardware platform, data storage attributes to support high data integrity, data center needs to ensure secure operation).</p>
 
-						<h3>Identify Issues to Guide Choices</h3>
-						<p>It may be helpful to organize the issues to be addressed according to the phases of gathering, using, storing, and reusing PRO data. These include: </p>
+						<h3>3.2. Identify Issues to Guide Choices</h3>
+						<p>It may be helpful to organize the issues to be addressed according to the phases of gathering, using, storing, and reusing PRO data. These include:</p>
 						<ol>
-							<li>the flow of information from the patient to the provider, </li>
-							<li>the use of the information by the provider, </li>
-							<li>storing the information to meet medico-legal requirements for medical record collection, retention and accounting of disclosures, and</li>
-							<li>reuse of the data for population health purposes.</li>
+							<li>The flow of information from the patient to the provider</li>
+							<li>The use of the information by the provider</li>
+							<li>Storing the information to meet medico-legal requirements for medical record collection, retention, and accounting of disclosures</li>
+							<li>Reuse of the data for population health purposes.</li>
 						</ol>
 						<p>Gathering information from the patient:</p>
 						<ul>
 							<li>In what settings will the patient use the system?  Only in the clinic?  At home, or in another location of their choosing?
-								<br>o What kind of support can be provided for in-clinic use?
-								<br>o In what locations can the patient use the system prior to their clinic visits?
-								<br>o What support is available for out-of-clinic use?
-								<br>o Can in-clinic use serve as a “backup” plan for patient’s unable to complete PROs outside the clinic, and if so, how does the communication occur to ensure that the patient can be prompted?</li>
+								<br>- What kind of support can be provided for in-clinic use?
+								<br>- In what locations can the patient use the system prior to their clinic visits?
+								<br>- What support is available for out-of-clinic use?
+								<br>- Can in-clinic use serve as a “backup” plan for patient’s unable to complete PROs outside the clinic, and if so, how does the communication occur to ensure that the patient can be prompted?</li>
 							<li>Can the system deliver reminders to the patient to complete PROs, or to the staff that a PRO has not been completed prior to a visit?
-								<br>o What hardware will deliver those reminders and what constraints does that place?</li>
+								<br>- What hardware will deliver those reminders and what constraints does that place?</li>
 							<li>What devices will the patient use in clinic? Tablets or iPads are a common choice.
-								<br>o Can concerns about damage or loss of in-clinic devices be assuaged?
-								<br>o Are there valid concerns about device cleanliness?
-								<br>o How will defective or mis-configured devices be identified and repaired?
-								<br>o What level of duplicate devices are needed to ensure tolerance of faulty hardware?</li>
+								<br>- Can concerns about damage or loss of in-clinic devices be assuaged?
+								<br>- Are there valid concerns about device cleanliness?
+								<br>- How will defective or mis-configured devices be identified and repaired?
+								<br>- What level of duplicate devices are needed to ensure tolerance of faulty hardware?</li>
 							<li>Can the patient use the device of their own choosing out of the clinic? Can they use that device in clinic?
-								<br>o Can they use their phone?
-								<br>o Can they use a computer?
-								<br>o What security considerations are there if they are using a device that is not theirs?</li>
+								<br>- Can they use their phone?
+								<br>- Can they use a computer?
+								<br>- What security considerations are there if they are using a device that is not theirs?</li>
 							<li>How do we validate the identity of the patient when initially enrolling them?</li>
 							<li>How do we authenticate patients when they are using the system?
-								<br>o Is that done in person, for in-clinic use?
-								<br>o Do we sign them in with a patient-specific username/password and what kind of registration process do we use to support that?
-								<br>o How do we manage support for recovering passwords, or other login issues?
-								<br>o Does logging in present too much of a barrier to use and are there strategies such as one-time questionnaire links which can be used?
-								<br>- What are the institutional concerns around using one-time links?  
-								<br>- How does it impact the data that can be shown to the patient?
-								<br>- How does it impact the value to the patient?</li>
+								<br>- Is that done in person, for in-clinic use?
+								<br>- Do we sign them in with a patient-specific username/password and what kind of registration process do we use to support that?
+								<br>- How do we manage support for recovering passwords, or other login issues?
+								<br>- Does logging in present too much of a barrier to use and are there strategies such as one-time questionnaire links which can be used?
+								<br>&nbsp;&nbsp;&nbsp;o What are the institutional concerns around using one-time links?  
+								<br>&nbsp;&nbsp;&nbsp;o How does it impact the data that can be shown to the patient?
+								<br>&nbsp;&nbsp;&nbsp;o How does it impact the value to the patient?</li>
 							<li>What controls the patient’s periodic usage of the system?
-								<br>o Can the patient use the system electively, like a diary in their control, or only on a fixed schedule, as if it were an in-clinic questionnaire?
-								<br>o Can they edit/correct/revise their responses? How do they address errors?
-								<br>o Can the system deliver reminders to the patient to complete PROs, or to the staff that a PRO has not been completed prior to a visit?
-								<br>o What hardware will deliver those reminders and what constraints does that place?</li>
+								<br>- Can the patient use the system electively, like a diary in their control, or only on a fixed schedule, as if it were an in-clinic questionnaire?
+								<br>- Can they edit/correct/revise their responses? How do they address errors?
+								<br>- Can the system deliver reminders to the patient to complete PROs, or to the staff that a PRO has not been completed prior to a visit?
+								<br>- What hardware will deliver those reminders and what constraints does that place?</li>
 							<li>Do we need to implement a patient’s “right be forgotten” in a particular setting?
-								<br>o Does that conflict with the need to maintain records, or to make data available for population health uses?</li>
+								<br>- Does that conflict with the need to maintain records, or to make data available for population health uses?</li>
 						</ul>
-						<p>Presenting information to the provider</p>
+						<p>Presenting information to the provider:</p>
 						<ul>
 							<li>How can the information be presented to the provider?
-								<br>o Discrete values sent to an EHR and viewed through charting or table functions?
-								<br>o Customized, domain-specific longitudinal patient summary?</li>
+								<br>- Discrete values sent to an EHR and viewed through charting or table functions?
+								<br>- Customized, domain-specific longitudinal patient summary?</li>
 							<li>How can the provider access those views of information?
-								<br>o While logged into the EHR, using EHR tools?
-								<br>o While logged into the EHR, viewing a static summary?
-								<br>o While logged into the EHR, using an application within the EHR to view the data interactively?
-								<br>o Similarly, the last two options may be options in a vendor system, locally developed system, or system provided as part of a research or clinical care network.
-								<br>o Are there visualization considerations that create opportunities to overlook or erroneously interpret information?
-								<br>o Especially if patients can use the system electively, are there visualizations which efficiently present a large amount of information?</li>
+								<br>- While logged into the EHR, using EHR tools?
+								<br>- While logged into the EHR, viewing a static summary?
+								<br>- While logged into the EHR, using an application within the EHR to view the data interactively?
+								<br>- Similarly, the last two options may be options in a vendor system, locally developed system, or system provided as part of a research or clinical care network.
+								<br>- Are there visualization considerations that create opportunities to overlook or erroneously interpret information?
+								<br>- Especially if patients can use the system electively, are there visualizations which efficiently present a large amount of information?</li>
 							<li>Is viewing information closely linked to the providers documentation process?
-								<br>o Are there “macros” or summary information that can be imported into the documentation?</li>
+								<br>- Are there “macros” or summary information that can be imported into the documentation?</li>
 						</ul>
-						<p>Reuse of information for population health</p>
+
+						<p>Storing information into the medical record:</p>
+						<ul>
+							<li>Are the PRO data preserved as discrete observations in the EHR?</li>
+							<li>Are they preserved in their entirety, or only in the form of scores or alerts?</li>
+							<li>Are they preserved as a visit-specific longitudinal summary, imported or preserved in the EHR system and linked to a specific encounter?</li>
+							<li>If not part of the EHR, are the data preserved in a system that meets reliability, security, assurance, and retention requirements under appropriate regulations?</li>
+							<li>Are there other more general regulatory or policy considerations, such as privacy practices or security regulations or Institutional Review Board (IRB) guidance, with which the system has to comply?</li>
+						</ul>
+
+						<p>Reuse of information for population health:</p>
 						<ul>
 							<li>Are there individual level metrics of frequency and completeness of use? Is individual level data collected from patients and providers to monitor satisfaction and barriers to use?</li>
 							<li>Are there clinic level indicators of use available to show broad patterns of use and monitored for changes that might represent systematic barriers or enablers to use?</li>
@@ -770,18 +780,18 @@
 							<li>Are the PRO data represented using standard formats and value sets, such that extracted data may have its structure and meaning consistent with that form other systems?</li>
 						</ul>
 
-						<p>As an example, in the PROgress study, after discussion with teams at St. Michaels and Midway clinics, including discussions with the IT staff, we addressed these issues as follows:</p>
+						<p>As an example, in the PROgress study, after discussion with teams at St. Michaels Hospital and Midway Specialty clinics, including discussions with the IT staff, we addressed these issues as follows:</p>
 
 						<p><b>Gathering information from the patient:</b> Initial implementations at both sites were based on in-clinic administration of the PROs on a tablet. This simplifies both the direct support for the patient in using the system, if needed, as well as the issues of identity verification and account management for the patients. However, this comes at a cost of flexibility of administration. Both sites were pleased with their choices, but both had trouble making the transition to remote use with the onset of COVID-19 concerns and the shift to telehealth visits.</p>
 
-						<p><b>Presenting information to the provider:</b> Both sites valued integration with the EHR, however both were in transition to, or strongly considering new EHR vendors and would have needed a clear and economical path to integration with their existing vendors. We did explore both FHIR interfaces and SMART on FHIR integration with one of the vendors, but exchanging enough information to secure a firm bid proved elusive and both sites elected to use automated printing of a results summary on PRO completion, and delivery of that summary to the provider at the time of the visit. </p>
+						<p><b>Presenting information to the provider:</b> Both sites valued integration with the EHR, however both were in transition to, or strongly considering new EHR vendors and would have needed a clear and economical path to integration with their existing vendors. We did explore both Fast Healthcare Interoperability Resources (FHIR) interfaces and Substitutable Medical Applications, Reusable Technologies (SMART) on FHIR integration with one of the vendors, but exchanging enough information to secure a firm bid proved elusive and both sites elected to use automated printing of a results summary on PRO completion, and delivery of that summary to the provider at the time of the visit.</p>
 
-						<p><b>Storing information into the medical record:</b> Both sites elected to scan the summary sheet into the electronic medical record, since an electronic interface was not implemented and they were soon going to transition to other EHRs.</p>
+						<p><b>Storing information into the medical record:</b> Both sites elected to scan the summary sheet into the electronic medical record since an electronic interface was not implemented and they were soon going to transition to other EHRs.</p>
 
-						<p><b>Reuse of information for population health:</b> Both sites elected to rely on the built-in dashboard features in the administrative view to track usage and completion, and on the analysis data set download feature for further examination of population level responses.  Midway requested a “whiteboard” view to track waiting room completion status in real time in the provider room, which was implemented. This is similar to a feature that had been previously developed for another clinical setting and allowed a screen to always show progress of patients on the PROs in the clinic in real time.</p>
+						<p><b>Reuse of information for population health:</b> Both sites elected to rely on the built-in dashboard features in the administrative view to track usage and completion, and on the analysis data set download feature for further examination of population level responses. Midway requested a ‘whiteboard’ view to track waiting room completion status in real time in the provider room, which was implemented. This is similar to a feature that had been previously developed for another clinical setting and allowed a screen to always show progress of patients on the PROs in the clinic in real time.</p>
 
-						<h3>Consider System Features</h3>
-						<p>Table 5 describes considerations for the PRO system features, adapted from<sup><a href="#REF">36</a></sup>, which reflect a similar set of concerns.</p>
+						<h3>3.3 Consider System Features</h3>
+						<p><b>Table 5</b> describes considerations for the PRO system features, adapted from Fenton et al,<sub>34</sub> which reflect a similar set of concerns.</p>
 
 						<div class="table-wrapper">
 							<table class="alt">
@@ -791,8 +801,8 @@
 									</tr>
 								</thead>
 								<tbody>
-									<tr>
-										<td>Key Consideration</td>
+									<tr style="background-color: #e40046;">
+										<td style="color: white;">Key Consideration</td>
 										<td>Definition</td>
 									</tr>
 									<tr>
@@ -846,39 +856,41 @@
 									</tr>
 								</tbody>
 								<tfoot>
-									<td>Adapted from<sup><a href="#REF">36</a></sup></td>
+									<td>Adapted from Fenton et al.<sup>34</sup></td>
 								</tfoot>
 							</table>
 						</div>
 
 
-						<h3>Consider Data Quality</h3>
-						<p>System features may include creating a dashboard to enhance usage monitoring, improve data accessibility and monitor data quality. Minimizing data errors within the PRO system is critically important. Errors or missing data can be reduced through automated data quality assurance measures that assess data for inconsistencies (e.g., validation rules built into the application), and through consideration of issues that discourage patients from starting or completing PRO sessions. Figure 3 describes the characteristics that define data quality.</p>
+						<h3>3.4. Consider Data Quality</h3>
+						<p>System features may include creating a dashboard to enhance usage monitoring, improve data accessibility, and monitor data quality. Minimizing data errors within the PRO system is critically important. Errors or missing data can be reduced through automated data quality assurance measures that assess data for inconsistencies (e.g. validation rules built into the application), and through consideration of issues that discourage patients from starting or completing PRO sessions. </p>
+						<p><b>Figure 3</b> describes the characteristics that define data quality.</p>
 
 
 						<p><b>Figure 3. The characteristics that define data quality</b></p>
-						<p>Accuracy and precision refer to the exactness of the data. Accuracy in healthcare is worth high levels of investment. The data must not contain errors and must convey the correct information without being misleading. PRO answers that are considered valid or legitimate based on the survey’s requirement are allowable. </p>
-						<p>At the same time, it is important to realize that requiring a patient to answer a question does not guarantee accurate data, any more than requiring a health care provider to acknowledge an alert guarantees their thoughtful consideration of the underlying information. Patients should be given a pathway through the PRO process which encourages them to provide information useful to their care, and to understand the benefit of providing that information.</p>
+						<span class="image fit"><img src="images/toolkit/Fig 3.jpeg" alt=""></span>
+						<p>Adapted from Fenton et al.<sup>35</sup></p>
+
+						<p>Accuracy and precision refer to the exactness of the data. Accuracy in healthcare is worth high levels of investment. The data must not contain errors and must convey the correct information without being misleading. PRO answers that are considered valid or legitimate based on the survey’s requirement are allowable.</p>
+						<p>At the same time, it is important to realize that requiring a patient to answer a question does not guarantee accurate data, any more than requiring a healthcare provider to acknowledge an alert guarantees their thoughtful consideration of the underlying information. Patients should be given a pathway through the PRO process which encourages them to provide information useful to their care, and to understand the benefit of providing that information.</p>
 						<p>There must be a valid reason to collect the data to justify the time and effort required. PRO data collected that is not relevant can misrepresent a patient’s health status and drive inaccurate clinical decision-making. Incomplete data collection can lead to incomplete understanding of patient health. Providers need the right level of access to the PRO data to adequately evaluate the data in a timely manner.</p>
 						<p>There must be a reliable mechanism that collects and stores the PRO data without inconsistency or variance. The level of data detail is important, since inaccurate decisions can occur if the data is not clearly presented. Simple raw data may have a different meaning than data that has been aggregated and summarized.</p>
 						<p>A PRO system that offers a wide range of software features can adapt to specific patient or provider needs without significant additional programming and supports reporting and data visualization solutions.</p>
 
-						<h3>Resources</h3>
+						<h3>3.5. Resources</h3>
 						<p><b>Guidance on Infrastructure</b></p>
 						<ul>
-							<li>Snyder C, and Wu, A.W., eds. Users’ Guide to Integrating Patient-Reported Outcomes in Electronic Health Records. Baltimore, MD: Johns Hopkins University. 2017. Funded by Patient-Centered Outcomes Research Institute (PCORI); JHU Contract No. 10.01.14 TO2 08.01.15.
-							<br>Available at: http://www.pcori.org/document/users-guide-integrating-patient-reported-outcomes-electronic-health-records </li>
-							<li>Coons SJ, Eremenco S, Lundy JJ, O’Donohoe P, O’Gorman H, Malizia W. Capturing Patient-Reported Outcome (PRO) Data Electronically: The Past, Present, and Promise of ePRO Measurement in Clinical Trials. The Patient. 2015;8(4):301-309. doi:10.1007/s40271-014-0090-z.
+							<li>Snyder C and Wu AW, eds. Users’ guide to integrating patient-reported outcomes in electronic health records. Baltimore, MD: Johns Hopkins University. 2017. Funded by Patient-Centered Outcomes Research Institute (PCORI); JHU Contract No. 10.01.14 TO2 08.01.15. Available <a href="http://www.pcori.org/document/users-guide-integrating-patient-reported-outcomes-electronic-health-records">here</a>. Accessed October 2020.</li>
+							<li>Coons SJ, Eremenco S, Lundy JJ, et al. Capturing patient-reported outcome (PRO) data electronically: the past, present, and promise of ePRO measurement in clinical trials. The Patient 2015;8:301-9.
 							</li>
 						</ul>
 						<p><b>Other Helpful Information or Examples</b></p>
 						<ul>
-							<li>ePROs in Clinical Care: Guidelines and tools for health systems. (https://epros.becertain.org/) 2020.</li>
-							<li>Clinical Data Capture and Management Evaluation Checklist, Oracle Data Sheet. </li>
-							<li>Review of Data Accessibility Methods In Healthcare (PDF Download Available).</li>
-							<br>Available from: https://www.researchgate.net/publication/280722426_REVIEW_OF_DATA_ACCESSIBILITY_METHODS_IN_HEALTHCARE [accessed Feb 12 2018].</ul>
-							<li>The MAPS Toolkit: mHealth assessment and planning for scale. World Health Organization (2015). United Nations Foundation. UNDP/UNFPA/WHO/World Bank Special Programme of Research, Development and Research Training in Human Reproduction. Johns Hopkins University.</li>
-							<li>REDCap is a secure web application for building and managing online surveys and databases http://projectredcap.org</li>
+							<li>ePROs in clinical care: guidelines and tools for health systems. 2020. Available from:<a href="https://epros.becertain.org."> https://epros.becertain.org</a>. Accessed October 2020.</li>
+							<li>Clinical data capture and management evaluation checklist. Available from:<a href="https://core.ac.uk/download/pdf/232911061.pdf">Oracle Data Sheet.</a> </li>
+							<li>Review of data accessibility methods in healthcare. Available from: <a href="https://www.researchgate.net/publication/280722426_REVIEW_OF_DATA_ACCESSIBILITY_METHODS_IN_HEALTHCARE">https://www.researchgate.net/publication/280722426_REVIEW_OF_DATA_ACCESSIBILITY_METHODS_IN_HEALTHCARE</a>. Accessed October 2020.</li>
+							<li>The MAPS Toolkit: mHealth Assessment and Planning for Scale. Geneva: World Health Organization; 2015. Available from: <a href="https://apps.who.int/iris/handle/10665/185238">https://apps.who.int/iris/handle/10665/185238</a>. Accessed October 2020.</li>
+							<li>REDCap (Research Electronic Data Capture) is a secure web application for building and managing online surveys and databases. Available from: <a href="http://projectredcap.org">http://projectredcap.org</a>. Accessed October 2020.</li>
 						</ul>
 
 					</div>
