@@ -7463,7 +7463,7 @@ input, select, textarea {
 	#hambagaMenu #menuToggle input:checked ~ span{  
 		opacity: 1;  
 		transform: rotate(45deg) translate(-2px, -1px);  
-		background: #E40046;
+		background: #071D49;
 	}
 	/* * But let's hide the middle one. */ 
 	#hambagaMenu #menuToggle input:checked ~ span:nth-last-child(3){  
