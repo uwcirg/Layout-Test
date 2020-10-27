@@ -7413,7 +7413,7 @@ input, select, textarea {
 		#hambagaMenu {        
 			display: block;        
 			width: 100%;       
-			background: hsla(0, 0%, 0%, 0.75);        
+			background: #071d49;        
 			padding: 1em;        
 			position: fixed;        
 			top: 0;        
@@ -7446,7 +7446,7 @@ input, select, textarea {
  		height: 4px;  
 		margin-bottom: 5px;  
 		position: relative;  
-		background: #BBC9C7;  
+		background: #E40046;  
 		border-radius: 3px;  
 		z-index: 1;  
 		transform-origin: 4px 0px;  
@@ -7464,7 +7464,7 @@ input, select, textarea {
 	#hambagaMenu #menuToggle input:checked ~ span{  
 		opacity: 1;  
 		transform: rotate(45deg) translate(-2px, -1px);  
-		background: #222222;
+		background: #071D49;
 	}
 	/* * But let's hide the middle one. */ 
 	#hambagaMenu #menuToggle input:checked ~ span:nth-last-child(3){  
@@ -7482,10 +7482,10 @@ input, select, textarea {
 		margin: -100px 0 0 -50px;  
 		padding: 50px;  
 		border-radius: 0.5rem;
-		/*font-weight: bold;*/
+		
 		text-decoration: none !important;
 		padding-top: 125px;  
-		background: #BBC9C7; 
+		background: #eceff1; 
 		/* background: rgba(94, 66, 166, 1); */
 		list-style-type: none;  
 		-webkit-font-smoothing: antialiased;  
@@ -7495,7 +7495,7 @@ input, select, textarea {
 		transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 	}
 	#hambagaMenu #menu hover {
-		color: #ffffff;	
+		color: #E40046;	
 	}
 	#hambagaMenu #menu li{  
 		padding: 10px 0;  
@@ -7510,7 +7510,7 @@ input, select, textarea {
 
 	#sidebar {
 		padding: 2.5em 2.5em 0.5em 2.5em ;
-		background: hsla(0, 0%, 0%, 0.75);
+		background: #071D49;
 		cursor: default;
 		position: fixed;
 		top: 0;
