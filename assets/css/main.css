@@ -7481,10 +7481,11 @@ input, select, textarea {
 		margin: -100px 0 0 -50px;  
 		padding: 50px;  
 		border-radius: 0.5rem;
-		/*font-weight: bold;*/
+		font-weight: bold;
 		text-decoration: none !important;
+		color: #ffffff; 
 		padding-top: 125px;  
-		background: #e40046; 
+		background: #071D49; 
 		/* background: rgba(94, 66, 166, 1); */
 		list-style-type: none;  
 		-webkit-font-smoothing: antialiased;  
@@ -7494,7 +7495,7 @@ input, select, textarea {
 		transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 	}
 	#hambagaMenu #menu hover {
-		color: #ffffff;	
+		color: #E40046;	
 	}
 	#hambagaMenu #menu li{  
 		padding: 10px 0;  
