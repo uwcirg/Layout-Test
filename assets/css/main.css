@@ -7483,9 +7483,8 @@ input, select, textarea {
 		border-radius: 0.5rem;
 		font-weight: bold;
 		text-decoration: none !important;
-		color: #ffffff; 
 		padding-top: 125px;  
-		background: #071D49; 
+		background: #eceff1; 
 		/* background: rgba(94, 66, 166, 1); */
 		list-style-type: none;  
 		-webkit-font-smoothing: antialiased;  
