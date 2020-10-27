@@ -223,7 +223,7 @@ input, select, textarea {
 		-ms-transition: color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out;
 		color: #5bc2e7;
-		text-decoration: underline;
+		
 	}
 
 		a:hover {
