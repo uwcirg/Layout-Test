@@ -7509,7 +7509,7 @@ input, select, textarea {
 
 	#sidebar {
 		padding: 2.5em 2.5em 0.5em 2.5em ;
-		background: hsla(0, 0%, 0%, 0.75);
+		background: #071D49;
 		cursor: default;
 		position: fixed;
 		top: 0;
