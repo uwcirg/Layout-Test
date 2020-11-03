@@ -3802,7 +3802,7 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			.banner.style2 {
-				padding: 2rem 2rem 0.1rem 2rem ;
+				padding: 1rem 1rem 0.1rem 1rem ;
 			}
 
 				.banner.style2 .content {
