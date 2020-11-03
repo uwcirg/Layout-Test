@@ -85,10 +85,10 @@
 		<!-- Wrapper -->
 			<div id="wrapper" class="divided">
 				<section class="banner style2 orient-center content-align-left image-position-right onload-image-fade-in fullscreen onload-content-fade-right">
-					<div class="content" style="width: 80%;">
+					<div class="content" style="width: 90%;">
 						<h1 id="intro">The PROgress Project: Implementing Patient Reported Outcomes Within Routine HIV Care.</h1>
-						<p>•&nbsp;&nbsp;&nbsp;Helping patients share information with their doctor about their health, situation, needs and preferences that may otherwise not be discussed
-						<br>•&nbsp;&nbsp;&nbsp;Improving patient provider discussions and relationships to facilitate better-informed care and improve clinical efficiency</p>
+						<h3>•&nbsp;&nbsp;&nbsp;Helping patients share information with their doctor about their health, situation, needs and preferences that may otherwise not be discussed
+						<br>•&nbsp;&nbsp;&nbsp;Improving patient provider discussions and relationships to facilitate better-informed care and improve clinical efficiency</h3>
 						<hr>
 							
 						<p>The PROgress project, “<i>Improving HIV Care Through The Implementation Of PROs within Routine Patient Management</i>,” is a ViiV Healthcare sponsored research workstream in collaboration with the University of Washington. The goal of the project is to collate and supplement evidence, insights and resources that can support the implementation of patient reported outcomes and measures (PROs) within routine HIV care.</p>
@@ -191,11 +191,34 @@
 							<p class="box">It really did a lot for me because you had a lot of questions that I probably wouldn't have asked the doctor, or she probably wouldn't have asked me.
 							<br>-Patient living with HIV</p>
 							
-							<a onclick="toggle_visibility_id('quotes2');" class="button">Read More Testimonials</a>
+							<!--<a onclick="toggle_visibility_id('quotes2');" class="button">Read More Testimonials</a>-->
+							<button onclick="toggle1(); textswap1();"><p id="dbutton1">Read More Testimonials</p></button>
+							<script>
+							function toggle1() {
+							  var x = document.getElementsByClassName("detail1");
+							  for (var i =0; i < x.length; i++) {	
+							  if (x[i].style.display === "none") {
+							    x[i].style.display = "block";
+							  } else {
+							    x[i].style.display = "none";
+							  }
+							  }
+							}
+							function textswap1() {
+							  var x = document.getElementById("dbutton1");
+							  if (x.innerHTML === "Show Fewer Testimonials") {
+							    x.innerHTML = "Read More Testimonials";
+							  } else {
+							    x.innerHTML = "Show Fewer Testimonials";
+							  }
+							}
+							 
+							</script>
+
 								<p>From HIV Providers and Patients Living with HIV</p>
 
 
-							<span id="quotes2" style="display: none;">
+							<span id="quotes2" style="display: none;" class="detail1">
 									<p class="major">Two key areas for which patients and providers believed PROs had an impact: <sup><a href="ref.html">2,26,27</a></sup></p>
 
 									<div class="table-wrapper">
@@ -380,9 +403,31 @@
 							<h3 id="samplePRO">Sample PRO Results Page</h3>
 							<p style="text-align: left;">PRO results reporting can be tailored to suit the needs of any clinic. Modifiable aspects of PRO results reporting include highlighting/prioritization of the most clinically urgent topics through use of placement, bold font, or color; the use of multiple time points to note change over time; and style and degree of scoring and interpretation needed. In addition, responses to clinically urgent questions, such as suicidal ideation, can be programmed to trigger pager alerts in real time for relevant staff.</p>
 
-							<a onclick="toggle_visibility_id('result');" class="button fit">View Sample PRO Results</a>
+							<!--<a onclick="toggle_visibility_id('result');" class="button fit">View Sample PRO Results</a>-->
+							<button onclick="toggle2(); textswap2();"><p id="dbutton2">View Sample PRO Results</p></button>
+							<script>
+							function toggle2() {
+							  var x = document.getElementsByClassName("detail2");
+							  for (var i =0; i < x.length; i++) {	
+							  if (x[i].style.display === "none") {
+							    x[i].style.display = "block";
+							  } else {
+							    x[i].style.display = "none";
+							  }
+							  }
+							}
+							function textswap2() {
+							  var x = document.getElementById("dbutton2");
+							  if (x.innerHTML === "Hide Sample PRO Results") {
+							    x.innerHTML = "View Sample PRO Results";
+							  } else {
+							    x.innerHTML = "Hide Sample PRO Results";
+							  }
+							}
+							 
+							</script>
 
-							<span id="result" style="display: none;">
+							<span id="result" style="display: none; margin: 1em;" class="detail2">
 								<iframe src="assets/Sample Patient-Based Measures Provider Feedback (MIDWAY).pdf" width="100%" height="700px"></iframe>
 							</span>
 								
@@ -398,7 +443,7 @@
 							}
 							</script> -->
 							
-							<!-- should be moved to css -->
+							<!-- should be moved to css
 							<script>
 							function toggle() {
 							  var x = document.getElementsByClassName("detail");
@@ -419,7 +464,7 @@
 							  }
 							}
 							 
-							</script>
+							</script> -->
 							
 							<!-- <ul class="actions stacked">
 								<li><a href="clinicaltopics.html" class="button">Learn More</a></li>
