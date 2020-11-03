@@ -403,9 +403,31 @@
 							<h3 id="samplePRO">Sample PRO Results Page</h3>
 							<p style="text-align: left;">PRO results reporting can be tailored to suit the needs of any clinic. Modifiable aspects of PRO results reporting include highlighting/prioritization of the most clinically urgent topics through use of placement, bold font, or color; the use of multiple time points to note change over time; and style and degree of scoring and interpretation needed. In addition, responses to clinically urgent questions, such as suicidal ideation, can be programmed to trigger pager alerts in real time for relevant staff.</p>
 
-							<a onclick="toggle_visibility_id('result');" class="button fit">View Sample PRO Results</a>
+							<!--<a onclick="toggle_visibility_id('result');" class="button fit">View Sample PRO Results</a>-->
+							<button onclick="toggle2(); textswap2();"><p id="dbutton2">View Sample PRO Results</p></button>
+							<script>
+							function toggle2() {
+							  var x = document.getElementsByClassName("detail2");
+							  for (var i =0; i < x.length; i++) {	
+							  if (x[i].style.display === "none") {
+							    x[i].style.display = "block";
+							  } else {
+							    x[i].style.display = "none";
+							  }
+							  }
+							}
+							function textswap2() {
+							  var x = document.getElementById("dbutton2");
+							  if (x.innerHTML === "Hide Sample PRO Results") {
+							    x.innerHTML = "View Sample PRO Results";
+							  } else {
+							    x.innerHTML = "Hide Sample PRO Results";
+							  }
+							}
+							 
+							</script>
 
-							<span id="result" style="display: none;">
+							<span id="result" style="display: none;" class="detail2">
 								<iframe src="assets/Sample Patient-Based Measures Provider Feedback (MIDWAY).pdf" width="100%" height="700px"></iframe>
 							</span>
 								
