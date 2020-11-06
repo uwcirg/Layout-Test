@@ -9172,6 +9172,10 @@ input, select, textarea {
 			line-height: 1.5em;
 			min-width: 120px;
 		}
+		#exitWarningModal #btnOK {
+			background: #071D49;
+			color: #FFF !important;
+		}
 
 		/*#exitWarningModal button-filled {
 			color: #071D49 !important;

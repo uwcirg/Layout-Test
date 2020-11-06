@@ -414,7 +414,7 @@
 		 * implementing exit warning modal
 		 */
 		//dynamically adding exit warning modal element to a page
-		$("body").append('<div id="exitWarningModal"><p>This link will take you to an external website. We do not recommend, endorse or accept liability for sites controlled by third-parties.</p><div class="buttons-container"><button id="btnOK">OK</button><button id="btnCancel">Cancel</button></div></div>');
+		$("body").append('<div id="exitWarningModal"><p>This link will take you to an external website. We do not recommend, endorse or accept liability for sites controlled by third-parties.</p><div class="buttons-container"><button id="btnCancel">Cancel</button><button id="btnOK">OK</button></div></div>');
 
 		//any anchor link with the attribute, rel="external", which indicates that it is an external website link,will invoke the exit warning modal
 		$("a").on("click", function(e) {
@@ -427,7 +427,10 @@
 		});
 		//onclick event for the OK button in the exit warning modal
 		$("body").delegate("#exitWarningModal #btnOK", "click", function() {
-			window.location = $("#exitWarningModal").attr("exit-site-url");
+			setTimeout(function() {
+				$("body").removeClass("modal");
+			}, 50);
+			window.open($("#exitWarningModal").attr("exit-site-url"), "_blank");
 			return false;
 		});
 		//onclick event for the Cancel button in the exit warning modal
