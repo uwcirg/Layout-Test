@@ -9127,3 +9127,70 @@ input, select, textarea {
 			#wrapper.divided > .invert:first-child {
 				box-shadow: none !important;
 			}
+		body.modal:before {
+			display: block;
+			content: " ";
+			position: fixed;
+			z-index: 99998;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: #444;
+			opacity: 0.8;
+		}
+		body.modal {
+			overflow: hidden;
+		}
+		#exitWarningModal {
+			display: none;
+			width: 100%;
+			padding: 32px;
+			position: fixed;
+			top: 15%;
+			left: 0;
+			z-index: 99999;
+			background: #FFF;
+		}
+		@media (min-width: 500px) {
+			#exitWarningModal {
+				width: 500px;
+				top: 20%;
+				left: calc(50% - 250px);
+			}
+		}
+		#exitWarningModal .buttons-container {
+			display: flex;
+			justify-content: center;
+		}
+		#exitWarningModal button {
+			color: #071D49 !important;
+			border: 1px solid #071D49;
+			box-shadow: none;
+			height: auto;
+			padding: 8px;
+			line-height: 1.5em;
+			min-width: 120px;
+		}
+		#exitWarningModal #btnOK {
+			background: #071D49;
+			color: #FFF !important;
+		}
+
+		/*#exitWarningModal button-filled {
+			color: #071D49 !important;
+			border: 1px solid #071D49;
+			box-shadow: none;
+			height: auto;
+			padding: 8px;
+			line-height: 1.5em;
+			min-width: 120px;
+		}*/
+
+
+		#exitWarningModal .buttons-container button:first-of-type {
+			margin-right: 12px;
+		}
+		body.modal #exitWarningModal {
+			display: block;
+		}
