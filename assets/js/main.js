@@ -20,13 +20,6 @@
 			xxsmall:  [ null,      '360px'  ]
 		});
 
-	// Play initial animations on page load.
-		$window.on('load', function() {
-			window.setTimeout(function() {
-				$body.removeClass('is-preload');
-			}, 100);
-		});
-
 	// Browser fixes.
 
 		// IE: Flexbox min-height bug.
@@ -64,9 +57,11 @@
 							$img = $this.children('img'),
 							positionClass = $this.parent().attr('class').match(/image-position-([a-z]+)/);
 
+						if (!$img.length) return;
+
 						// Set image.
 							$this
-								.css('background-image', 'url("' + $img.attr('src') + '")')
+								.css('background-image', 'url("' + ($img.attr('src') || $img.attr('data-src')) + '")')
 								.css('background-repeat', 'no-repeat')
 								.css('background-size', 'cover');
 
@@ -363,5 +358,84 @@
 							}, 275);
 
 						});
+		
+		/*
+		 * begin lazy loading images
+		 */
+		var initImageObservers = function() {
+			var observerConfig = {
+				rootMargin: '0px 0px 24px 0px',
+				threshold: 0
+			};
+			// register the config object with an instance
+			// of intersectionObserver
+			var observer = new IntersectionObserver(function(entries, self) {
+				// iterate over each entry
+				for (var index=0; index < entries.length; index++) {
+					var entry = entries[index];
+					// process just the images that are intersecting.
+					// isIntersecting is a property exposed by the interface
+					if(entry.isIntersecting) {
+						// custom function that copies the path to the img
+						// from data-src to src
+						(function(img) {
+							var imageSrc = (img).getAttribute("data-src");
+							img.setAttribute("src", imageSrc);
+							
+						})(entry.target);
+						// the image is now in place, stop watching
+						self.unobserve(entry.target);
+					}
+				}
+			}, observerConfig);
+			var imgs = document.querySelectorAll('[data-src]');
+			for (var index=0; index < imgs.length; index++) {
+				observer.observe(imgs[index]);
+			}
+		}
+		/*
+		 * hide loading spinner
+		 */
+		var setLoaderReady = function() {
+			setTimeout(function() {
+				document.querySelector('.loading-container').classList.remove('loading');
+			}, 750);
+		}
+		// Play initial animations on page load.
+		$window.on('load', function() {
+			window.setTimeout(function() {
+				$body.removeClass('is-preload');
+			}, 100);
+			initImageObservers();
+			setLoaderReady();
+		});
 
+		/*
+		 * implementing exit warning modal
+		 */
+		//dynamically adding exit warning modal element to a page
+		$("body").append('<div id="exitWarningModal"><p>This link will take you to an external website. We do not recommend, endorse or accept liability for sites controlled by third-parties.</p><div class="buttons-container"><button id="btnCancel">Cancel</button><button id="btnOK">OK</button></div></div>');
+
+		//any anchor link with the attribute, rel="external", which indicates that it is an external website link,will invoke the exit warning modal
+		$("a").on("click", function(e) {
+			if ($(this).attr("rel") == "external") {
+				e.preventDefault();
+				$("body").addClass("modal");
+				$("#exitWarningModal").attr("exit-site-url", $(this).attr("href"));
+				return false;
+			}
+		});
+		//onclick event for the OK button in the exit warning modal
+		$("body").delegate("#exitWarningModal #btnOK", "click", function() {
+			setTimeout(function() {
+				$("body").removeClass("modal");
+			}, 50);
+			window.open($("#exitWarningModal").attr("exit-site-url"), "_blank");
+			return false;
+		});
+		//onclick event for the Cancel button in the exit warning modal
+		$("body").delegate("#exitWarningModal #btnCancel", "click", function() {
+			$("#exitWarningModal").attr("exit-site-url", "");
+			$("body").removeClass("modal");
+		});
 })(jQuery);
